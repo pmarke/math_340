@@ -12,12 +12,15 @@
 \renewcommand{\thesubsection}{\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{subsubsection}}
 
-\addtocounter{section}{0}
+\addtocounter{section}{1}
 
 \newcommand\abs[1]{\left|#1\right|}
 \end_preamble
 \options onecolumn
 \use_default_options true
+\begin_modules
+theorems-sec
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -102,6 +105,10 @@ Mark Petersen
 \begin_layout Standard
 \align center
 06/22/2020
+\end_layout
+
+\begin_layout --Separator--
+
 \end_layout
 
 \begin_layout Exercise
@@ -701,7 +708,11 @@ Form and prove a conjecture about the relationship between
 \end_layout
 
 \begin_deeper
-\begin_layout Conjecture
+\begin_layout Standard
+
+\series bold
+Conjecture: 
+\series default
 Let 
 \begin_inset Formula $g:\mathbb{R}\to\mathbb{R}$
 \end_inset
@@ -1221,6 +1232,10 @@ The good behavior of preimages demonstrated in part a) is completely general.
 \begin_layout Proof
 With no loss in generality, see the proof in part a) with the domain 
 \begin_inset Formula $D=\mathbb{R}$
+\end_inset
+
+, and codomains 
+\begin_inset Formula $A,B\subseteq\mathbb{R}$
 \end_inset
 
 .
