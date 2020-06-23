@@ -3,6 +3,7 @@
 \begin_document
 \begin_header
 \textclass IEEEtran
+\options onecolumn
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -103,7 +104,7 @@ A real number
 
  is the 
 \emph on
-greatest upper bound
+greatest lower bound
 \emph default
  for a set 
 \begin_inset Formula $A\subseteq\mathbb{R}$
@@ -114,7 +115,6 @@ greatest upper bound
 
 \begin_deeper
 \begin_layout Enumerate
-i) 
 \begin_inset Formula $s$
 \end_inset
 
@@ -126,11 +126,11 @@ i)
 \end_layout
 
 \begin_layout Enumerate
-ii) if 
+if 
 \begin_inset Formula $b$
 \end_inset
 
- is any lower bound for 
+ is a lower bound for 
 \begin_inset Formula $A$
 \end_inset
 
@@ -319,12 +319,336 @@ Find a formula for
 
 \begin_deeper
 \begin_layout Enumerate
+
+\series bold
+Conjecture: 
+\series default
+
 \begin_inset Formula $\sup\left(A_{1}\cup A_{2}\right)=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right)\right)$
 \end_inset
 
 .
  
+\end_layout
+
+\begin_layout Proof
+We will show that 
+\begin_inset Formula $\sup\left(A_{1}\cup A_{2}\right)=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right)\right)$
+\end_inset
+
+ by proving the inequalities 
+\begin_inset Formula $\sup\left(A_{1}\cup A_{2}\right)\geq\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right)\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\sup\left(A_{1}\cup A_{2}\right)\leq\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\geq\right):$
+\end_inset
+
+ Let 
+\begin_inset Formula $x=\sup\left(A_{1}\cup A_{2}\right)$
+\end_inset
+
+, then for all 
+\begin_inset Formula $a\in A_{1}\cup A_{2}$
+\end_inset
+
+, we have that 
+\begin_inset Formula $a\leq x$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $A_{1}\subseteq A_{1}\cup A_{2}$
+\end_inset
+
+, then for all 
+\begin_inset Formula $b\in A_{1}$
+\end_inset
+
+ we have that 
+\begin_inset Formula $b\leq x$
+\end_inset
+
+.
+ Similarly, since 
+\begin_inset Formula $A_{2}\subseteq A_{1}\cup A_{2}$
+\end_inset
+
+, then for all 
+\begin_inset Formula $c\in A_{2}$
+\end_inset
+
+, it must be that 
+\begin_inset Formula $c\leq x$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $x$
+\end_inset
+
+ is an upper bound for 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula $\sup\left(A_{1}\right)\leq x$
+\end_inset
+
+ and 
+\begin_inset Formula $\sup\left(A_{2}\right)\leq x$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right)\right)\leq x=\sup\left(A_{1}\cup A_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\leq\right)$
+\end_inset
+
+: Let 
+\begin_inset Formula $x=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right)\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $x$
+\end_inset
+
+ is an upper bound for 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
+ In other words, for all 
+\begin_inset Formula $b\in A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $b\leq x$
+\end_inset
+
+, and for all 
+\begin_inset Formula $c\in A_{2},c\leq x$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $A_{1}\cup A_{2}=\left\{ h\,:\,h\in A_{1}\text{ or }h\in A_{2}\right\} $
+\end_inset
+
+, we know that for all 
+\begin_inset Formula $d\in A_{1}\cup A_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $d\leq x$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $x$
+\end_inset
+
+ is an upper bound for 
+\begin_inset Formula $A_{1}\cup A_{2}$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $\sup\left(A_{1}\cup A_{2}\right)\leq x$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\sup\left(A_{1}\cup A_{2}\right)\leq\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right)\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Since both inequalities hold, we have that 
+\begin_inset Formula $\sup\left(A_{1}\cup A_{2}\right)=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Conjecture:
+\series default
+
 \begin_inset Formula $\sup\left(\cup_{k=1}^{n}A_{k}\right)=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right),\ldots,\sup\left(A_{n}\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $n,k\in\mathbb{N}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{k}\subseteq\mathbb{R}$
+\end_inset
+
+ be bounded from above.
+ We want to show that the open sentence 
+\begin_inset Formula 
+\[
+P\left(n\right):\sup\left(\cup_{k=1}^{n}A_{k}\right)=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right),\ldots,\sup\left(A_{n}\right)\right)
+\]
+
+\end_inset
+
+is true for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: 
+\begin_inset Formula $P\left(1\right)$
+\end_inset
+
+ is trivial since 
+\begin_inset Formula $\sup\left(A_{1}\right)=\max\left(\sup\left(A_{1}\right)\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $P\left(2\right)$
+\end_inset
+
+ has been proven above.
+ 
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+.
+ We assume that 
+\begin_inset Formula $P\left(m\right)$
+\end_inset
+
+ is true and we want to show that 
+\begin_inset Formula $P\left(m+1\right)$
+\end_inset
+
+ is true which is the statement
+\begin_inset Formula 
+\[
+\sup\left(\cup_{i=1}^{m+1}A_{k}\right)=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right),\ldots,\sup\left(A_{m+1}\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We can write the right hand side as 
+\begin_inset Formula 
+\[
+\max\left(\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right),\ldots,\sup\left(A_{m}\right)\right),\sup\left(A_{m+1}\right)\right).
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $P\left(m\right)$
+\end_inset
+
+ is true, we can reduce it to 
+\begin_inset Formula 
+\begin{align*}
+ & \max\left(\sup\left(\cup_{j=1}^{m}A_{j}\right),\sup\left(A_{m+1}\right)\right)\\
+ & \max\left(\sup\left(B\right),\sup\left(A_{m+1}\right)\right),
+\end{align*}
+
+\end_inset
+
+with 
+\begin_inset Formula $B=\cup_{j=1}^{m}A_{j}$
+\end_inset
+
+ which is a subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ that is bounded from above.
+ This problem then reduces to the base case 
+\begin_inset Formula $P\left(2\right)$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula 
+\begin{align*}
+\sup\left(B\cup A_{m+1}\right) & =\max\left(\sup\left(B\right),\sup\left(A_{m+1}\right)\right)\\
+\sup\left(\left(\cup_{i=1}^{m}A_{j}\right)\cup A_{m+1}\right) & =\max\left(\sup\left(B\right),\sup\left(A_{m+1}\right)\right)\\
+\sup\left(\cup_{i=1}^{m+1}A_{k}\right) & =\max\left(\sup\left(B\right),\sup\left(A_{m+1}\right)\right),
+\end{align*}
+
+\end_inset
+
+hence 
+\begin_inset Formula 
+\[
+\sup\left(\cup_{i=1}^{m+1}A_{k}\right)=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right),\ldots,\sup\left(A_{m+1}\right)\right).
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $P\left(m+1\right)$
+\end_inset
+
+ is true, we have shown that 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for all 
+\begin_inset Formula $n$
 \end_inset
 
 .
@@ -333,7 +657,7 @@ Find a formula for
 \end_deeper
 \begin_layout Enumerate
 Consider 
-\begin_inset Formula $\sup\left(\cup_{k+1}^{\infty}\right)$
+\begin_inset Formula $\sup\left(\cup_{k=1}^{\infty}A_{k}\right)$
 \end_inset
 
 .
@@ -346,9 +670,52 @@ Consider
 
 \begin_deeper
 \begin_layout Enumerate
-Yes, since each set is nonempty and bounded above, the union of all the
- sets must be nonempty and bounded above.
- Therefore, the supremum exists.
+No.
+ Consider the upper bounded sets 
+\begin_inset Formula $A_{i}=\left\{ i\right\} $
+\end_inset
+
+ with 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+, then each set is bounded from above by 
+\begin_inset Formula $i+1$
+\end_inset
+
+.
+ However, the set 
+\begin_inset Formula $\cup_{k=1}^{\infty}A_{k}$
+\end_inset
+
+ isn't bounded from above.
+ To show this, suppose 
+\begin_inset Formula $y=\sup\left(\cup_{k=1}^{\infty}A_{k}\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $y$
+\end_inset
+
+ is not an upper bound of 
+\begin_inset Formula $A_{y+1}$
+\end_inset
+
+.
+ But since 
+\begin_inset Formula $A_{y+1}\subseteq\cup_{k=1}^{\infty}A_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ cannot be a supremem.
+ This is a contradiction, thus 
+\begin_inset Formula $\sup\left(\cup_{k=1}^{\infty}A_{k}\right)$
+\end_inset
+
+ does not exist.
  
 \end_layout
 
