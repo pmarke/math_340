@@ -980,7 +980,19 @@ Since the domain
 \end_inset
 
 .
- 
+ Under the assumption that 
+\begin_inset Formula $D\subseteq\mathbb{R}$
+\end_inset
+
+, then 
+\begin_inset Formula $f^{-1}\left(A\right)=\left[0,2\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{-1}\left(B\right)=\left[-1,1\right]$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -988,7 +1000,16 @@ We want to show that
 \begin_inset Formula $f^{-1}\left(A\cap B\right)=f^{-1}\left(A\right)\cap f^{-1}\left(B\right)$
 \end_inset
 
+.
+ We will show this for the function 
+\begin_inset Formula $f:D\subseteq\mathbb{R}\to\mathbb{R}$
+\end_inset
 
+ and arbitrary sets 
+\begin_inset Formula $A,B\subseteq\mathbb{R}$
+\end_inset
+
+.
 \end_layout
 
 \begin_deeper
@@ -1201,6 +1222,29 @@ Since both inclusions hold, we have that
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+Using the proofs done above.
+ In the case that 
+\begin_inset Formula $f^{-1}\left(A\right)=\left[0,2\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $f^{-1}\left(B\right)=\left[-1,1\right]$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $f^{-1}\left(A\cap B\right)=f^{-1}\left(A\right)\cap f^{-1}\left(B\right)=\left[0,1\right]$
+\end_inset
+
+.
+ And 
+\begin_inset Formula $f^{-1}\left(A\cup B\right)=f^{-1}\left(A\right)\cup f^{-1}\left(B\right)=\left[-2,2\right]$
+\end_inset
+
+.
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 The good behavior of preimages demonstrated in part a) is completely general.

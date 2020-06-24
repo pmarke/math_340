@@ -657,7 +657,7 @@ Since
 \end_deeper
 \begin_layout Enumerate
 Consider 
-\begin_inset Formula $\sup\left(\cup_{k+1}^{\infty}\right)$
+\begin_inset Formula $\sup\left(\cup_{k=1}^{\infty}A_{k}\right)$
 \end_inset
 
 .
@@ -670,9 +670,52 @@ Consider
 
 \begin_deeper
 \begin_layout Enumerate
-Yes, since each set is nonempty and bounded above, the union of all the
- sets must be nonempty and bounded above.
- Therefore, the supremum exists.
+No.
+ Consider the upper bounded sets 
+\begin_inset Formula $A_{i}=\left\{ i\right\} $
+\end_inset
+
+ with 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+, then each set is bounded from above by 
+\begin_inset Formula $i+1$
+\end_inset
+
+.
+ However, the set 
+\begin_inset Formula $\cup_{k=1}^{\infty}A_{k}$
+\end_inset
+
+ isn't bounded from above.
+ To show this, suppose 
+\begin_inset Formula $y=\sup\left(\cup_{k=1}^{\infty}A_{k}\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $y$
+\end_inset
+
+ is not an upper bound of 
+\begin_inset Formula $A_{y+1}$
+\end_inset
+
+.
+ But since 
+\begin_inset Formula $A_{y+1}\subseteq\cup_{k=1}^{\infty}A_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ cannot be a supremem.
+ This is a contradiction, thus 
+\begin_inset Formula $\sup\left(\cup_{k=1}^{\infty}A_{k}\right)$
+\end_inset
+
+ does not exist.
  
 \end_layout
 

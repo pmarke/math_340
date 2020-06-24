@@ -331,6 +331,7 @@ Conjecture:
  
 \end_layout
 
+\begin_deeper
 \begin_layout Proof
 We will show that 
 \begin_inset Formula $\sup\left(A_{1}\cup A_{2}\right)=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right)\right)$
@@ -496,18 +497,20 @@ Since both inequalities hold, we have that
 .
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \series bold
 Conjecture:
 \series default
-
+ 
 \begin_inset Formula $\sup\left(\cup_{k=1}^{n}A_{k}\right)=\max\left(\sup\left(A_{1}\right),\sup\left(A_{2}\right),\ldots,\sup\left(A_{n}\right)\right)$
 \end_inset
 
 .
 \end_layout
 
+\begin_deeper
 \begin_layout Proof
 Let 
 \begin_inset Formula $n,k\in\mathbb{N}$
@@ -654,6 +657,7 @@ Since
 .
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Consider 
