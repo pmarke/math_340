@@ -1107,7 +1107,7 @@ We assume, by contrapositive, that
 \begin_inset Formula 
 \begin{align*}
 f\left(x_{1}\right) & =f\left(x_{2}\right)\\
-\left(x_{1},1\right) & =\left(x_{2},2\right),
+\left(x_{1},1\right) & =\left(x_{2},1\right),
 \end{align*}
 
 \end_inset

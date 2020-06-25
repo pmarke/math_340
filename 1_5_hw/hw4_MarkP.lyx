@@ -578,6 +578,23 @@ Explain why induction cannot be used to prove part (ii) of Theorem 1.5.8 from
  
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Induction is a method used to prove that an open sentence 
+\begin_inset Formula $P\left(n\right)$
+\end_inset
+
+ is true for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ It is not designed to handle the infinite case as in the infinite union.
+ Therefore, induction cannot be used to prove part (ii).
+ 
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Show how arranging 
 \begin_inset Formula $\N$
