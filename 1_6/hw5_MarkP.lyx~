@@ -1,0 +1,827 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 5 Section 1.6
+\end_layout
+
+\begin_layout After Title Text
+Exercises 3,4,5,6,7
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+06/26/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\lvert#1\rvert}
+{\lvert#1\rvert}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q3)
+\series default
+: Supply rebuttals to the following complaints about the proof of Theorem
+ 1.6.1.
+\end_layout
+
+\begin_layout Enumerate
+Every rational number has a decimal expansion, so we could apply this same
+ argument to show that the set of rational numbers between 0 and 1 is uncountabl
+e.
+ However, because we know that any subset of 
+\begin_inset Formula $\Q$
+\end_inset
+
+ must be countable, the proof of Theorem 1.6.1 must be flawed.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The set of rational numbers between 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $1$
+\end_inset
+
+ is 
+\begin_inset Formula $S=\left\{ \frac{m}{n}\in\Q\,:\,0<\frac{m}{n}<1\right\} $
+\end_inset
+
+.
+ Since there is an irrational number between every two real numbers, we
+ know that 
+\begin_inset Formula $S\subsetneq\left(0,1\right)$
+\end_inset
+
+.
+ This means that we cannot define a real rational number 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ with the decimal expansion 
+\begin_inset Formula $x=0.b_{1}b_{2}b_{3}\cdots$
+\end_inset
+
+ using the rule 
+\begin_inset Formula 
+\[
+b_{n}=\begin{cases}
+2 & \text{if }a_{nn}\neq2\\
+3 & \text{if }a_{nn}=2
+\end{cases}
+\]
+
+\end_inset
+
+or any variant of the rule, since there is no guarantee that this rule will
+ ensure that 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ since 
+\begin_inset Formula $x$
+\end_inset
+
+ could become an irrational number.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Some numbers have two different decimal representations.
+ Specifically, any decimal expansion that terminates can also be written
+ with repeating 
+\begin_inset Formula $9's$
+\end_inset
+
+.
+ for instance, 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $0.5$
+\end_inset
+
+ or as 
+\begin_inset Formula $0.4999$
+\end_inset
+
+...
+ Doesn't this cause some problems?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+In the proof of Theorem 1.5.6, we assume that the function 
+\begin_inset Formula $f:\N\to\left(0,1\right)$
+\end_inset
+
+ is bijective, so the image of 
+\begin_inset Formula $f$
+\end_inset
+
+ doesn't contain any repeating elements, and by using the rule 
+\begin_inset Formula 
+\[
+b_{n}=\begin{cases}
+2 & \text{if }a_{nn}\neq2\\
+3 & \text{if }a_{nn}=2
+\end{cases}
+\]
+
+\end_inset
+
+we ensure that we do not construct a number with repeating 
+\begin_inset Formula $9's$
+\end_inset
+
+ or that terminates in a 
+\begin_inset Formula $0$
+\end_inset
+
+ in order to avoid repeating numbers.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be the set consisting of all sequences of 
+\begin_inset Formula $0's$
+\end_inset
+
+ and 
+\begin_inset Formula $1's$
+\end_inset
+
+.
+ Observe that 
+\begin_inset Formula $S$
+\end_inset
+
+ is not a particular sequence, but rather a large set whose elements are
+ sequences; namely
+\begin_inset Formula 
+\[
+S=\left\{ \left(a_{1},a_{2},a_{2},\ldots\right)\,:\,a_{n}=0\text{ or }1\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Give a rigorous argument showing that 
+\begin_inset Formula $S$
+\end_inset
+
+ is uncountable.
+ 
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $f:\left(0,1\right)\to S$
+\end_inset
+
+ be the map that sends 
+\begin_inset Formula $x\in\left(0,1\right)$
+\end_inset
+
+ to it's binary representation with the decimals digits forming a tuple.
+ For example, if 
+\begin_inset Formula $x=0.8125$
+\end_inset
+
+ then it's binary representation is 
+\begin_inset Formula $0.1101$
+\end_inset
+
+ and tuple form is 
+\begin_inset Formula $\left(1,1,0,1\right)$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $f\left(x\right)=\left(1,1,0,1\right)$
+\end_inset
+
+.
+ By showing that this map is injective, we show that 
+\begin_inset Formula $\abs{\left(0,1\right)}\leq\abs S$
+\end_inset
+
+, and since 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ is uncountable, then 
+\begin_inset Formula $S$
+\end_inset
+
+ must be uncountable.
+ Let 
+\begin_inset Formula $a,b\in\left(0,1\right)$
+\end_inset
+
+ and suppose, contrapositively, that 
+\begin_inset Formula $f\left(a\right)=f\left(b\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+f\left(a\right)=\left(a_{1},a_{2},a_{2},\cdots\right)=f\left(b\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $a_{i}\in\left\{ 0,1\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ have the binary representation 
+\begin_inset Formula 
+\[
+0.a_{1}a_{2}a_{3}\cdots,
+\]
+
+\end_inset
+
+and must be the same.
+ Thus the function 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective.
+ Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective 
+\begin_inset Formula $\abs{\left(0,1\right)}\leq\abs S$
+\end_inset
+
+, therefore 
+\begin_inset Formula $S$
+\end_inset
+
+ is an uncountable set.
+ 
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: a) Let 
+\begin_inset Formula $A=\left\{ a,b,c\right\} $
+\end_inset
+
+.
+ List the eight elements of 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+ b) If 
+\begin_inset Formula $A$
+\end_inset
+
+ is finite with 
+\begin_inset Formula $n$
+\end_inset
+
+ elements, show that 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ has 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ elements.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\mathcal{P}\left(A\right)=\left\{ \emptyset,\left\{ a\right\} ,\left\{ b\right\} ,\left\{ c\right\} ,\left\{ a,b\right\} ,\left\{ a,c\right\} ,\left\{ b,c\right\} ,\left\{ a,b,c\right\} \right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is finite with 
+\begin_inset Formula $n$
+\end_inset
+
+ elements, show that 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ has 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ elements.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+A subset of 
+\begin_inset Formula $A$
+\end_inset
+
+ is any set 
+\begin_inset Formula $U$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $u\in U$
+\end_inset
+
+, 
+\begin_inset Formula $u\in A$
+\end_inset
+
+.
+ The cardinality of these subsets are 
+\begin_inset Formula $0\leq\abs U\leq n$
+\end_inset
+
+.
+ In other words, in order to construct each subset, we choose 
+\begin_inset Formula $k$
+\end_inset
+
+ elements from the 
+\begin_inset Formula $n$
+\end_inset
+
+ elements of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ The binomial coefficient can be used to calculate the number of unique
+ subsets of 
+\begin_inset Formula $A$
+\end_inset
+
+ that can be constructed by choosing 
+\begin_inset Formula $k$
+\end_inset
+
+ elements from 
+\begin_inset Formula $A$
+\end_inset
+
+, thus 
+\begin_inset Formula 
+\begin{align*}
+\abs{\mathcal{P}\left(A\right)} & =\sum_{k=0}^{n}\left(\begin{matrix}n\\
+k
+\end{matrix}\right)\\
+ & =\sum_{k=0}^{n}\frac{n!}{k!\left(n-k\right)!}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We now wish to show that the open sentence 
+\begin_inset Formula 
+\[
+Q\left(n\right):\sum_{k=0}^{n}\frac{n!}{k!\left(n-k\right)!}=2^{n}
+\]
+
+\end_inset
+
+ for all 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We first verify 
+\begin_inset Formula $Q\left(0\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $Q\left(1\right)$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $n=0$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=0}^{n}\frac{n!}{k!\left(n-k\right)!} & =\sum_{k=0}^{0}\frac{n!}{k!\left(n-k\right)!}\\
+ & =\frac{0!}{0!\left(0-0\right)!}\\
+ & =1\\
+ & =2^{0}.
+\end{align*}
+
+\end_inset
+
+Let 
+\begin_inset Formula $n=1$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=0}^{n}\frac{n!}{k!\left(n-k\right)!} & =\sum_{k=0}^{1}\frac{n!}{k!\left(n-k\right)!}\\
+ & =\frac{1!}{0!\left(1-0\right)!}+\frac{1!}{1!\left(0-1\right)!}\\
+ & =2\\
+ & =2^{1}.
+\end{align*}
+
+\end_inset
+
+Thus 
+\begin_inset Formula $Q\left(1\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $Q\left(2\right)$
+\end_inset
+
+ are true.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $m\in\mathbb{Z}\geq0$
+\end_inset
+
+.
+ We assume that 
+\begin_inset Formula $Q\left(m\right)$
+\end_inset
+
+ is true, and we want to show that 
+\begin_inset Formula $Q\left(m+1\right)$
+\end_inset
+
+ is true.
+ 
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=0}^{m+1}\frac{\left(m+1\right)!}{k!\left(m+1-k\right)!} & =\sum_{k=0}^{m+1}\frac{\left(m\right)!}{k!\left(m-k\right)!}+\sum_{k=1}^{m+1}\frac{\left(m\right)!}{\left(k-1\right)!\left(m-k-1\right)!}\\
+ & =\sum_{k=0}^{m}\frac{\left(m\right)!}{k!\left(m-k\right)!}+\frac{\left(m\right)!}{m!\left(m-m\right)!}+\sum_{k=1}^{m+1}\frac{\left(m\right)!}{\left(k-1\right)!\left(m-k-1\right)!}\\
+ & =2^{m}+\sum_{k=0}^{m}\frac{\left(m\right)!}{k!\left(m-k\right)!}\\
+ & =2^{m}+2^{m}\\
+ & =2^{m+1},
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $Q\left(m+1\right)$
+\end_inset
+
+ is true.
+ Therefore, the open sentence 
+\begin_inset Formula $Q\left(n\right)$
+\end_inset
+
+ is true.
+ Hence 
+\begin_inset Formula $\abs{\mathcal{P}\left(A\right)}=2^{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q6)
+\series default
+: Three problems
+\end_layout
+
+\begin_layout Enumerate
+Using the particular set 
+\begin_inset Formula $A=\left\{ a,b,c\right\} ,$
+\end_inset
+
+ exhibit two different injective mappings from 
+\begin_inset Formula $A$
+\end_inset
+
+ into 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f_{1}:A\to\mathcal{P}\left(A\right)$
+\end_inset
+
+ defined as 
+\begin_inset Formula 
+\begin{align*}
+f_{1}\left(a\right) & =\left\{ a\right\} \\
+f_{1}\left(b\right) & =\left\{ b\right\} \\
+f_{1}\left(c\right) & =\left\{ c\right\} .
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f_{2}:A\to\mathcal{P}\left(A\right)$
+\end_inset
+
+ defined as 
+\begin_inset Formula 
+\begin{align*}
+f_{2}\left(a\right) & =\left\{ c\right\} \\
+f_{2}\left(b\right) & =\left\{ b\right\} \\
+f_{2}\left(c\right) & =\left\{ a\right\} .
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Letting 
+\begin_inset Formula $C=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+, produce an example of an injective map 
+\begin_inset Formula $g:C\to\mathcal{P\left(C\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $g:C\to\mathcal{P}\left(C\right)$
+\end_inset
+
+ be defined as
+\begin_inset Formula 
+\[
+g\left(x\right)=\left\{ x\right\} ,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Explain why, in parts (a) and (b), it is impossible to construct mappings
+ that are onto.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be an arbitrary finite set with cardinality 
+\begin_inset Formula $n$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{\mathcal{P}\left(S\right)}=2^{n}$
+\end_inset
+
+.
+ Thus there are always more elements in 
+\begin_inset Formula $\mathcal{P}\left(S\right)$
+\end_inset
+
+, then in 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Thus an injection exists, but not a surjection.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q7)
+\series default
+: Return to the particular funcitons constructed in Exercise 1.6.6 and construct
+ the subset 
+\begin_inset Formula $B$
+\end_inset
+
+ that results using the preceding rule.
+ 
+\end_layout
+
+\end_body
+\end_document

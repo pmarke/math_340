@@ -1,0 +1,1082 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 6 Section 2.2
+\end_layout
+
+\begin_layout After Title Text
+Exercises 2,4,5,6,7
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+06/26/2020
+\end_layout
+
+\begin_layout Standard
+\align center
+06/26/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert#1\right\lvert}
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q2)
+\series default
+: Prove, using the definition of convergence of a sequence, that the following
+ sequences converge to the proposed limit.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\frac{2n+1}{5n+4}=\frac{2}{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ such that 
+\begin_inset Formula $N=\left(\frac{3}{25\epsilon}-\frac{4}{5}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\N>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{2n+1}{5n+4}-\frac{2}{5}} & =\abs{\frac{5\left(2n+1\right)-2\left(5n+4\right)}{5\left(5n+4\right)}}\\
+ & =\abs{\frac{-3}{25n+20}}\\
+ & <\abs{\frac{-3}{25N+20}}\\
+ & =\abs{\frac{-3}{25\left(\frac{3}{25\epsilon}-\frac{4}{5}\right)+20}}\\
+ & =\abs{\frac{-3}{\frac{3}{\epsilon}-20+20}}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\abs{\frac{2n+1}{5n+4}-\frac{2}{5}}<\epsilon$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\lim\frac{2n+1}{5n+4}=\frac{2}{5}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim\frac{2n^{2}}{n^{3}+3}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that 
+\begin_inset Formula $N=\frac{2}{\epsilon}$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\mathbb{N}>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{2n^{2}}{n^{3}+3}} & <\abs{\frac{2n^{2}}{n^{3}}}\\
+ & =\frac{2}{n}\\
+ & <\frac{2}{\frac{2}{\epsilon}}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\abs{\frac{2n^{2}}{3n^{3}+3}}<\epsilon$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\lim\frac{2n^{2}}{n^{3}+3}=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim\frac{\sin\left(n^{2}\right)}{\sqrt[3]{n}}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ such that 
+\begin_inset Formula $N=\frac{1}{\epsilon^{3}}$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\mathbb{N}>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{\sin\left(n^{2}\right)}{\sqrt[3]{n}}} & \leq\abs{\frac{1}{\sqrt[3]{n}}}\\
+ & <\frac{1}{\sqrt[3]{N}}\\
+ & =\frac{1}{\frac{1}{\sqrt[3]{\epsilon^{3}}}}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\abs{\frac{\sin\left(n^{2}\right)}{\sqrt[3]{n}}}<\epsilon$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\lim\frac{\sin\left(n^{2}\right)}{\sqrt[3]{n}}=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Give an example of each or state that the request is impossible.
+ For any that are impossible, give a compelling argument for why that is
+ the case.
+\end_layout
+
+\begin_layout Enumerate
+A sequence with an infinite number of ones that does not converge to one.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ be the infinite sequence 
+\begin_inset Formula $\left(1,0,1,0,1,0,\cdots\right)$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $a_{m}=1$
+\end_inset
+
+, then 
+\begin_inset Formula $a_{m+1}=0$
+\end_inset
+
+, for all 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+.
+ Thus for 
+\begin_inset Formula $\epsilon=0.5$
+\end_inset
+
+, there does exists a 
+\begin_inset Formula $k>N\in\N$
+\end_inset
+
+ for any 
+\begin_inset Formula $N$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\abs{a_{k}-1}>\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A sequence with an infinite number of ones that converges to a limit not
+ equal to one.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This sequence is impossible.
+ Suppose, by contrary, that 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ is a converging sequence with an infinite number of ones and converges
+ to 
+\begin_inset Formula $a\neq1$
+\end_inset
+
+.
+ Then for any 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n\in\N>N$
+\end_inset
+
+, 
+\begin_inset Formula $\abs{a_{n}-a}<\epsilon$
+\end_inset
+
+.
+ Since there are an infinite number of ones, for any 
+\begin_inset Formula $n$
+\end_inset
+
+, which is finite, there is an 
+\begin_inset Formula $a_{m}=1$
+\end_inset
+
+ such that 
+\begin_inset Formula $m>1$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $\abs{1-a}$
+\end_inset
+
+ must be less than 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ as well for all 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ But since limits are unique, this in only possible if 
+\begin_inset Formula $1=a$
+\end_inset
+
+.
+ This is a contradiction, therefore the sequence 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ is impossible.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A divergent sequence such that for every 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+ it is possible to find 
+\begin_inset Formula $n$
+\end_inset
+
+ consecutive ones somewhere in the sequence.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ be the sequence 
+\begin_inset Formula 
+\[
+\left(1,0,1,1,0,1,1,1,0,1,1,1,1,0,\cdots\right),
+\]
+
+\end_inset
+
+where there are 
+\begin_inset Formula $k$
+\end_inset
+
+ consecutive ones followed by a zero for every 
+\begin_inset Formula $k\in\N$
+\end_inset
+
+.
+ Since the sequence is infinite, for any 
+\begin_inset Formula $m\in\N$
+\end_inset
+
+, there is an 
+\begin_inset Formula $a_{\ell}$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\ell>j>m$
+\end_inset
+
+ and 
+\begin_inset Formula $\abs{a_{\ell}-a_{j}}=1$
+\end_inset
+
+.
+ Thus the sequence doesn't converge.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: Let 
+\begin_inset Formula $\left[\left[x\right]\right]$
+\end_inset
+
+ be the greatest integer less than or equal to 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ For example, 
+\begin_inset Formula $\left[\left[\pi\right]\right]=3$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[\left[3\right]\right]=3$
+\end_inset
+
+, find 
+\begin_inset Formula $\lim a_{n}$
+\end_inset
+
+ and verify it with the definition of convergence.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\left[\left[5/n\right]\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $\lim\,a_{n}=0$
+\end_inset
+
+.
+ Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $N\in\N>10$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\N>N$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left[\left[5/n\right]\right]=\left[\left[0.5\right]\right]=0$
+\end_inset
+
+, thus 
+\begin_inset Formula 
+\[
+\abs{\left[\left[5/n\right]\right]-0}=0<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}=\left[\left[\left(12+4n\right)/3n\right]\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $\lim\,a_{n}=1$
+\end_inset
+
+.
+ We do this by first considering the sequence 
+\begin_inset Formula $b_{n}=\left(12+4n\right)/3n$
+\end_inset
+
+ and show that 
+\begin_inset Formula $\lim\,b_{n}=\frac{4}{3}$
+\end_inset
+
+.
+ Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $N\in\N>\frac{4}{\epsilon}$
+\end_inset
+
+, and 
+\begin_inset Formula $n\in\N>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{12+4n}{3n}-\frac{4}{3}} & =\abs{\frac{12+4n-4n}{3n}}\\
+ & =\frac{12}{3n}\\
+ & =\frac{4}{n}\\
+ & <\frac{4}{\frac{4}{\epsilon}}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\lim\,b_{n}=\frac{4}{3}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\lim\,b_{n}=\frac{4}{3}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+\lim\,a_{n} & =\left[\left[\lim\,b_{n}\right]\right]\\
+ & =\left[\left[\frac{4}{3}\right]\right]\\
+ & =1.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q6)
+\series default
+: Prove theorem 2.2.7.
+ To get started, assume 
+\begin_inset Formula $\left(a_{n}\right)\to a$
+\end_inset
+
+ and also that 
+\begin_inset Formula $\left(a_{n}\right)\to b$
+\end_inset
+
+.
+ Now argue 
+\begin_inset Formula $a=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ be a sequence.
+ We suppose, by contradiction, that 
+\begin_inset Formula $\left(a_{n}\right)\to a$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(a_{n}\right)\to b$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\abs{a-b}>0$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $A=\left\{ x\in a_{n\,:\,}\abs{x-a}<\frac{\abs{a-b}}{2}\right\} $
+\end_inset
+
+, and 
+\begin_inset Formula $B=\left\{ x\in a_{n\,}:\,\abs{x-b}<\frac{\abs{a-b}}{2}\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $A\cap B=\emptyset$
+\end_inset
+
+, in other words, the open sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are disjoint.
+ This means that there are some elements of 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ that cannot be arbitrarily close to both 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ In other words, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there doesn't exists an 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ that such whenever 
+\begin_inset Formula $n\in\mathbb{N}>N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{a_{n}-a}<\epsilon
+\]
+
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\abs{a_{n}-b}<\epsilon
+\]
+
+\end_inset
+
+since the neighborhood around 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are disjoint.
+ The simple counterexample is when 
+\begin_inset Formula $\epsilon<\frac{\abs{a-b}}{2}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q7)
+\series default
+: Here are two useful definitions:
+\end_layout
+
+\begin_layout Exercise
+(i) A sequence 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ is eventually in a set 
+\begin_inset Formula $A\subseteq\R$
+\end_inset
+
+ if there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that 
+\begin_inset Formula $a_{n}\in A$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+(ii) A sequence 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ is frequently in a set 
+\begin_inset Formula $A\subseteq\R$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+ such that 
+\begin_inset Formula $a_{n}\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Is the sequence 
+\begin_inset Formula $\left(-1\right)^{n}$
+\end_inset
+
+ eventually or frequently in the set 
+\begin_inset Formula $\left\{ 1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The sequence is frequently in the set, since if 
+\begin_inset Formula $\left(-1\right)^{m}\in\left\{ 1\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $\left(-1\right)^{m+1}\notin\left\{ 1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Which definition is stronger? Does frequently imply eventually or does eventuall
+y imply frequently?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The definition eventually is stronger, since eventually means that the sequence
+ stays in the a set 
+\begin_inset Formula $A$
+\end_inset
+
+ after some 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, and if it stays in the set 
+\begin_inset Formula $A$
+\end_inset
+
+ after some 
+\begin_inset Formula $n$
+\end_inset
+
+, then for all 
+\begin_inset Formula $m\geq n$
+\end_inset
+
+, 
+\begin_inset Formula $a_{m}\in A$
+\end_inset
+
+.
+ Thus it is frequently in the set 
+\begin_inset Formula $A$
+\end_inset
+
+ as well.
+ The converse, however is not true.
+ For example, consider the sequence mentioned in part 
+\begin_inset Formula $a)$
+\end_inset
+
+.
+ It is frequently in the set 
+\begin_inset Formula $\left\{ 1\right\} $
+\end_inset
+
+, but not eventually in the set since it keeps leaving.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Give an alternate rephrasing of Definition 2.2.3B using either frequently
+ or eventually.
+ Which is the term we want?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A sequence 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $a$
+\end_inset
+
+ if, given any 
+\begin_inset Formula $\epsilon-$
+\end_inset
+
+neighborhood 
+\begin_inset Formula $V_{\epsilon}\left(a\right)$
+\end_inset
+
+ of 
+\begin_inset Formula $a$
+\end_inset
+
+, there exists a point in the sequence 
+\begin_inset Formula $m$
+\end_inset
+
+, such that 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ is eventually in the neighborhood 
+\begin_inset Formula $V_{\epsilon}\left(a\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Suppose an infinite number of terms of a sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ are equal to 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Is 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ necessarily eventually in the interval 
+\begin_inset Formula $\left(1.9,2.1\right)$
+\end_inset
+
+? Is it frequently in 
+\begin_inset Formula $\left(1.9,2.1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+It is not eventually in the interval.
+ Consider the counterexample 
+\begin_inset Formula 
+\[
+\left(x_{n}\right)=\left\{ 2,0,2,0,2,0,2,0,\cdots\right\} ,
+\]
+
+\end_inset
+
+that contains an infinite number of 
+\begin_inset Formula $2$
+\end_inset
+
+'s but alternates with 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Thus it will always leave the interval 
+\begin_inset Formula $\left(1.9,2.1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is frequently in the interval 
+\begin_inset Formula $\left(1.9,2.1\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Suppose that an infinite number of terms of a sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ are equal to 
+\begin_inset Formula $2$
+\end_inset
+
+, then for every 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, 
+\begin_inset Formula $N<\infty$
+\end_inset
+
+.
+ Since there are an infinite number of 
+\begin_inset Formula $2$
+\end_inset
+
+s in the sequence, and 
+\begin_inset Formula $N<\infty$
+\end_inset
+
+, there must be an 
+\begin_inset Formula $a_{m}=2$
+\end_inset
+
+, where 
+\begin_inset Formula $m\in\mathbb{N}>N$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is frequently in the interval 
+\begin_inset Formula $\left(1.9,2.1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document
