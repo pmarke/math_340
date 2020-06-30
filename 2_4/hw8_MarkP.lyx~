@@ -462,5 +462,295 @@ Show that
 .
 \end_layout
 
+\begin_layout Enumerate
+We will first show that 
+\begin_inset Formula $x_{n}^{2}$
+\end_inset
+
+ is always greater than or equal to 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to prove the open sentence 
+\begin_inset Formula 
+\[
+Q\left(n\right):\,x_{n}^{2}\geq2
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ with 
+\begin_inset Formula $x_{1}=2$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $x_{n+1}=\frac{1}{2}\left(x_{n}+\frac{2}{x_{n}}\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+x_{n+1}^{2} & =\left(\frac{1}{2}\left(x_{n}+\frac{2}{x_{n}}\right)\right)^{2}\\
+ & =\frac{x_{n}^{2}}{4}+1+\frac{1}{x_{n}^{2}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We first verify 
+\begin_inset Formula $Q\left(1\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $Q\left(2\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+x_{1}^{2} & =4\geq2\\
+x_{2}^{2} & =\frac{4}{4}+1+\frac{1}{4}=2.25\geq2.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $k\in\N$
+\end_inset
+
+.
+ We assume that 
+\begin_inset Formula $Q\left(k\right)$
+\end_inset
+
+ is true, and we want to show that 
+\begin_inset Formula $Q\left(k+1\right)$
+\end_inset
+
+ is true.
+ 
+\begin_inset Formula 
+\begin{align*}
+x_{k+1}^{2} & =\frac{x_{k}^{2}}{4}+1+\frac{1}{x_{k}^{2}}\\
+ & \geq\frac{2}{4}+1+\frac{1}{2}\\
+ & =2,
+\end{align*}
+
+\end_inset
+
+therefore, 
+\begin_inset Formula $Q\left(n\right)$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $x_{n}-x_{n+1}\geq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $x_{n+1}=\frac{1}{2}\left(x_{n}+\frac{2}{x_{n}}\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+x_{n}-x_{n+1} & =x_{n}-\frac{1}{2}\left(x_{n}+\frac{2}{x_{n}}\right)\\
+ & =x_{n}-\frac{x_{n}}{2}-\frac{1}{x_{n}}\\
+ & =\frac{x_{n}}{2}-\frac{1}{x_{n}}\\
+ & =\frac{x_{n}^{2}-2}{2x_{n}},
+\end{align*}
+
+\end_inset
+
+since 
+\begin_inset Formula $x_{n}^{2}\geq2$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{n}>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\frac{x_{n}^{2}-2}{2x_{n}}\geq0,
+\]
+
+\end_inset
+
+which means that 
+\begin_inset Formula $x_{n}-x_{n+1}\geq0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Conclude that 
+\begin_inset Formula $\lim\,x_{n}=\sqrt{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Since 
+\begin_inset Formula $x_{n}-x_{n+1}\geq0$
+\end_inset
+
+, the sequence 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ is monotonically decreasing.
+ Also, since 
+\begin_inset Formula $x_{n}^{2}\geq2$
+\end_inset
+
+, two serves as a lower bound.
+ Let 
+\begin_inset Formula $x=\lim\,x_{n}=\lim\,x_{n+1}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\lim\,x_{n+1} & =\lim\,\frac{1}{2}\left(x_{n}+\frac{2}{x_{n}}\right)\\
+x & =\frac{1}{2}x+\frac{1}{x}\\
+x^{2} & =\frac{1}{2}x^{2}+1\\
+\frac{1}{2}x^{2} & =1\\
+x & =\sqrt{2},
+\end{align*}
+
+\end_inset
+
+thus the limit is 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q7)
+\series default
+: Let 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ be a bounded sequence.
+\end_layout
+
+\begin_layout Enumerate
+Prove that the sequence defined by 
+\begin_inset Formula $y_{n}=\sup\left\{ a_{k}:k\geq n\right\} $
+\end_inset
+
+ converges.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that the sequence 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ is bounded, then there exists a number 
+\begin_inset Formula $M>0$
+\end_inset
+
+, such that 
+\begin_inset Formula $\abs{a_{n}}\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+ According to the axiom of completeness, any upper bounded set has a least
+ upper bound, in other words, a supremem.
+ Thus the 
+\begin_inset Formula $\sup\left\{ a_{k}:k\geq n\right\} $
+\end_inset
+
+ exists for all 
+\begin_inset Formula $k,n\in\N$
+\end_inset
+
+.
+ The sequence 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ either converges or diverges.
+ If it converges, then 
+\begin_inset Formula $\lim\,y_{n}=\lim\,a_{n}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ does not converge, then the set 
+\begin_inset Formula $\left\{ a_{k}:k\geq n\right\} $
+\end_inset
+
+ must have the same upper bound.
+ ????
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\end_layout
+
 \end_body
 \end_document
