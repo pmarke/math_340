@@ -216,7 +216,7 @@ The sequence
 \end_inset
 
  cannot be the limit of 
-\begin_inset Formula $y_{n}$
+\begin_inset Formula $\left(y_{n}\right)$
 \end_inset
 
  since the limit doesn't exist.
@@ -265,7 +265,7 @@ We want to show that
 
 \begin_layout Proof
 To show that 
-\begin_inset Formula $a_{n}$
+\begin_inset Formula $\left(a_{n}\right)$
 \end_inset
 
  has an upper bound, we want to show that the open sentence 
@@ -354,7 +354,7 @@ thus
 \end_inset
 
  is an upper bound of the sequence 
-\begin_inset Formula $a_{n}$
+\begin_inset Formula $\left(a_{n}\right)$
 \end_inset
 
 .
@@ -368,7 +368,7 @@ Since
 
 , the sequence is monotonically increasing.
  Since 
-\begin_inset Formula $a_{n}$
+\begin_inset Formula $\left(a_{n}\right)$
 \end_inset
 
  is monotonic and bounded, the sequence converges.
@@ -378,7 +378,7 @@ Since
 
 \begin_layout Proof
 We now know that 
-\begin_inset Formula $a_{n}$
+\begin_inset Formula $\left(a_{n}\right)$
 \end_inset
 
  converges.
@@ -410,6 +410,10 @@ This gives
 .
  Since 
 \begin_inset Formula $a_{n}>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
 \end_inset
 
 , 
@@ -641,12 +645,16 @@ Since
 \end_inset
 
 , the sequence 
-\begin_inset Formula $x_{n}$
+\begin_inset Formula $\left(x_{n}\right)$
 \end_inset
 
  is monotonically decreasing.
  Also, since 
 \begin_inset Formula $x_{n}^{2}\geq2$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
 \end_inset
 
 , two serves as a lower bound.
@@ -725,32 +733,641 @@ We suppose directly that the sequence
 \end_inset
 
 .
- The sequence 
-\begin_inset Formula $a_{n}$
+ Since the sequence 
+\begin_inset Formula $\left(a_{n}\right)$
 \end_inset
 
- either converges or diverges.
- If it converges, then 
-\begin_inset Formula $\lim\,y_{n}=\lim\,a_{n}$
+ is bounded, the sequence 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ is also bounded.
+ The supremem of any subset if equal or less to the supremem of the original
+ set, thus, 
+\begin_inset Formula $y_{j}\leq y_{m}$
+\end_inset
+
+ for any 
+\begin_inset Formula $j,m\in\N$
+\end_inset
+
+ such that 
+\begin_inset Formula $j<m$
 \end_inset
 
 .
- If 
-\begin_inset Formula $a_{n}$
+ Thus the sequence 
+\begin_inset Formula $\left(y_{n}\right)$
 \end_inset
 
- does not converge, then the set 
-\begin_inset Formula $\left\{ a_{k}:k\geq n\right\} $
+ is monotonically decreasing and bounded; therefore, according to the monotone
+ convergence theorem, the sequence 
+\begin_inset Formula $\left(y_{n}\right)$
 \end_inset
 
- must have the same upper bound.
- ????
+ converges.
+ 
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
+The limit superior of 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+, or 
+\begin_inset Formula $\lim\sup\,a_{n}$
+\end_inset
+
+ is defined by 
+\begin_inset Formula 
+\[
+\lim\sup\,a_{n}=\lim\,y_{n},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ is the sequence from part (a) of this exercise.
+ Provide a reasonable definition for 
+\begin_inset Formula $\lim\inf\,a_{n}$
+\end_inset
+
+ and briefly explain why it always exists for any bounded sequence.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The limit inferior of 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ is defined by 
+\begin_inset Formula 
+\[
+\lim\inf\,a_{n}=\lim\,z_{n},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $z_{n}=\inf\left\{ a_{k}:k\geq n\right\} $
+\end_inset
+
+.
+ The reason why this limit exists is similar to that the previous portion
+ of the exercise.
+ The sequence 
+\begin_inset Formula $\left(z_{n}\right)$
+\end_inset
+
+ is bounded an monotonically increases; therefore, it converges.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that 
+\begin_inset Formula $\lim\,\inf\,a_{n}\leq\lim\,\sup\,a_{n}$
+\end_inset
+
+ for every bounded sequence, and give an example of a sequence for which
+ the inequality is strict.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\abs{a_{n}}\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ We want to show that 
+\begin_inset Formula $\lim\inf\,a_{n}\leq\lim\sup\,a_{n}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $y_{n}=\sup\left\{ a_{n}:k\geq n\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $z_{n}=\inf\left\{ a_{k}:k\geq n\right\} $
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $S_{n}=\left\{ a_{k}:k\geq n\right\} $
+\end_inset
+
+, then for all 
+\begin_inset Formula $s\in S_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{n}\geq s$
+\end_inset
+
+ and 
+\begin_inset Formula $z_{n}\leq s$
+\end_inset
+
+.
+ Hence, 
+\begin_inset Formula $y_{n}\geq s\geq z_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $y_{n}\geq z_{n}$
+\end_inset
+
+.
+ Thus, as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, 
+\begin_inset Formula $y_{n}\geq z_{n}$
+\end_inset
+
 
 \end_layout
 
+\begin_layout Enumerate
+An example of a bounded sequence for which the inequality is strict is the
+ sequence 
+\begin_inset Formula $a_{n}=\cos\left(\frac{2n}{10}\pi\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $z_{n}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{n}=-1$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $y_{n}<z_{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $\lim\inf\,a_{n}=\lim\sup\,a_{n}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $\lim\,a_{n}$
+\end_inset
+
+ exists.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+This is a biconditional statement so we must prove both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ Let 
+\begin_inset Formula $z_{n}=\inf\left\{ a_{k}:k\geq n\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $y_{n}=\sup\left\{ a_{k}:k\geq n\right\} $
+\end_inset
+
+.
+ We suppose directly that 
+\begin_inset Formula $\lim\inf\,a_{n}=\lim\sup\,a_{n}$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim\,z_{n}=\lim\,y_{n}$
+\end_inset
+
+.
+ According to the order limit theorem and the squeeze theorem, since 
+\begin_inset Formula 
+\[
+z_{n}\leq a_{n}\leq y_{n}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+\lim\,z_{n} & \leq\lim\,a_{n}\leq\lim\,y_{n}.
+\end{align*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\lim\,z_{n}=\lim\,y_{n}$
+\end_inset
+
+, we have that 
+\begin_inset Formula $\lim\,a_{n}=\lim\,y_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Every convergent sequence is bounded, so the sequence has a least upper
+ bound and a greatest lower bound.
+ Since 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $L$
+\end_inset
+
+, then given any 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+\abs{a_{n}-L} & <\epsilon\\
+-\epsilon<a_{n}-L & <\epsilon\\
+L-\epsilon<a_{n} & <L+\epsilon.
+\end{align*}
+
+\end_inset
+
+According to lemma 1.3.8, 
+\begin_inset Formula $L$
+\end_inset
+
+ must be the limit supremum and the limit infimum of the sequence 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+.
+ Therefore, if 
+\begin_inset Formula $\lim\,a_{n}$
+\end_inset
+
+ exists, 
+\begin_inset Formula $\lim\inf\,a_{n}=\lim\sup\,a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q8)
+\series default
+: For each series, find an explicit formula for the sequence of partial
+ sums and determine if the series converges.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{2^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We want to show that 
+\begin_inset Formula $s_{n}=\sum_{k=1}^{n}\frac{1}{2^{k}}=\frac{2^{n}-1}{2^{n}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume that 
+\begin_inset Formula $s_{n}=\sum_{k=1}^{n}\frac{1}{2^{k}}$
+\end_inset
+
+, and we want to prove the open sentence 
+\begin_inset Formula 
+\[
+Q\left(n\right):s_{n}=\frac{2^{n}-1}{2^{n}}
+\]
+
+\end_inset
+
+is true for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+ We work this by induction.
+ 
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: We first verify 
+\begin_inset Formula $Q\left(1\right)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+s_{1}=\frac{1}{2}=\frac{2^{1}-1}{2^{1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: We assume that 
+\begin_inset Formula $Q\left(m\right)$
+\end_inset
+
+ is true and we want to show that 
+\begin_inset Formula $Q\left(m+1\right)$
+\end_inset
+
+ is true.
+ 
+\begin_inset Formula 
+\begin{align*}
+s_{m+1} & =\sum_{k=1}^{m+1}\frac{1}{2^{k}}\\
+ & =\frac{2^{m}-1}{2^{m}}+\frac{1}{2^{m+1}}\\
+ & =\frac{2\left(2^{m}-1\right)+1}{2^{m+1}}\\
+ & =\frac{2^{m+1}-1}{2^{m+1}},
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $Q\left(m+1\right)$
+\end_inset
+
+ is true; therefore, 
+\begin_inset Formula $Q\left(n\right)$
+\end_inset
+
+ is true for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+We want to show that 
+\begin_inset Formula $\lim\,s_{n}\to1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+The value 
+\begin_inset Formula 
+\begin{align*}
+s_{n} & =\frac{2^{n}-1}{2^{n}}\\
+ & =\frac{2^{n}}{2^{n}}-\frac{1}{2^{n}}\\
+ & =1-\frac{1}{2^{n}}.
+\end{align*}
+
+\end_inset
+
+Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $N=\frac{\ln\left(\frac{1}{\epsilon}\right)}{\ln\left(2\right)}$
+\end_inset
+
+, and choose 
+\begin_inset Formula $k\in\N>N$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{s_{k}-1} & =\abs{1-\frac{1}{2^{k}}-1}\\
+ & =\abs{\frac{1}{2^{k}}}\\
+ & <\frac{1}{2^{N}}\\
+ & <\epsilon.
+\end{align*}
+
+\end_inset
+
+Thus 
+\begin_inset Formula $\left(s_{n}\right)\to1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n\left(n+1\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We want to show that 
+\begin_inset Formula $s_{k}=\sum_{k=1}^{n}\frac{1}{k\left(k+1\right)}=1-\frac{1}{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+The series 
+\begin_inset Formula $\sum_{k=1}^{n}\frac{1}{k\left(k+1\right)}$
+\end_inset
+
+ can be expanded 
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=1}^{n}\frac{1}{k\left(k+1\right)} & =\sum_{k=1}^{n}\frac{1}{k}-\frac{1}{k+1}\\
+ & =\left(1-\frac{1}{2}\right)+\left(\frac{1}{2}-\frac{1}{3}\right)+\left(\frac{1}{3}-\frac{1}{4}\right)+\cdots+\left(\frac{1}{n}-\frac{1}{n-1}\right)\\
+ & =1-\frac{1}{n-1}.
+\end{align*}
+
+\end_inset
+
+Thus 
+\begin_inset Formula $s\left(n\right)=1-\frac{1}{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+We want to show that 
+\begin_inset Formula $\left(s_{n}\right)\to1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $N=\frac{1}{\epsilon}+1$
+\end_inset
+
+, then when 
+\begin_inset Formula $n\in\N>N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+\abs{s_{n}-1} & =\abs{1-\frac{1}{n-1}-1}\\
+ & =\frac{1}{n-1}\\
+ & <\frac{1}{N-1}\\
+ & =\frac{1}{\frac{1}{\epsilon}+1-1}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\left(s_{n}\right)\to1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{n=1}^{\infty}\log\left(\frac{n+1}{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We want to show that 
+\begin_inset Formula $s_{n}=\sum_{k=1}^{n}\log\left(\frac{k+1}{k}\right)=\log\left(k+1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+The partial sum 
+\begin_inset Formula $s_{n}$
+\end_inset
+
+ can be expanded out 
+\begin_inset Formula 
+\begin{align*}
+\sum_{k=1}^{n}\log\left(\frac{k+1}{k}\right) & =\sum_{k=1}^{n}\left(\log\left(k+1\right)-\log\left(k\right)\right)\\
+ & =\left(\log\left(2\right)-\log\left(1\right)\right)+\left(\log\left(3\right)-\log\left(2\right)\right)+\cdots+\left(\log\left(k+1\right)-\log\left(k\right)\right)\\
+ & =\log\left(k+1\right)-\log\left(1\right)\\
+ & =\log\left(k+1\right).
+\end{align*}
+
+\end_inset
+
+Thus 
+\begin_inset Formula $s_{n}=\log\left(k+1\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The sequence 
+\begin_inset Formula $\left(s_{n}\right)$
+\end_inset
+
+ does not converge since the natural logarithm is not bounded from above
+ and it's argument is tending towards zero.
+ 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

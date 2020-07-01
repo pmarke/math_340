@@ -1039,8 +1039,75 @@ thus if
 
 \end_deeper
 \begin_layout Enumerate
+If 
+\begin_inset Formula $\left(a_{n}\right)\to0$
+\end_inset
 
+ and 
+\begin_inset Formula $\abs{b_{n}-b}\leq a_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(b_{n}\right)\to b$
+\end_inset
+
+.
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\left(a_{n}\right)\to0$
+\end_inset
+
+ and 
+\begin_inset Formula $\abs{b_{n}-b}\leq a_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n\in\N>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{a_{n}}<\epsilon,
+\]
+
+\end_inset
+
+hence 
+\begin_inset Formula 
+\begin{align*}
+\abs{b_{n}-b} & \leq a_{n}<\epsilon\\
+\abs{b_{n}-b} & <\epsilon,
+\end{align*}
+
+\end_inset
+
+therefore, 
+\begin_inset Formula $\left(b_{n}\right)\to b$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

@@ -1,0 +1,963 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 9 Section 2.5
+\end_layout
+
+\begin_layout After Title Text
+Exercises 1,2,3,5,6
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+07/01/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1)
+\series default
+: Give an example of each of the following, or argue that such a request
+ is impossible.
+ 
+\end_layout
+
+\begin_layout Enumerate
+A sequence that has a subsequence that is bounded that is bounded but contains
+ no subsequence that converges.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This is impossible.
+ Let 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ be a sequence and 
+\begin_inset Formula $\left(a_{n_{k}}\right)$
+\end_inset
+
+ be the bounded subsequence.
+ According to the Bolzano-Weierstrass Theorem, since 
+\begin_inset Formula $\left(a_{n_{k}}\right)$
+\end_inset
+
+ is bounded, it has a subsequence that bounded which is a subsequence of
+ the original sequence.
+ Therefore, if a sequence contains a bounded subsequence, it must also contain
+ a subsequence that converges.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A sequence that does not contain 
+\begin_inset Formula $0$
+\end_inset
+
+ or 
+\begin_inset Formula $1$
+\end_inset
+
+ as a term but contains subsequences converging to each of these values.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\left(a_{n}\right)=\left\{ \frac{1}{2},1+\frac{1}{2},\frac{1}{3},1+\frac{1}{3},\frac{1}{4},1+\frac{1}{4},\cdots\right\} $
+\end_inset
+
+ be the sequence that does not contain 
+\begin_inset Formula $0$
+\end_inset
+
+ or 
+\begin_inset Formula $1$
+\end_inset
+
+, but is bounded.
+ Let 
+\begin_inset Formula $\left(a_{n_{k}}\right)$
+\end_inset
+
+ be the subsequence 
+\begin_inset Formula $\left\{ \frac{1}{2},\frac{1}{3},\frac{1}{4},\cdots\right\} $
+\end_inset
+
+ that converges to 
+\begin_inset Formula $0$
+\end_inset
+
+, and let 
+\begin_inset Formula $\left(a_{n_{j}}\right)$
+\end_inset
+
+ be the subsequence 
+\begin_inset Formula $\left\{ 1+\frac{1}{2},1+\frac{1}{3},1+\frac{1}{4},\cdots\right\} $
+\end_inset
+
+ that converges to 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A sequence that contains subsequences converging to every point in the infinite
+ set 
+\begin_inset Formula 
+\[
+\left\{ 1,\frac{1}{2},\frac{1}{3},\frac{1}{4},\cdots\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\left(a_{n}^{i}\right)$
+\end_inset
+
+ be the sequence defined by 
+\begin_inset Formula $\frac{1}{i}+\frac{1}{n}$
+\end_inset
+
+ where 
+\begin_inset Formula $i\in\N$
+\end_inset
+
+, and let 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ be the sequence defined as 
+\begin_inset Formula 
+\[
+\left\{ a_{1}^{1},a_{1}^{2},a_{1}^{3},\ldots a_{2}^{1},a_{2}^{2},a_{2}^{3},\cdots a_{3}^{1}a_{3}^{2}a_{3}^{3}\cdots\right\} .
+\]
+
+\end_inset
+
+Since the infinite union of countable sets is still countable, the set 
+\begin_inset Formula $\left\{ \left(b_{n}\right)\right\} $
+\end_inset
+
+ is still countable.
+ Therefore, it is a sequence with 
+\begin_inset Formula $\left(a_{n}^{i}\right)$
+\end_inset
+
+ being the subsequences.
+ (Forgive the different notation)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A sequence that contains subsequences converging to every point in the infinite
+ set 
+\begin_inset Formula 
+\[
+\left\{ 1,\frac{1}{2},\frac{1}{3},\frac{1}{4},\cdots\right\} ,
+\]
+
+\end_inset
+
+and no subsequences converging to points outside this set.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This is impossible.
+ Note that 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ contains the points 
+\begin_inset Formula 
+\[
+\left\{ 1,\frac{1}{2},\frac{1}{3},\frac{1}{4},\cdots\right\} ,
+\]
+
+\end_inset
+
+which converges to 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $0\notin\left\{ \left(b_{n}\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q2)
+\series default
+: Decide whether the following propositions are true or false, providing
+ a short justification for each conclusion.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If every proper subsequence of 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ converges, then 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ converges as well.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+True.
+ Let 
+\begin_inset Formula $\left(x_{n_{k}}\right)$
+\end_inset
+
+ be the subsequence of 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ that contains all the terms of 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ except the first term, i.e.
+ 
+\begin_inset Formula $n_{k}=k+1$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left(x_{n_{k}}\right)$
+\end_inset
+
+ converges, there exists some 
+\begin_inset Formula $K\in\N$
+\end_inset
+
+ given some 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $k>K$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{x_{n_{k}}-\lim\,x_{n_{k}}}<\epsilon,
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula 
+\[
+\abs{x_{k+1}-\lim\,x_{n_{k}}}<\epsilon.
+\]
+
+\end_inset
+
+Thus 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ converges.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ contains a divergent subsequence, then 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ diverges.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+True.
+ Consider the contrapositive: if 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ converges then it does not contain a divergent subsequence.
+ This is true since every subsequence of a converging sequence converges;
+ therefore, if 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ contains a divergent subsequence, then 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ diverges.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is bounded and diverges, then there exists two subsequences of 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+that converge to different limits.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+True.
+ Since every bounded sequence contains a convergent subsequence we know
+ that there exists a subsequence that converges.
+ Let 
+\begin_inset Formula $\left(x_{n_{k}}^{1}\right)$
+\end_inset
+
+ be a convergent subsequence that converges to 
+\begin_inset Formula $L$
+\end_inset
+
+ and contains all of the terms in 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ that converge to 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ diverges, there must be a subsequence that diverges.
+ Let 
+\begin_inset Formula $\left(x_{n_{k}}^{2}\right)$
+\end_inset
+
+ be a divergent subsequence that contains all of the terms in 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ except for the terms in 
+\begin_inset Formula $\left(x_{n_{k}}^{1}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left\{ x_{n_{k}}^{1}\right\} \cup\left\{ x_{n_{k}}^{2}\right\} =\left\{ x_{n}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ x_{n_{k}}^{1}\right\} \cap\left\{ x_{n_{k}}^{2}\right\} =\emptyset$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left(x_{n_{k}}^{2}\right)$
+\end_inset
+
+ is a bounded subsequence, it must contain a convergent subsequence that
+ converges to a number 
+\begin_inset Formula $B\neq L$
+\end_inset
+
+.
+ By induction, you could infer that if 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is bounded and diverges, there exists an infinite number of subsequences
+ of 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ that converge to distinct limits.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is monotone and contains a convergent subsequence, the 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ converges.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+True.
+ Let 
+\begin_inset Formula $\left(x_{n_{k}}\right)$
+\end_inset
+
+ be the convergent subsequence, then 
+\begin_inset Formula $\abs{x_{n_{k}}}\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $k\in\N$
+\end_inset
+
+ and for some 
+\begin_inset Formula $M>0$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $n_{1}=z$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{m}=y$
+\end_inset
+
+, then 
+\begin_inset Formula $x_{z}=x_{n_{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{y}=x_{n_{m}}$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\N$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is a monotone sequence any terms of the sequence between 
+\begin_inset Formula $x_{n_{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{n_{m}}$
+\end_inset
+
+ must also be bounded.
+ Since 
+\begin_inset Formula $m$
+\end_inset
+
+ can be arbitrarily large and 
+\begin_inset Formula $x_{k}\geq k$
+\end_inset
+
+, every term of the sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ must be bounded.
+ Thus 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is bounded.
+ Since 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is bounded and monotone, it converges.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q3)
+\series default
+: Do the following
+\end_layout
+
+\begin_layout Enumerate
+Prove that if an infinite series converges, then the associate property
+ holds.
+ Assume 
+\begin_inset Formula $a_{1}+a_{2}+a_{3}+a_{4}+\cdots$
+\end_inset
+
+ converges to a limit 
+\begin_inset Formula $L$
+\end_inset
+
+ (i.e., the sequence of partial sums 
+\begin_inset Formula $\left(s_{n}\right)\to L$
+\end_inset
+
+).
+ Show that any regrouping of the terms 
+\begin_inset Formula 
+\[
+\left(a_{1}+a_{2}+a_{3}+\cdots+a_{n_{1}}\right)+\left(a_{n_{1}+1}+\cdots+a_{n_{2}}\right)+\left(a_{n_{2}+1}+\cdots+a_{n_{3}}\right)+\cdots
+\]
+
+\end_inset
+
+ leads to a series that also converges to 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $a_{1}+a_{2}+a_{3}+a_{4}+\cdots$
+\end_inset
+
+ converges to a limit 
+\begin_inset Formula $L$
+\end_inset
+
+, in other words 
+\begin_inset Formula $\left(s_{n}\right)\to L$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula 
+\begin{align*}
+b_{n_{1}} & =\left(a_{1}+a_{2}+a_{3}+\cdots+a_{n_{1}}\right)\\
+b_{n_{2}} & =\left(a_{1}+a_{2}+a_{3}+\cdots+a_{n_{1}}\right)+\left(a_{n_{1}+1}+\cdots+a_{n_{2}}\right)\\
+\vdots & =\vdots,
+\end{align*}
+
+\end_inset
+
+so that 
+\begin_inset Formula $b_{n_{k}}=s_{n=n_{k}}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left(s_{n}\right)$
+\end_inset
+
+ converges, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\abs{s_{n}-L} & <\epsilon\\
+\abs{b_{n_{k}=n}-L} & <\epsilon,
+\end{align*}
+
+\end_inset
+
+hence the associate property holds.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Compare this result to the example discussed at the end of Section 2.1 where
+ infinite addition was shown not to be associative.
+ Why doesn't our proof in part (1) apply to this example?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The proof in part (1) holds only when the infinite series converges.
+ The example discussed at the end of Section 2.1 doesn't converge, so the
+ proof doesn't pertain to it.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: Assume 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ is a bounded sequence with the property that every convergent subsequence
+ of 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converges to the same limit 
+\begin_inset Formula $a\in\R$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ must converge to 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We suppose, by contradiction, that every convergent subsequence of 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converges to the same limit 
+\begin_inset Formula $a\in\R$
+\end_inset
+
+, that 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ is bounded, and that 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ does not converge.
+ Since 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ is bounded, it must contain at least one subsequence 
+\begin_inset Formula $\left(a_{n_{k}}^{1}\right)$
+\end_inset
+
+ that converges according to the Bolzano-Weierstrass Theorem.
+ Let 
+\begin_inset Formula $\left(a_{n_{k}}^{1}\right)$
+\end_inset
+
+ contain all the terms of 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ that converge to 
+\begin_inset Formula $a$
+\end_inset
+
+, and let 
+\begin_inset Formula $\left(a_{n_{k}}^{2}\right)$
+\end_inset
+
+ be the subsequence that contains all of the other terms.
+ The subsequence 
+\begin_inset Formula $\left(a_{n_{k}}^{2}\right)$
+\end_inset
+
+ must diverge and contain an infinite number of terms since 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ diverges.
+ Since 
+\begin_inset Formula $\left(a_{n_{k}}^{2}\right)$
+\end_inset
+
+ is bounded, it must contain a subsequence that converges according to the
+ Bolzaon-Weierstrass Theorem.
+ Let this subsequence be denoted as 
+\begin_inset Formula $\left(a_{n_{k}}^{3}\right)$
+\end_inset
+
+.
+ By construction, the subsequence 
+\begin_inset Formula $\left(a_{n_{k}}^{3}\right)$
+\end_inset
+
+ does not converge to 
+\begin_inset Formula $a$
+\end_inset
+
+, but to some other number.
+ This contradicts our assumption that every convergent subsequence of 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converges to the same limit 
+\begin_inset Formula $a\in\R$
+\end_inset
+
+.
+ Therefore, the original statement must be true.
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q6)
+\series default
+: Use a similar strategy to the one in Example 2.5.3 to show that 
+\begin_inset Formula $\lim\,b^{1/n}$
+\end_inset
+
+ exists for all 
+\begin_inset Formula $b\geq0$
+\end_inset
+
+ and find the value of the limit.
+ 
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ be the sequence defined as 
+\begin_inset Formula $a_{n}=b^{\frac{1}{2}}$
+\end_inset
+
+.
+ We assume that 
+\begin_inset Formula $b\geq0$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\left\{ b,b^{\frac{1}{2}},b^{\frac{1}{3}},\cdots\right\} $
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $b>b^{\frac{1}{2}}>b^{\frac{1}{3}}>\cdots$
+\end_inset
+
+, we see that the sequence is monotonically decreasing.
+ Also, since 
+\begin_inset Formula $b\geq0$
+\end_inset
+
+, the sequence 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ is bounded between 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, thus 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converges.
+ Using the algebraic limit theorem, since 
+\begin_inset Formula $\lim\,\frac{1}{n}=0$
+\end_inset
+
+ the 
+\begin_inset Formula $\lim\,b^{\frac{1}{n}}=b^{0}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim\,b^{1/n}=b$
+\end_inset
+
+, else it is 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
