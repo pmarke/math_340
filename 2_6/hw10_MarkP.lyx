@@ -330,9 +330,582 @@ Let
 \end_layout
 
 \end_deeper
-\begin_layout Standard
+\begin_layout Exercise
+
+\series bold
+(Q3)
+\series default
+: If 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are Cauchy sequences, then one easy way to prove that 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)$
+\end_inset
+
+ is to use the Cauchy Criterion.
+ By Theorem 2.6.4, 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ must be convergent, and the Algebraic Limit Theorem then implies 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)$
+\end_inset
+
+ is convergent and hence Cauchy.
+\end_layout
+
+\begin_layout Enumerate
+Give a direct argument that 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence that does not use the Cauchy Criterion or the Algebraic
+ Limit Theorem.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are Cauchy sequences, then given an epsilon 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists and 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n,m\in\N$
+\end_inset
+
+ are greater than 
+\begin_inset Formula $N$
+\end_inset
+
+, the following inequalities hold
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n}-x_{m}} & <\frac{\epsilon}{2}\\
+\abs{y_{n}-y_{m}} & <\frac{\epsilon}{2}.
+\end{align*}
+
+\end_inset
+
+For the same 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $m$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n}+y_{n}-x_{m}-y_{m}} & \leq\abs{x_{n}-x_{m}}+\abs{y_{n}-y_{m}}\\
+ & =\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore, if 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are Cauchy sequences, then 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Give a direct argument that 
+\begin_inset Formula $\left(x_{n}y_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are Cauchy sequences, then 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are bounded, 
+\begin_inset Formula $\abs{x_{n}}\leq M_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\abs{y_{n}}\leq M_{y}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $M=\max\left(M_{x},M_{y}\right)$
+\end_inset
+
+.
+ Given an epsilon 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists and 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n,m\in\N$
+\end_inset
+
+ are greater than 
+\begin_inset Formula $N$
+\end_inset
+
+, the following inequalities hold
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n}-x_{m}} & <\frac{\epsilon}{2M}\\
+\abs{y_{n}-y_{m}} & <\frac{\epsilon}{2M}.
+\end{align*}
+
+\end_inset
+
 
 \end_layout
 
+\begin_layout Proof
+For the same 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $m$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n}y_{n}-x_{m}y_{m}} & =\abs{x_{n}y_{n}-x_{m}y_{m}+x_{n}y_{m}-x_{n}y_{m}}\\
+ & =\abs{x_{n}\left(y_{n}-y_{m}\right)+y_{m}\left(x_{n}-x_{m}\right)}\\
+ & \leq\abs{M\left(y_{n}-y_{m}\right)+M\left(x_{n}-x_{m}\right)}\\
+ & \leq M\abs{y_{n}-y_{m}}+M\abs{x_{n}-x_{m}}\\
+ & =M\frac{\epsilon}{2M}+M\frac{\epsilon}{2M}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Therefore, if 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are Cauchy sequences, then 
+\begin_inset Formula $\left(x_{n}y_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Let 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ be Cauchy sequences.
+ Decide whether each of the following sequences is a Cauchy sequence, justifying
+ each conclusion.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $c_{n}=\abs{a_{n}-b_{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ is a Cauchy sequence.
+ We suppose directly that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are Cauchy sequences, then given an epsilon 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists and 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n,m\in\N$
+\end_inset
+
+ are greater than 
+\begin_inset Formula $N$
+\end_inset
+
+, the following inequalities hold
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n}-x_{m}} & <\frac{\epsilon}{2}\\
+\abs{y_{n}-y_{m}} & <\frac{\epsilon}{2}.
+\end{align*}
+
+\end_inset
+
+It follows that 
+\begin_inset Formula 
+\begin{align*}
+\abs{c_{n}-c_{m}} & =\abs{\abs{a_{n}-b_{n}}-\abs{a_{m}-b_{m}}}\\
+ & \leq\abs{a_{n}-b_{n}-a_{m}+b_{m}}\\
+ & \leq\abs{a_{n}-a_{m}}+\abs{b_{n}-b_{m}}\\
+ & =\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore, 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ is a Cauchy sequence.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $c_{n}=\left(-1\right)^{n}a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ is not a Cauchy sequence with a counterexample.
+ Let 
+\begin_inset Formula $a_{n}=1$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(c_{n}\right)$
+\end_inset
+
+ has terms 
+\begin_inset Formula $\left\{ -1,1,-1,1,\ldots\right\} $
+\end_inset
+
+ which does not converge.
+ Therefore, 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ is not necessarily a Cauchy sequence.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $c_{n}=\left[\left[a_{n}\right]\right]$
+\end_inset
+
+, where 
+\begin_inset Formula $\left[\left[x\right]\right]$
+\end_inset
+
+ refers to the greatest integer less than or equal to 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We want to show that 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ is not a Cauchy sequence with a counterexample.
+ Let 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ be a non monotonic Cauchy sequence that oscillates around an integer.
+ For example, 
+\begin_inset Formula $a_{n}=0.5\exp\left(n\right)\cos\left(n\pi\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ will oscillate around 
+\begin_inset Formula $0$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(c_{n}\right)$
+\end_inset
+
+ would have terms 
+\begin_inset Formula $\left\{ 0,-1,0,-1,0,-1,\ldots\right\} $
+\end_inset
+
+ and doesn't converge.
+ Therefore, 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ is not necessarily a Cauchy sequence.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: Consider the following (invented) definition: A sequence 
+\begin_inset Formula $\left(s_{n}\right)$
+\end_inset
+
+ is pseudo-Cauchy if, for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N$
+\end_inset
+
+ such that if 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{s_{n+1}-s_{n}}<\epsilon$
+\end_inset
+
+.
+ Decide which one of the following two propositions is actually true.
+ Supply a proof for the valid statement and a counterexample for the other.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Pseudo-Cauchy sequences are bounded.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ Consider the harmonic series 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n}$
+\end_inset
+
+ and the partial sum 
+\begin_inset Formula $s_{n}=\sum_{i=1}\frac{1}{i}^{n}$
+\end_inset
+
+.
+ The sequence 
+\begin_inset Formula $\left(s_{n}\right)$
+\end_inset
+
+ is known to not converge and to not be bounded.
+ However, since 
+\begin_inset Formula $\abs{s_{m+1}-s_{m}}=\frac{1}{m+1}$
+\end_inset
+
+ for any 
+\begin_inset Formula $m\in\N$
+\end_inset
+
+, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N$
+\end_inset
+
+ such that if 
+\begin_inset Formula $m\geq N$
+\end_inset
+
+ then 
+\begin_inset Formula 
+\[
+\frac{1}{m+1}<\epsilon.
+\]
+
+\end_inset
+
+This follows from the Archimedean property, thus the sequence 
+\begin_inset Formula $\left(s_{n}\right)$
+\end_inset
+
+ is Pseudo-Cauchy but not bounded.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are pseudo-Cauchy, then 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)$
+\end_inset
+
+ is pseudo-Cauchy as well.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are pseudo-Cauchy sequences, then given an epsilon 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists and 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+ is greater than 
+\begin_inset Formula $N$
+\end_inset
+
+, the following inequalities hold
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n+1}-x_{n}} & <\frac{\epsilon}{2}\\
+\abs{y_{n+1}-y_{n}} & <\frac{\epsilon}{2}.
+\end{align*}
+
+\end_inset
+
+It follow that 
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n+1}+y_{n+1}-x_{n}-y_{n}} & \leq\abs{x_{n+1}-x_{n}}+\abs{y_{n+1}-y_{n}}\\
+ & =\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore, if 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ are pseudo-Cauchy, then 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)$
+\end_inset
+
+ is pseudo-Cauchy as well.
+ 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
