@@ -980,58 +980,12 @@ Next we show that
 \end_inset
 
  is also an element of 
-\begin_inset Formula $E^{0}$
-\end_inset
-
-.
- Since 
-\begin_inset Formula $E^{o}\subseteq E$
-\end_inset
-
-, 
-\begin_inset Formula $E^{o}=E$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Proof
-\begin_inset Formula $\left(\impliedby\right):$
-\end_inset
-
- Suppose that 
-\begin_inset Formula $E^{o}=E$
-\end_inset
-
-, then there exists a 
-\begin_inset Formula $V_{\epsilon}\left(x\right)\subseteq E$
-\end_inset
-
- for every 
-\begin_inset Formula $x\in E$
-\end_inset
-
-.
- By definition, 
 \begin_inset Formula $E$
 \end_inset
 
- is open.
- 
+
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-Show that 
-\begin_inset Formula $\overline{E}^{c}=\left(E^{c}\right)^{o}$
-\end_inset
-
-, and similarly that 
-\begin_inset Formula $\left(E^{o}\right)^{c}=\overline{E^{c}}$
-\end_inset
-
-.
-\end_layout
-
 \end_body
 \end_document
