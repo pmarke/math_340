@@ -1,0 +1,2019 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Midterm 1
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+07/09/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1.1)
+\series default
+: The Set 
+\begin_inset Formula $A$
+\end_inset
+
+ is countable.
+ 
+\end_layout
+
+\begin_layout Exercise
+A set is called countable if there exists a bijection 
+\begin_inset Formula $g:\N\to A$
+\end_inset
+
+, or if 
+\begin_inset Formula $A$
+\end_inset
+
+ is finite.
+ In other words, 
+\begin_inset Formula $\abs{\N}\sim\abs A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1.2)
+\series default
+: The set 
+\begin_inset Formula $A$
+\end_inset
+
+ is uncountable.
+ 
+\end_layout
+
+\begin_layout Exercise
+A set is called uncountable if it isn't countable.
+ 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1.3)
+\series default
+: The sequence 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+If for any 
+\begin_inset Formula $\epsilon\in\R>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, such that whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\abs{a_{n}-A}<\epsilon,
+\]
+
+\end_inset
+
+ then we say that the sequence 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $A$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1.4)
+\series default
+: The sequence 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+\end_layout
+
+\begin_layout Exercise
+A sequence 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence if given any 
+\begin_inset Formula $\epsilon\in\R>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, such that whenever 
+\begin_inset Formula $n,m\in\N>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{b_{n}-b_{m}}<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1.5)
+\series default
+: The series 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ converges.
+ 
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $s_{n}=\sum_{k=1}^{n}a_{k}$
+\end_inset
+
+ denote the partial series.
+ The series 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ is said to converge to 
+\begin_inset Formula $L$
+\end_inset
+
+ if given any 
+\begin_inset Formula $\epsilon\in\R>0$
+\end_inset
+
+, there exists and 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, such that whenever 
+\begin_inset Formula $n\in\N>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{s_{n}-L}<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q2.1)
+\series default
+: Sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+, which both diverge, but whose sum 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)$
+\end_inset
+
+ converges.
+ 
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $x_{n}=n$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{n}=-n$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ both diverge; however, 
+\begin_inset Formula $x_{n}+y_{n}=0$
+\end_inset
+
+, thus their sum converges to 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q2.2)
+\series default
+: Sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ converges, 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ diverges, and 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)$
+\end_inset
+
+ converges.
+ 
+\end_layout
+
+\begin_layout Exercise
+This is not possible.
+ Let 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ denote the limit of 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)$
+\end_inset
+
+, then given some 
+\begin_inset Formula $\epsilon_{1}>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N_{1}\in\N$
+\end_inset
+
+, such that whenever 
+\begin_inset Formula $n\in\N>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{x_{n}+y_{n}-L_{1}}<\epsilon_{1}.
+\]
+
+\end_inset
+
+Now let 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ denote the limit of 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+, then given some 
+\begin_inset Formula $\epsilon_{2}>0$
+\end_inset
+
+, there exists and 
+\begin_inset Formula $N_{2}\in\N$
+\end_inset
+
+ such that when 
+\begin_inset Formula $m\in\N>N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\abs{x_{m}-L_{2}}<\epsilon_{2}.
+\]
+
+\end_inset
+
+Lastly, let 
+\begin_inset Formula $L_{1}=L_{2}+L_{3}$
+\end_inset
+
+ for some 
+\begin_inset Formula $L_{3}\in\R$
+\end_inset
+
+ and 
+\begin_inset Formula $N=\max\left(N_{1},N_{2}\right)$
+\end_inset
+
+, then when 
+\begin_inset Formula $n>N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n}+y_{n}-L_{1}} & <\epsilon_{1}\\
+\abs{x_{n}+y_{n}-L_{2}-L_{3}} & <\epsilon_{1}\\
+\abs{\abs{x_{n}-L_{2}}-\abs{y_{n}-L_{3}}} & <\epsilon_{1}\\
+\abs{y_{n}-L_{3}} & <\epsilon_{1}+\epsilon_{2}\\
+\abs{y_{n}-L_{3}}<\epsilon_{3} & ,
+\end{align*}
+
+\end_inset
+
+since 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ doesn't converge, there exists an 
+\begin_inset Formula $\epsilon_{3}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs{y_{n}-L_{3}}>\epsilon_{3}$
+\end_inset
+
+.
+ Thus this is a contradiction which shows that the request is impossible.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q2.3)
+\series default
+: A convergent sequence 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $b_{n}\neq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(1/b_{n}\right)$
+\end_inset
+
+ diverges.
+ 
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $b_{n}=\frac{1}{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $0$
+\end_inset
+
+, and 
+\begin_inset Formula $b_{n}\neq0$
+\end_inset
+
+ for any 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\frac{1}{b_{n}}=n$
+\end_inset
+
+, thus 
+\begin_inset Formula $\left(\frac{1}{b_{n}}\right)$
+\end_inset
+
+ is not bounded and therefore doesn't converge.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q2.4)
+\series default
+: An unbounded sequence 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ and a convergent sequence 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $\left(a_{n}-b_{n}\right)$
+\end_inset
+
+ bounded.
+ 
+\end_layout
+
+\begin_layout Exercise
+This is not possible.
+ Let 
+\begin_inset Formula $\lim\,b_{n}=L$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon\in\R>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, such that whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+\abs{b_{n}-L} & <\epsilon\\
+-\epsilon+L<b_{n} & <\epsilon+L\\
+-L-\epsilon<-b_{n} & <-L+\epsilon\\
+a_{n}-L-\epsilon<a_{n}-b_{n} & <a_{n}-L+\epsilon,
+\end{align*}
+
+\end_inset
+
+which shows that since 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ isn't bounded, neither can 
+\begin_inset Formula $\left(a_{n}-b_{n}\right)$
+\end_inset
+
+ be bounded.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q2.5)
+\series default
+: Two sequences 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $\left(a_{n}b_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converge but 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ does not.
+ 
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $a_{n}=\frac{1}{n^{3}}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{n}=n$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, then 
+\begin_inset Formula $a_{n}b_{n}=\frac{1}{n^{2}}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\left(a_{n}b_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ converge, but 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ doesn't.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q3)
+\series default
+: Assume 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=3$
+\end_inset
+
+.
+ Using the definition of a convergent sequence, prove that 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{a_{n}^{2}+1}{a_{n}-2}=10.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We begin by manipulating the term 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{a_{n}^{2}+1}{a_{n}-2}-10} & =\abs{\frac{a_{n}^{2}+1-10a_{n}+20}{a_{n}-2}}\\
+ & =\abs{\frac{\left(a_{n}-7\right)\left(a_{n}-3\right)}{a_{n}-2}}\\
+ & =\frac{\abs{a_{n}-7}\abs{a_{n}-3}}{\abs{a_{n}-2}}.
+\end{align*}
+
+\end_inset
+
+Since we assume directly that 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=3$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N_{1}\in\N$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\abs{a_{N_{1}}-3}<\frac{1}{2},
+\]
+
+\end_inset
+
+which is equivalent to 
+\begin_inset Formula 
+\[
+\frac{1}{2}<a_{N_{1}}-2<\frac{3}{2}.
+\]
+
+\end_inset
+
+It is also equivalent to 
+\begin_inset Formula 
+\begin{align*}
+-4-\frac{1}{2} & <a_{N_{1}}-7<-4+\frac{1}{2}\\
+-\frac{9}{2} & <a_{N_{1}}-7<-\frac{7}{2}.
+\end{align*}
+
+\end_inset
+
+Thus, for any 
+\begin_inset Formula $n>N_{1}$
+\end_inset
+
+, we have that 
+\begin_inset Formula 
+\begin{align*}
+\frac{\abs{a_{n}-7}\abs{a_{n}-3}}{\abs{a_{n}-2}} & <\frac{\frac{7}{2}\abs{a_{n}-3}}{\frac{1}{2}}\\
+ & =7\abs{a_{n}-3}.
+\end{align*}
+
+\end_inset
+
+Once again, Since we assume directly that 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=3$
+\end_inset
+
+, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N_{2}\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $m>N_{2}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{a_{n}-3}<\frac{\epsilon}{7}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Thus, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $N=\max\left(N_{1},N_{2}\right)$
+\end_inset
+
+, then whenever 
+\begin_inset Formula $n\in\N>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{a_{n}^{2}+1}{a_{n}-2}-10} & <7\abs{a_{n}-3}\\
+ & <7\frac{\epsilon}{7}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{a_{n}^{2}+1}{a_{n}-2}=10.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Assume 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence that satisfies 
+\begin_inset Formula $2<x_{n}<3$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+ By directly using the definition of a Cauchy sequence, show that 
+\begin_inset Formula 
+\[
+\left(\frac{x_{n}^{2}}{x_{n}-1}\right)
+\]
+
+\end_inset
+
+is also a Cauchy sequence.
+ 
+\end_layout
+
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence that satisfies 
+\begin_inset Formula $2<x_{n}<3$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, such that whenever 
+\begin_inset Formula $n,m>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left(x_{n}-x_{m}\right)<\frac{\epsilon}{15}.
+\]
+
+\end_inset
+
+We next examine the term 
+\begin_inset Formula $\left(\frac{x_{n}^{2}}{x_{n}-1}\right)$
+\end_inset
+
+, and begin to manipulate it.
+ 
+\begin_inset Formula 
+\[
+\abs{\frac{x_{n}^{2}}{x_{n}-1}-\frac{x_{m}^{2}}{x_{m}-1}}=\abs{\frac{x_{n}^{2}\left(x_{m}-1\right)-x_{m}^{2}\left(x_{n}-1\right)}{\left(x_{n}-1\right)\left(x_{m}-1\right)}}.
+\]
+
+\end_inset
+
+Using the fact that 
+\begin_inset Formula $2<x_{n}<3$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, we know that 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{x_{n}^{2}\left(x_{m}-1\right)-x_{m}^{2}\left(x_{n}-1\right)}{\left(x_{n}-1\right)\left(x_{m}-1\right)}} & \leq\abs{\frac{x_{n}^{2}\left(x_{m}-1\right)-x_{m}^{2}\left(x_{n}-1\right)}{\left(2-1\right)\left(2-1\right)}}\\
+ & =\abs{x_{n}^{2}\left(x_{m}-1\right)-x_{m}^{2}\left(x_{n}-1\right)}\\
+ & =\abs{x_{n}^{2}x_{m}-x_{n}^{2}-x_{m}^{2}x_{n}+x_{m}^{2}}\\
+ & =\abs{x_{n}x_{m}\left(x_{n}-x_{m}\right)-x_{n}^{2}+x_{m}^{2}}\\
+ & =\abs{x_{n}x_{m}\left(x_{n}-x_{m}\right)-x_{n}^{2}+x_{m}^{2}-x_{n}x_{m}+x_{n}x_{m}}\\
+ & =\abs{x_{n}x_{m}\left(x_{n}-x_{m}\right)-x_{n}\left(x_{n}-x_{m}\right)-x_{m}\left(x_{n}-x_{m}\right)}\\
+ & \leq\abs{x_{n}x_{m}\left(x_{n}-x_{m}\right)}+\abs{x_{n}\left(x_{n}-x_{m}\right)}+\abs{x_{m}\left(x_{n}-x_{m}\right)}\\
+ & \leq3\cdot3\cdot\abs{x_{n}-x_{m}}+3\cdot\abs{x_{n}-x_{m}}+3\cdot\abs{x_{n}-x_{m}}\\
+ & =15\abs{x_{n}-x_{m}}\\
+ & <15\frac{\epsilon}{15}\\
+ & =\epsilon;
+\end{align*}
+
+\end_inset
+
+therefore, 
+\begin_inset Formula $\left(\frac{x_{n}^{2}}{x_{n}-1}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: Prove that the open interval 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ is uncountable by using Cantor's diagonalization method.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose, by contradiction, that 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ is countable, then there exists a bijection 
+\begin_inset Formula $f:\N\to\left(0,1\right)$
+\end_inset
+
+.
+ For all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, let 
+\begin_inset Formula 
+\[
+f\left(n\right)=0.b_{n1}b_{n2}b_{n3}b_{n4}\cdots
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $b_{ij}$
+\end_inset
+
+ being the 
+\begin_inset Formula $j^{th}$
+\end_inset
+
+ decimal digit of the value 
+\begin_inset Formula $f\left(i\right)$
+\end_inset
+
+.
+ Any number in the interval 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ can be written as 
+\begin_inset Formula 
+\[
+0.d_{1}d_{2}d_{3}d_{4}\cdots
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $d_{j}$
+\end_inset
+
+ is the 
+\begin_inset Formula $j^{th}$
+\end_inset
+
+ decimal digit.
+ Let 
+\begin_inset Formula $a\in\left(0,1\right)$
+\end_inset
+
+ be the number whose 
+\begin_inset Formula $j^{th}$
+\end_inset
+
+ decimal digit is defined by 
+\begin_inset Formula 
+\[
+d_{j}=\begin{cases}
+3 & \text{if }b_{jj}\neq3\\
+7 & \text{else}
+\end{cases},
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula $a\neq f\left(1\right)$
+\end_inset
+
+ since 
+\begin_inset Formula $d_{1}\neq b_{11}$
+\end_inset
+
+, 
+\begin_inset Formula $a\neq f\left(2\right)$
+\end_inset
+
+, since 
+\begin_inset Formula $d_{2}\neq b_{22}$
+\end_inset
+
+, 
+\begin_inset Formula $a\neq f\left(3\right)$
+\end_inset
+
+ since 
+\begin_inset Formula $d_{3}\neq b_{33}$
+\end_inset
+
+, etc.
+ Thus 
+\begin_inset Formula $a$
+\end_inset
+
+ is not in the image of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Which means that 
+\begin_inset Formula $f$
+\end_inset
+
+ is not a bijection.
+ This is a contradiction.
+ Therefore, the open interval 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ is uncountable.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q6)
+\series default
+: Let 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ be a convergent sequence and assume that 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=A\neq0$
+\end_inset
+
+.
+ By directly using the definition of the limit, prove that 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{1}{a_{n}}=\frac{1}{A}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename X.jpg
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q7)
+\series default
+: Let 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ be the sequence defined recursively by 
+\begin_inset Formula $x_{1}=3$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+x_{n+1}=\frac{1}{4-x_{n}}
+\]
+
+\end_inset
+
+ for 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $\lim\,x_{n}=L$
+\end_inset
+
+ exists and find the value of 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+In order to show that the limit exists, we will show that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is a bounded, monotonic sequence.
+ First we will prove that 
+\begin_inset Formula $x_{n}\geq2-\sqrt{3}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+ We do this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: 
+\begin_inset Formula $x_{1}=3$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+x_{2} & =\frac{1}{4-3}\\
+ & =1\\
+ & \geq2-\sqrt{3}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $k\in\N$
+\end_inset
+
+, we suppose directly that 
+\begin_inset Formula $x_{k}\geq2-\sqrt{3}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+x_{k+1} & =\frac{1}{4-x_{k}}\\
+ & \geq\frac{1}{4-2+\sqrt{3}}\\
+ & =\frac{1}{2+\sqrt{3}}\\
+ & =\frac{2-\sqrt{3}}{\left(2+\sqrt{3}\right)\left(2-\sqrt{3}\right)}\\
+ & =2-\sqrt{3},
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $x_{k+1}\geq2-\sqrt{3}$
+\end_inset
+
+; therefore, 
+\begin_inset Formula $x_{n}\geq2-\sqrt{3}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+We next want to show that 
+\begin_inset Formula $x_{n}\leq3$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+ We work this by induction.
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Base Case
+\series default
+: 
+\begin_inset Formula $x_{1}=3$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+x_{2} & =\frac{1}{4-3}\\
+ & =1\\
+ & \leq3.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\series bold
+Induction Step
+\series default
+: Let 
+\begin_inset Formula $k\in\N$
+\end_inset
+
+, we suppose directly that 
+\begin_inset Formula $x_{k}\leq3$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+x_{k+1} & =\frac{1}{4-x_{k}}\\
+ & \leq\frac{1}{4-3}\\
+ & =1,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $x_{k+1}\leq3$
+\end_inset
+
+; therefore, 
+\begin_inset Formula $x_{k}\leq3$
+\end_inset
+
+ for all 
+\begin_inset Formula $k\in\N$
+\end_inset
+
+.
+ We now know that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is bounded such that 
+\begin_inset Formula $2-\sqrt{3}\leq x_{n}\leq3$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Next we show that 
+\begin_inset Formula $x_{n}-x_{n+1}\geq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+x_{n}-x_{n+1} & =x_{n}-\frac{1}{4-x_{n}}\\
+ & =\frac{x_{n}\left(4-x_{n}\right)-1}{4-x_{n}}\\
+ & =\frac{-\left(x_{n}-2+\sqrt{3}\right)\left(x_{n}-2-\sqrt{3}\right)}{4-x_{n}}\\
+ & \geq0,
+\end{align*}
+
+\end_inset
+
+hence 
+\begin_inset Formula $x_{n}\geq x_{n+1}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ monotonic and bounded, it has a limit.
+ Let 
+\begin_inset Formula $L$
+\end_inset
+
+ denote the limit of 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+, then as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\begin{align*}
+L & =\frac{1}{4-L}\\
+L^{2}-4L+1 & =0,
+\end{align*}
+
+\end_inset
+
+which has roots 
+\begin_inset Formula $2\pm\sqrt{3}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $2+\sqrt{3}>3$
+\end_inset
+
+, it must be that 
+\begin_inset Formula $L=2-\sqrt{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q8)
+\series default
+: Prove that the real numbers are uncountable with a proof that relies on
+ the Nested Interval Theorem.
+\end_layout
+
+\begin_layout Proof
+We suppose, by contradiction, that the real numbers are countable, thus
+ there exists a bijection 
+\begin_inset Formula $f:\N\to\R$
+\end_inset
+
+.
+ We can construct nested closed intervals in the following manner.
+ Let 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ be the closed interval such that 
+\begin_inset Formula $I_{1}\subseteq\R$
+\end_inset
+
+ and such that 
+\begin_inset Formula $f\left(1\right)\notin I_{1}$
+\end_inset
+
+.
+ Then let 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+ be the closed interval such that 
+\begin_inset Formula $I_{2}\subseteq\R$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(2\right)\notin I_{2}$
+\end_inset
+
+.
+ We can repeat this process recursively such that 
+\begin_inset Formula $I_{n}\subseteq I_{n+1}$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(n\right)\notin I_{n}$
+\end_inset
+
+.
+ We then form the intersection 
+\begin_inset Formula $\cap_{n=1}^{\infty}I_{n}$
+\end_inset
+
+ which is not empty according to the nested interval theorem, and is not
+ in the image of 
+\begin_inset Formula $f$
+\end_inset
+
+ by construction.
+ Thus 
+\begin_inset Formula $f$
+\end_inset
+
+ is not surjective, and hence not a bijection.
+ This contradicts our assumption, thus 
+\begin_inset Formula $\R$
+\end_inset
+
+ is uncountable.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q9)
+\series default
+: Assume that the sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is a convergent sequence and 
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=L$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is also a Cauchy sequence.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is a convergent sequence and 
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=L$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n,m\in\N>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{x_{n}-L}<\frac{\epsilon}{2},
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\abs{x_{m}-L}<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+Adding the two together, we get 
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n}-L}+\abs{x_{m}-L} & \geq\abs{x_{n}-x_{m}+L-L}\\
+ & =\abs{x_{n}-x_{m}},
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula 
+\begin{align*}
+\abs{x_{n}-x_{m}} & <\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus the sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is also a Cauchy sequence.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q10)
+\series default
+: Prove that if the series 
+\begin_inset Formula $\sum_{k=1}^{\infty}\abs{a_{n}}$
+\end_inset
+
+ converges, then the series 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ converges.
+ 
+\end_layout
+
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $\sum_{k=1}^{\infty}\abs{a_{n}}$
+\end_inset
+
+ converges, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, such that whenever 
+\begin_inset Formula $n>m\in\N>N$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\sum_{k=m}^{n}\abs{a_{k}}<\epsilon.
+\]
+
+\end_inset
+
+Well,
+\begin_inset Formula 
+\[
+\sum_{k=m}^{n}\abs{a_{k}}\geq\abs{\sum_{k=m}^{n}a_{k}},
+\]
+
+\end_inset
+
+thus 
+\begin_inset Formula 
+\[
+\abs{\sum_{k=m}^{n}a_{k}}<\epsilon,
+\]
+
+\end_inset
+
+which is the Cauchy convergent series condition for the series 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+, therefore, 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ converges if 
+\begin_inset Formula $\sum_{k=1}^{\infty}\abs{a_{n}}$
+\end_inset
+
+ converges.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q11)
+\series default
+: Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a nonempty set and let 
+\begin_inset Formula $\mathcal{P}\left(A\right)$
+\end_inset
+
+ denote the power set of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Show that there does not exist a surjective function 
+\begin_inset Formula $g:A\to\mathcal{P}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename X.jpg
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q12)
+\series default
+: Assume 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+ Prove that the geometric series 
+\begin_inset Formula 
+\[
+\sum_{k=0}^{\infty}ar^{k}
+\]
+
+\end_inset
+
+converges if and only if 
+\begin_inset Formula $\abs r<1$
+\end_inset
+
+.
+ In the case 
+\begin_inset Formula $\abs r=1$
+\end_inset
+
+, show that 
+\begin_inset Formula 
+\[
+\sum_{k=0}^{\infty}ar^{k}=\frac{a}{1-r}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+To prove the statement, we will break it into three cases.
+ When 
+\begin_inset Formula $\abs r\geq1$
+\end_inset
+
+ and 
+\begin_inset Formula $\abs r<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+We suppose that 
+\begin_inset Formula $\abs r\geq1$
+\end_inset
+
+, then 
+\begin_inset Formula $ar^{k}\not\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $k\to\infty$
+\end_inset
+
+.
+ Thus by the divergence criteria, 
+\begin_inset Formula $\sum_{k=0}^{\infty}ar^{k}$
+\end_inset
+
+ does not converge.
+ 
+\end_layout
+
+\begin_layout Case
+We suppose that 
+\begin_inset Formula $\abs r<1$
+\end_inset
+
+, then 
+\begin_inset Formula $r^{k}\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $k\to\infty$
+\end_inset
+
+.
+ We next take the partial series 
+\begin_inset Formula 
+\[
+\sum_{k=0}^{m}ar^{k},
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $m\in\N$
+\end_inset
+
+ and multiply it by 
+\begin_inset Formula $\left(1-r\right)$
+\end_inset
+
+ to get 
+\begin_inset Formula 
+\begin{align*}
+\left(\sum_{k=0}^{m}ar^{k}\right)\left(1-r\right) & =a-ar+ar-ar^{2}+\cdots+ar^{m}-ar^{m+1}\\
+ & =a-ar^{m+1}\\
+ & =a\left(1-r^{m+1}\right).
+\end{align*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\abs r<1$
+\end_inset
+
+, 
+\begin_inset Formula $\left(1-r\right)\neq0$
+\end_inset
+
+, thus 
+\begin_inset Formula 
+\[
+\sum_{k=0}^{m}ar^{k}=\frac{a\left(1-r^{m+1}\right)}{1-r}.
+\]
+
+\end_inset
+
+As we take the limit as 
+\begin_inset Formula $m\to\infty$
+\end_inset
+
+, 
+\begin_inset Formula $r^{m}\to0$
+\end_inset
+
+, thus 
+\begin_inset Formula 
+\[
+\sum_{k=0}^{\infty}ar^{k}=\frac{a}{1-r}.
+\]
+
+\end_inset
+
+Therefore, the geometric series converges if and only if 
+\begin_inset Formula $\abs r<1$
+\end_inset
+
+, and it converges to 
+\begin_inset Formula 
+\[
+\frac{a}{1-r}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
