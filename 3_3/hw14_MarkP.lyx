@@ -456,20 +456,9 @@ A countable set contained in
 \begin_deeper
 \begin_layout Enumerate
 This cannot exist.
- Suppose that there does exist a countable set contained in 
-\begin_inset Formula $\left[0,1\right]$
-\end_inset
-
- denoted 
-\begin_inset Formula $A$
-\end_inset
-
- that doesn't have any limit points.
- Then there exists a bijective function 
-\begin_inset Formula $f:\N\to A$
-\end_inset
-
-
+ Since the set is bounded, by the Bolzano-Weierstrass theorem, there exists
+ a limit point in the set.
+ 
 \end_layout
 
 \end_deeper
@@ -507,6 +496,69 @@ A set with an uncountable number of isolated points.
 \begin_deeper
 \begin_layout Enumerate
 This cannot exist.
+ Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be the set and 
+\begin_inset Formula $B=\left\{ x_{\lambda}\,:\,\lambda\in\Lambda\right\} $
+\end_inset
+
+ be the set of all of the isolated points of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then for each 
+\begin_inset Formula $x_{\lambda}$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $V_{\epsilon}\left(x_{\lambda}\right)\cap A=\left\{ x_{\lambda}\right\} $
+\end_inset
+
+.
+ Due to the density or 
+\begin_inset Formula $\R$
+\end_inset
+
+, there exists at least one rational number 
+\begin_inset Formula $q_{\lambda}\in V_{\epsilon}\left(x_{\lambda}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $q_{\lambda}\neq x_{\lambda}$
+\end_inset
+
+.
+ By taking one rational number within the set of each neighborhood, 
+\begin_inset Formula $V_{\epsilon}\left(x_{\lambda}\right)$
+\end_inset
+
+, we can construct the set 
+\begin_inset Formula $C=\left\{ q_{\lambda}:\lambda\in\Lambda\right\} $
+\end_inset
+
+ and the bijection 
+\begin_inset Formula $f:C\to A$
+\end_inset
+
+.
+ Where 
+\begin_inset Formula $f\left(q_{\lambda}\right)=x_{\lambda}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $C$
+\end_inset
+
+ is not an uncountable set, there cannot exist an uncountable number of
+ isolate points.
  
 \end_layout
 
@@ -787,28 +839,16 @@ Now consider the set
 \end_layout
 
 \begin_layout Proof
-We first show that 
-\begin_inset Formula $B$
+Let 
+\begin_inset Formula $X_{r}=\left\{ x\,:\,x\in A\text{ and }x<r\right\} $
 \end_inset
 
- is nonempty.
- Let 
-\begin_inset Formula $m\in\R$
+ and 
+\begin_inset Formula $Y_{r}=\left\{ x\,:\,x\in A\text{ and }x>r\right\} $
 \end_inset
 
- denote the middle of 
-\begin_inset Formula $A$
-\end_inset
-
-, that is, 
-\begin_inset Formula $m$
-\end_inset
-
- divides 
-\begin_inset Formula $A$
-\end_inset
-
- into 
+.
+ 
 \end_layout
 
 \begin_layout Exercise
@@ -1033,5 +1073,295 @@ Show that
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+We start by showing that 
+\begin_inset Formula $\overline{E}^{c}=\left(E^{c}\right)^{o}$
+\end_inset
+
+.
+ Since this is an equivalent statement between sets, we must show inclusion
+ both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\subseteq\right):$
+\end_inset
+
+ Let 
+\begin_inset Formula $x\in\overline{E}^{c}$
+\end_inset
+
+, then 
+\begin_inset Formula $x\notin\overline{E}$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $x\notin E\cup L$
+\end_inset
+
+ where 
+\begin_inset Formula $L$
+\end_inset
+
+ is the set of the limit points of 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ That means, for every 
+\begin_inset Formula $x\in E^{c}$
+\end_inset
+
+, there exists an open 
+\begin_inset Formula $\epsilon-$
+\end_inset
+
+neighborhood such that 
+\begin_inset Formula $V_{\epsilon}\left(x\right)\subseteq E^{c}$
+\end_inset
+
+.
+ This is because 
+\begin_inset Formula $x$
+\end_inset
+
+ is not a limit point of 
+\begin_inset Formula $E$
+\end_inset
+
+ so it cannot be arbitrarily close to an element of 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $x\in\left(E^{c}\right)^{o}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\supseteq\right):$
+\end_inset
+
+ Let 
+\begin_inset Formula $x\in\left(E^{c}\right)^{o}$
+\end_inset
+
+, then for every 
+\begin_inset Formula $x\in E^{c}$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $\epsilon-$
+\end_inset
+
+neighborhood such that 
+\begin_inset Formula $V_{\epsilon}\left(x\right)\subseteq E^{c}$
+\end_inset
+
+.
+ Since a neighborhood in entirely contained in 
+\begin_inset Formula $E^{c}$
+\end_inset
+
+, it cannot be a limit point of 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $x\notin E\cup L$
+\end_inset
+
+ where 
+\begin_inset Formula $L$
+\end_inset
+
+ is the set of the limit points of 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $x\notin\overline{E}$
+\end_inset
+
+, thus 
+\begin_inset Formula $x\in\overline{E}^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since both inclusions hold, 
+\begin_inset Formula $\overline{E}^{c}=\left(E^{c}\right)^{o}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Next we show that 
+\begin_inset Formula $\left(E^{o}\right)^{c}=\overline{E^{c}}$
+\end_inset
+
+.
+ Since this is an equivalent statement between sets, we must show inclusion
+ both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\subseteq\right):$
+\end_inset
+
+ Let 
+\begin_inset Formula $x\in\left(E^{o}\right)^{c}$
+\end_inset
+
+, then 
+\begin_inset Formula $x\notin E^{o}$
+\end_inset
+
+.
+ In other words, there does not exist an 
+\begin_inset Formula $\epsilon-$
+\end_inset
+
+neighborhood such that 
+\begin_inset Formula $V_{\epsilon}\left(x\right)\subseteq E^{o}$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $x$
+\end_inset
+
+ is either an isolated point of 
+\begin_inset Formula $E$
+\end_inset
+
+ or not in 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ An isolate point of 
+\begin_inset Formula $E$
+\end_inset
+
+ is a limit point of it's complement since there is a point in 
+\begin_inset Formula $E^{c}$
+\end_inset
+
+ that is arbitrarily close to any isolated point of 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $x\in E^{c}$
+\end_inset
+
+ or 
+\begin_inset Formula $x\in L_{c}$
+\end_inset
+
+ where 
+\begin_inset Formula $L_{c}$
+\end_inset
+
+ is the set of limit points of 
+\begin_inset Formula $E^{c}$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $x\in\overline{E^{c}}$
+\end_inset
+
+ , which shows that 
+\begin_inset Formula $\left(E^{o}\right)^{c}\subseteq\overline{E^{c}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\supseteq\right):$
+\end_inset
+
+ Let 
+\begin_inset Formula $x\in\overline{E^{c}}$
+\end_inset
+
+, then 
+\begin_inset Formula $x\in E^{c}\cup L_{c}$
+\end_inset
+
+ where 
+\begin_inset Formula $L_{c}$
+\end_inset
+
+ is the set of limit points of 
+\begin_inset Formula $E^{c}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $x\in E^{c}$
+\end_inset
+
+ or there exists an 
+\begin_inset Formula $\epsilon-$
+\end_inset
+
+neighborhood such that there is another element 
+\begin_inset Formula $a\in E^{c}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\in V_{\epsilon}\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ cannot be an interior point of 
+\begin_inset Formula $E$
+\end_inset
+
+, thus 
+\begin_inset Formula $x\notin E^{o}$
+\end_inset
+
+.
+ Hence, 
+\begin_inset Formula $x\in\left(E^{o}\right)^{c}$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $\left(E^{o}\right)^{c}\supseteq\overline{E^{c}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Since both inclusions hold, 
+\begin_inset Formula $\left(E^{o}\right)^{c}=\overline{E^{c}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
