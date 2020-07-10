@@ -848,6 +848,113 @@ Let
 \end_inset
 
 .
+ Let 
+\begin_inset Formula $T_{l}$
+\end_inset
+
+ be the set of all 
+\begin_inset Formula $r\in\R$
+\end_inset
+
+ such that 
+\begin_inset Formula $X_{r}$
+\end_inset
+
+ is countable and 
+\begin_inset Formula $T_{u}$
+\end_inset
+
+ be the set of all 
+\begin_inset Formula $r\in\R$
+\end_inset
+
+ such that 
+\begin_inset Formula $Y_{r}$
+\end_inset
+
+ is countable.
+ Next, let 
+\begin_inset Formula $t_{l}=\sup\left(T_{l}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{u}=\inf\left(T_{u}\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $X_{t_{l}}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{t_{u}}$
+\end_inset
+
+ are countable sets, their union is countable, thus 
+\begin_inset Formula $A\neq X_{t_{l}}\cup Y_{t_{u}}$
+\end_inset
+
+ since 
+\begin_inset Formula $A$
+\end_inset
+
+ is uncountable.
+ This means that there is still an uncountable many elements of 
+\begin_inset Formula $A$
+\end_inset
+
+ that are in the interval 
+\begin_inset Formula $\left(t_{l},t_{u}\right)$
+\end_inset
+
+.
+ Thus we see that 
+\begin_inset Formula $t_{l}<t_{u}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, since 
+\begin_inset Formula $t_{l}=\sup\left(T_{l}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{u}=\inf\left(T_{u}\right)$
+\end_inset
+
+, the sets 
+\begin_inset Formula $X_{t_{l}+\epsilon}$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{t_{u}-\epsilon}$
+\end_inset
+
+ are uncountable.
+ Therefore, let 
+\begin_inset Formula $b\in\left(t_{l},t_{u}\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $X_{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{b}$
+\end_inset
+
+ are uncountable, thus 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ which means that 
+\begin_inset Formula $B$
+\end_inset
+
+ is not empty.
  
 \end_layout
 
