@@ -7,7 +7,7 @@
 \usepackage{enumitem}
 \renewcommand{\labelenumi}{\alph{enumi})}
 \end_preamble
-\options oncecolumn
+\options onecolumn
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -84,6 +84,10 @@ Homework 15 Section 3.3
 
 \begin_layout After Title Text
 Exercise 1,2,3,4,5,8
+\end_layout
+
+\begin_layout Author
+Mark Petersen
 \end_layout
 
 \begin_layout Standard
@@ -283,10 +287,21 @@ The set of natural numbers is not compact.
 \begin_deeper
 \begin_layout Enumerate
 The set is compact.
- Since it is bounded, every sequence contains a convergent subsequence according
- to the Bolzano-Weierstrass theorem.
- And since it is a closed set, every limit point is contained within the
- set.
+ The rational number is not a closed set since every irrational number in
+ the interval 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ is a limit point of 
+\begin_inset Formula $\Q\cap\left[0,1\right]$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\Q\cap\left[0,1\right]$
+\end_inset
+
+ does not contain all of its limit points and cannot be closed.
  
 \end_layout
 
@@ -304,8 +319,10 @@ The Cantor set is a subset of
  and is thus bounded.
  According to the Bolzano-Weierstrass theorem, every bounded sequence contains
  a convergent subsequence.
- Also, since the set is closed, all convergent sequences converge to a limit
- point contained in the set.
+ The construction of the Cantor set consists of the intersection of an infinite
+ number of closed intervals, thus the Cantor set is also closed.
+ Since the set is closed, all convergent sequences converge to a limit point
+ contained in the set.
  Thus the Cantor set is compact.
 \end_layout
 
@@ -319,7 +336,8 @@ The Cantor set is a subset of
 
 \begin_deeper
 \begin_layout Enumerate
-This set 
+Not compact.
+ This set 
 \begin_inset Formula $A$
 \end_inset
 
@@ -398,7 +416,8 @@ Due to the density of
 
 \begin_deeper
 \begin_layout Enumerate
-The set 
+Compact.
+ The set 
 \begin_inset Formula $A$
 \end_inset
 
@@ -484,5 +503,465 @@ Let
  
 \end_layout
 
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Assume 
+\begin_inset Formula $K$
+\end_inset
+
+ is compact and 
+\begin_inset Formula $F$
+\end_inset
+
+ is closed.
+ Decide if the following sets are definitely compact, definitely closed,
+ both or neither.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $K\cap F$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Definitely compact and closed.
+ Since 
+\begin_inset Formula $K$
+\end_inset
+
+ is closed and bounded and 
+\begin_inset Formula $F$
+\end_inset
+
+ is closed, the intersection 
+\begin_inset Formula $K\cap F$
+\end_inset
+
+ is closed and its bounded since 
+\begin_inset Formula $K\cap F\subseteq K$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\overline{F^{c}\cup K^{c}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Definitely closed.
+ Since 
+\begin_inset Formula $K$
+\end_inset
+
+ is bounded, 
+\begin_inset Formula $K^{c}$
+\end_inset
+
+ is not bounded.
+ Thus 
+\begin_inset Formula $F^{c}\cup K^{c}$
+\end_inset
+
+ is not bounded.
+ The closure of any set is closed, thus 
+\begin_inset Formula $\overline{F^{c}\cup K^{c}}$
+\end_inset
+
+ is closed and not bounded.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $K\backslash F$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This is neither definitely compact or closed.
+ For example, let 
+\begin_inset Formula $K=\left[0,1\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $F=\left\{ 0.5\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $K\backslash F=\left[0,0.5\right)\cup\left(0.5,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\overline{K\cap F^{c}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Definitely compact and closed.
+ Since 
+\begin_inset Formula $K\cap F^{c}\subseteq K$
+\end_inset
+
+, it must be bounded.
+ And the closure of a set is always closed.
+ thus 
+\begin_inset Formula $\overline{K\cap F^{c}}$
+\end_inset
+
+ is closed and bounded.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: Decide whether the following propositions are true or false.
+ If the claim is valid, supply a short proof, and if the claim is false,
+ provide a counterexample.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The arbitrary intersection of compact sets is compact.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+True, A compact set is closed an bounded.
+ The arbitrary intersection of closed sets is closed.
+ Since all of the sets are bounded, the intersection of all of the sets
+ must be bounded.
+ Thus, arbitrary intersection of compact sets is compact.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The arbitrary union of compact sets is compact.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+False.
+ Let 
+\begin_inset Formula $I_{n}=\left[0,n\right]$
+\end_inset
+
+ where 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, then 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ is compact.
+ However, 
+\begin_inset Formula $\cup_{k=1}^{\infty}I_{k}=\left[0,\infty\right)$
+\end_inset
+
+ which is not bounded and thus not compact.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be arbitrary, and let 
+\begin_inset Formula $K$
+\end_inset
+
+ be compact.
+ Then, the intersection 
+\begin_inset Formula $A\cap K$
+\end_inset
+
+ is compact.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+False, let 
+\begin_inset Formula $K$
+\end_inset
+
+ be a closed interval and 
+\begin_inset Formula $A$
+\end_inset
+
+ be an open interval contained in 
+\begin_inset Formula $K$
+\end_inset
+
+, then 
+\begin_inset Formula $A\cap K=A$
+\end_inset
+
+ which is open.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $F_{1}\supseteq F_{2}\supseteq F_{3}\supseteq\cdots$
+\end_inset
+
+ is a nested sequence of nonempty closed sets, then the intersection 
+\begin_inset Formula $\cap_{n=1}^{\infty}F_{n}\neq\emptyset$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+False.
+ Let 
+\begin_inset Formula $F_{n}=\left[n,\infty\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $\cap_{n=1}^{\infty}F_{n}=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q8)
+\series default
+: Let 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ be nonempty compact sets, and define 
+\begin_inset Formula 
+\[
+d=\inf\left\{ \abs{x-y}\,:\,x\in K\text{ and }y\in L\right\} .
+\]
+
+\end_inset
+
+This turns out to be a reasonable definition for the distance between 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ are disjoint, show that 
+\begin_inset Formula $d>0$
+\end_inset
+
+ and that 
+\begin_inset Formula $d=\abs{x_{0}-y_{0}}$
+\end_inset
+
+ for some 
+\begin_inset Formula $x_{0}\in K$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{0}\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose, by contradiction, that 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ are disjoint, nonempty compact sets and that 
+\begin_inset Formula $d=0$
+\end_inset
+
+.
+ This means that given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists some 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in L$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs{x-y}<\epsilon$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\epsilon_{n}=\frac{1}{n}$
+\end_inset
+
+ and the corresponding elements be 
+\begin_inset Formula $x_{n}\in K$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{n}\in L$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs{x_{n}-y_{n}}<\epsilon_{n}$
+\end_inset
+
+.
+ Then we can construct the sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ are bounded, 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ must have subsequences that converge to a point; in fact, they must converge
+ to the same point since as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, 
+\begin_inset Formula $\abs{x_{n}-y_{n}}\to0$
+\end_inset
+
+ since 
+\begin_inset Formula $\epsilon_{n}\to0$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $K$
+\end_inset
+
+ must contain a limit point of 
+\begin_inset Formula $L$
+\end_inset
+
+, but this is a contradiction since 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ are disjoint.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Show that it's possible to have 
+\begin_inset Formula $d=0$
+\end_inset
+
+ if we assume only that the disjoint sets 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ are closed.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $K$
+\end_inset
+
+ be the set of all natural numbers and 
+\begin_inset Formula $L=\left\{ n+\frac{1}{n}\,:\,n\in\N\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $d=\inf\left\{ \frac{1}{n}\,:\,n\in\N\right\} =0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
