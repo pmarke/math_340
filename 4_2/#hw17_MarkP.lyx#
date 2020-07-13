@@ -848,9 +848,64 @@ Using this fact in the term
 \end_layout
 
 \end_deeper
-\begin_layout Standard
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Consider the reasonable but erroneous claim that 
+\begin_inset Formula 
+\[
+\lim_{x\to10}\frac{1}{\left[\left[x\right]\right]}=\frac{1}{10}.
+\]
+
+\end_inset
+
 
 \end_layout
 
+\begin_layout Enumerate
+Find the largest 
+\begin_inset Formula $\delta$
+\end_inset
+
+ that represents a proper response to the challenge of 
+\begin_inset Formula $\epsilon=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We begin with scratch work.
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{1}{\left[\left[x\right]\right]}-\frac{1}{10}} & <\frac{1}{2}\\
+-\frac{4}{10}<\frac{1}{\left[\left[x\right]\right]} & <\frac{6}{10},
+\end{align*}
+
+\end_inset
+
+which means that 
+\begin_inset Formula 
+\[
+\left[\left[x\right]\right]<-\frac{10}{4},
+\]
+
+\end_inset
+
+or 
+\begin_inset Formula 
+\[
+\left[\left[x\right]\right]>\frac{10}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

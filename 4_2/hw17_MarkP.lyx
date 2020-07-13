@@ -762,9 +762,158 @@ Make an educated conjecture for
 \end_inset
 
 .
- Argue that all the points in this set are isolate.
+ Argue that all the points in this set are isolated.
  
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Conjecture
+\series default
+: The 
+\begin_inset Formula $\lim_{x\to1}t\left(x\right)$
+\end_inset
+
+ does not exist.
+\end_layout
+
+\begin_layout Proof
+Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, we form the set 
+\begin_inset Formula $\left(x\in\R\,:\,t\left(x\right)\geq\epsilon\right)$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $t\left(x\right)\geq\epsilon$
+\end_inset
+
+ only when 
+\begin_inset Formula $x=0$
+\end_inset
+
+ or 
+\begin_inset Formula $x=\frac{m}{n}\in\Q\backslash\left\{ 0\right\} $
+\end_inset
+
+ in lowest terms.
+ Thus, when 
+\begin_inset Formula $t\left(x\right)\geq\epsilon$
+\end_inset
+
+ we have that 
+\begin_inset Formula 
+\[
+\frac{1}{n}\geq\epsilon,
+\]
+
+\end_inset
+
+or 
+\begin_inset Formula 
+\[
+x=0.
+\]
+
+\end_inset
+
+In the former case, we get that 
+\begin_inset Formula 
+\[
+\frac{1}{\epsilon}\geq n.
+\]
+
+\end_inset
+
+Using this fact in the term 
+\begin_inset Formula $\frac{m}{n}$
+\end_inset
+
+ we get that 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{m}{n}} & \geq\frac{\abs m}{\frac{1}{\epsilon}}\\
+ & =\abs m\epsilon\\
+ & \geq\epsilon
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Consider the reasonable but erroneous claim that 
+\begin_inset Formula 
+\[
+\lim_{x\to10}\frac{1}{\left[\left[x\right]\right]}=\frac{1}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the largest 
+\begin_inset Formula $\delta$
+\end_inset
+
+ that represents a proper response to the challenge of 
+\begin_inset Formula $\epsilon=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We begin with scratch work.
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{1}{\left[\left[x\right]\right]}-\frac{1}{10}} & <\frac{1}{2}\\
+-\frac{4}{10}<\frac{1}{\left[\left[x\right]\right]} & <\frac{6}{10},
+\end{align*}
+
+\end_inset
+
+which means that 
+\begin_inset Formula 
+\[
+\left[\left[x\right]\right]<-\frac{10}{4}=-\frac{5}{2},
+\]
+
+\end_inset
+
+or 
+\begin_inset Formula 
+\[
+\left[\left[x\right]\right]>\frac{10}{6}=\frac{5}{3}.
+\]
+
+\end_inset
+
+Which implies that 
+\begin_inset Formula $x<-2$
+\end_inset
+
+ or 
+\begin_inset Formula $x>2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
