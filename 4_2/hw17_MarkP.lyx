@@ -1,0 +1,770 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 17 Section 4.2
+\end_layout
+
+\begin_layout After Title Text
+1,2,3,4,5
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+07/13/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1)
+\series default
+: Complete the following
+\end_layout
+
+\begin_layout Enumerate
+Supply the details for how Corollary 4.2.4 part (ii) follows from the Sequential
+ Criterion for Functional Limits in theorem 4.2.3 and the Algebraic Limit
+ Theorem for sequences proved in Chapter 2.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $f:A\to\R$
+\end_inset
+
+ and 
+\begin_inset Formula $g:A\to\R$
+\end_inset
+
+ be two functions, 
+\begin_inset Formula $A\subseteq\R$
+\end_inset
+
+, 
+\begin_inset Formula $\lim_{x\to c}f\left(x\right)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\to c}g\left(x\right)=M$
+\end_inset
+
+.
+ According to the sequential criterion for functional limits, for any sequence
+ 
+\begin_inset Formula $\left(a_{n}\right)\subseteq A$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $a_{n}\neq c$
+\end_inset
+
+, and 
+\begin_inset Formula $\left(a_{n}\right)\to c$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $f\left(a_{n}\right)\to L$
+\end_inset
+
+ and 
+\begin_inset Formula $g\left(a_{n}\right)\to M$
+\end_inset
+
+.
+ Thus, we can form a new sequence 
+\begin_inset Formula $f_{n}=f\left(a_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{n}=g\left(a_{n}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(f_{n}\right)\to L$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(g_{n}\right)\to M$
+\end_inset
+
+.
+ According to the Algebraic Limit Theorem, since 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+ converge, 
+\begin_inset Formula $\left(f_{n}+g_{n}\right)\to L+M$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $\lim_{x\to c}\left(f\left(x\right)+g\left(x\right)\right)=L+M$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now, write another proof for Corollary 4.2.4 part 
+\begin_inset Formula $\left(ii\right)$
+\end_inset
+
+ directly from Definition 4.2.1 without using the sequential criterion in
+ Theorem 4.2.3
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\lim_{x\to c}f\left(x\right)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\to c}g\left(x\right)=M$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $\delta\in\R>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $0<\abs{x-c}<\delta$
+\end_inset
+
+ it follows that 
+\begin_inset Formula 
+\[
+\abs{f\left(x\right)-L}<\frac{\epsilon}{2},
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\abs{g\left(x\right)-M}<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+Now we consider the term 
+\begin_inset Formula $\abs{f\left(x\right)+g\left(x\right)-L-M}$
+\end_inset
+
+ and manipulate it 
+\begin_inset Formula 
+\begin{align*}
+\abs{f\left(x\right)+g\left(x\right)-L-M} & \leq\abs{f\left(x\right)-L}+\abs{g\left(x\right)-M}\\
+ & <\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Thus 
+\begin_inset Formula $\lim_{x\to c}\left(f\left(x\right)+g\left(x\right)\right)=L+M$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Repeat (a) and (b) for Corollary 4.2.4 part (iii)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We will first prove Corollary 4.2.4 part (iii) using the algebraic limit theorem,
+ but we will be more brief this time since it is similar to part (a).
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $f:A\to\R$
+\end_inset
+
+ and 
+\begin_inset Formula $g:A\to\R$
+\end_inset
+
+ be two functions, 
+\begin_inset Formula $A\subseteq\R$
+\end_inset
+
+, 
+\begin_inset Formula $\lim_{x\to c}f\left(x\right)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\to c}g\left(x\right)=M$
+\end_inset
+
+.
+ According to the sequential criterion for functional limits, for any sequence
+ 
+\begin_inset Formula $\left(a_{n}\right)\subseteq A$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $a_{n}\neq c$
+\end_inset
+
+, and 
+\begin_inset Formula $\left(a_{n}\right)\to c$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $f\left(a_{n}\right)\to L$
+\end_inset
+
+ and 
+\begin_inset Formula $g\left(a_{n}\right)\to M$
+\end_inset
+
+.
+ Thus, we can form a new sequence 
+\begin_inset Formula $f_{n}=f\left(a_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{n}=g\left(a_{n}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(f_{n}\right)\to L$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(g_{n}\right)\to M$
+\end_inset
+
+.
+ According to the Algebraic Limit Theorem, since 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+ converge, 
+\begin_inset Formula $\left(f_{n}g_{n}\right)\to LM$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $\lim_{x\to c}\left(f\left(x\right)g\left(x\right)\right)=LM$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+We will now prove it using the definition of the limit of a function.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\lim_{x\to c}f\left(x\right)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\to c}g\left(x\right)=M$
+\end_inset
+
+.
+ Since the functions converge, they are also bounded.
+ Let 
+\begin_inset Formula $\abs{f\left(x\right)}\leq F$
+\end_inset
+
+ and 
+\begin_inset Formula $\abs{g\left(x\right)}\leq G$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ Then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, such that whenever 
+\begin_inset Formula $0<\abs{x-c}<\delta$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{f\left(x\right)-L}<\frac{\epsilon}{2\left(G+1\right)},
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\abs{g\left(x\right)-M}<\frac{\epsilon}{2\left(\abs L+1\right)}.
+\]
+
+\end_inset
+
+It then follows that,
+\begin_inset Formula 
+\begin{align*}
+\abs{f\left(x\right)g\left(x\right)-LM+Lg\left(x\right)-Lg\left(x\right)} & =\abs{g\left(x\right)\left(f\left(x\right)-L\right)+L\left(g\left(x\right)-M\right)}\\
+ & \leq\abs{g\left(x\right)\left(f\left(x\right)-L\right)}+\abs L\abs{g\left(x\right)-M}\\
+ & \leq G\abs{f\left(x\right)-L}+\abs L\abs{g\left(x\right)-M}\\
+ & <\frac{G\epsilon}{2\left(G+1\right)}+\frac{\abs L\epsilon}{2\left(\abs L+1\right)}\\
+ & <\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore, if 
+\begin_inset Formula $\lim_{x\to c}f\left(x\right)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\to c}g\left(x\right)=M$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{x\to c}\left(f\left(x\right)g\left(x\right)\right)=LM$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q2)
+\series default
+: For each stated limit, find the largest possible 
+\begin_inset Formula $\delta-$
+\end_inset
+
+neighborhood that is a proper response to the given 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ challenge.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to3}\left(5x-6\right)=9$
+\end_inset
+
+, where 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We begin with the definition of the limit and perform scratch work.
+\begin_inset Formula 
+\begin{align*}
+\abs{5x-6-9} & <1\\
+\abs{5x-15} & <1\\
+5\abs{x-3} & <1\\
+\abs{x-3} & <\frac{1}{5},
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\delta=\frac{1}{5}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to4}\sqrt{x}=2$
+\end_inset
+
+, where 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We begin with the definition of the limit and perform scratch work.
+\begin_inset Formula 
+\begin{align*}
+\abs{\sqrt{x}-2} & <1\\
+-1<\sqrt{x}-2 & <1\\
+1<\sqrt{x} & <3\\
+1<x & <9\\
+-3<x-4 & <5\\
+\abs{x-4} & <5,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\delta=5$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to\pi}\left[\left[x\right]\right]=3$
+\end_inset
+
+, where 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When 
+\begin_inset Formula $x$
+\end_inset
+
+ is less than three, then the error is greater than 1, and when 
+\begin_inset Formula $x$
+\end_inset
+
+ is 
+\begin_inset Formula $4$
+\end_inset
+
+ or above, the error is greater than 1.
+ Thus we get that 
+\begin_inset Formula $0<\abs{x-3}<$
+\end_inset
+
+
+\begin_inset Formula $\delta=\pi-3$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to\pi}\left[\left[x\right]\right]=3$
+\end_inset
+
+, where 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For the same reason as the previous part, 
+\begin_inset Formula $\delta=\pi-3$
+\end_inset
+
+.
+ For any 
+\begin_inset Formula $\delta$
+\end_inset
+
+ greater than this, the error would be 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q3)
+\series default
+: Review the definition of Thomae's function 
+\begin_inset Formula $t\left(x\right)$
+\end_inset
+
+ from section 4.1.
+\end_layout
+
+\begin_layout Enumerate
+Construct three different sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $\left(z_{n}\right)$
+\end_inset
+
+, each of which converges to 
+\begin_inset Formula $1$
+\end_inset
+
+ without using the number 
+\begin_inset Formula $1$
+\end_inset
+
+ as a term in the sequence.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x_{n}=1+\frac{1}{1+n}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{n}=1-\frac{1}{1+n}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{n}=1+\frac{1}{2+n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now, compute 
+\begin_inset Formula $\lim\,t\left(x_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\lim\,t\left(y_{n}\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $\lim\,t\left(z_{n}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Using the definition of the function 
+\begin_inset Formula $t:\R\to\R$
+\end_inset
+
+, we get that 
+\begin_inset Formula 
+\begin{align*}
+\lim\,t\left(x_{n}\right) & =\lim\,\left(\frac{1}{1+n}\right),\\
+\lim\,t\left(y_{n}\right) & =\lim\,\left(\frac{1}{1+n}\right),\\
+\lim\,t\left(z_{n}\right) & =\lim\,\left(\frac{1}{2+n}\right),
+\end{align*}
+
+\end_inset
+
+which all have limits of 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Make an educated conjecture for 
+\begin_inset Formula $\lim_{x\to1}t\left(x\right)$
+\end_inset
+
+, and use Definition 4.2.1 B to verify the claim.
+ (Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, consider the set of points 
+\begin_inset Formula $\left\{ x\in\R\,:\,t\left(x\right)\geq\epsilon\right\} $
+\end_inset
+
+.
+ Argue that all the points in this set are isolate.
+ 
+\end_layout
+
+\end_body
+\end_document
