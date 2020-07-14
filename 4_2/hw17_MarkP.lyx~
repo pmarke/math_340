@@ -567,13 +567,13 @@ We begin with the definition of the limit and perform scratch work.
 1<\sqrt{x} & <3\\
 1<x & <9\\
 -3<x-4 & <5\\
-\abs{x-4} & <5,
+\abs{x-4} & <3,
 \end{align*}
 
 \end_inset
 
 thus 
-\begin_inset Formula $\delta=5$
+\begin_inset Formula $\delta=3$
 \end_inset
 
 .
@@ -773,43 +773,174 @@ Make an educated conjecture for
 Conjecture
 \series default
 : The 
-\begin_inset Formula $\lim_{x\to1}t\left(x\right)$
+\begin_inset Formula $\lim_{x\to1}t\left(x\right)=0$
 \end_inset
 
- does not exist.
+ .
 \end_layout
 
 \begin_layout Proof
-Given 
+Our objective is to find a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ given an 
 \begin_inset Formula $\epsilon>0$
 \end_inset
 
-, we form the set 
-\begin_inset Formula $\left(x\in\R\,:\,t\left(x\right)\geq\epsilon\right)$
+, such that when 
+\begin_inset Formula $0<\abs{x-1}<\delta$
 \end_inset
 
-.
- The function 
-\begin_inset Formula $t\left(x\right)\geq\epsilon$
+,
+\begin_inset Formula 
+\[
+\abs{t\left(x\right)}<\epsilon.
+\]
+
 \end_inset
 
- only when 
+When 
+\begin_inset Formula $x$
+\end_inset
+
+ is irrational 
+\begin_inset Formula $t\left(x\right)=0<\epsilon$
+\end_inset
+
+, when 
 \begin_inset Formula $x=0$
 \end_inset
 
- or 
+, 
+\begin_inset Formula $t\left(x\right)=1$
+\end_inset
+
+, and when 
 \begin_inset Formula $x=\frac{m}{n}\in\Q\backslash\left\{ 0\right\} $
 \end_inset
 
- in lowest terms.
- Thus, when 
-\begin_inset Formula $t\left(x\right)\geq\epsilon$
+ such that 
+\begin_inset Formula $n>0$
 \end_inset
 
- we have that 
+, 
+\begin_inset Formula $t\left(x\right)=\frac{1}{n}$
+\end_inset
+
+.
+ Thus we need to choose 
+\begin_inset Formula $\delta$
+\end_inset
+
+ so that 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ and so that 
 \begin_inset Formula 
 \[
-\frac{1}{n}\geq\epsilon,
+\frac{1}{n}<\epsilon.
+\]
+
+\end_inset
+
+Manipulating the equation yields
+\begin_inset Formula 
+\[
+\frac{1}{\epsilon}>n.
+\]
+
+\end_inset
+
+We then choose 
+\begin_inset Formula $\delta=\frac{1}{n}$
+\end_inset
+
+.
+ This gives 
+\begin_inset Formula 
+\begin{align*}
+\abs{x-1} & <\frac{1}{n}\\
+-\frac{1}{n}<x-1 & <\frac{1}{n}\\
+\frac{n-1}{n}<x & <\frac{n+1}{n}
+\end{align*}
+
+\end_inset
+
+and 
+\begin_inset Formula $x\neq1$
+\end_inset
+
+.
+ With these constraints, any value of 
+\begin_inset Formula $x$
+\end_inset
+
+ will have a denominator 
+\begin_inset Formula $m>n$
+\end_inset
+
+, thus 
+\begin_inset Formula $\abs{t\left(x\right)}<\frac{1}{n}$
+\end_inset
+
+.
+ This proves that 
+\begin_inset Formula 
+\[
+\lim_{x\to1}t\left(x\right)=0.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Consider the reasonable but erroneous claim that 
+\begin_inset Formula 
+\[
+\lim_{x\to10}\frac{1}{\left[\left[x\right]\right]}=\frac{1}{10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the largest 
+\begin_inset Formula $\delta$
+\end_inset
+
+ that represents a proper response to the challenge of 
+\begin_inset Formula $\epsilon=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We begin with scratch work.
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{1}{\left[\left[x\right]\right]}-\frac{1}{10}} & <\frac{1}{2}\\
+-\frac{4}{10}<\frac{1}{\left[\left[x\right]\right]} & <\frac{6}{10},
+\end{align*}
+
+\end_inset
+
+which means that 
+\begin_inset Formula 
+\[
+\left[\left[x\right]\right]<-\frac{10}{4}=-\frac{5}{2},
 \]
 
 \end_inset
@@ -817,40 +948,355 @@ Given
 or 
 \begin_inset Formula 
 \[
-x=0.
+\left[\left[x\right]\right]>\frac{10}{6}=\frac{5}{3}.
 \]
 
 \end_inset
 
-In the former case, we get that 
-\begin_inset Formula 
-\[
-\frac{1}{\epsilon}\geq n.
-\]
-
+Which implies that 
+\begin_inset Formula $x<-2$
 \end_inset
 
-Using this fact in the term 
-\begin_inset Formula $\frac{m}{n}$
+ or 
+\begin_inset Formula $x>2$
 \end_inset
 
- we get that 
+.
+ Since we are taking the limit as 
+\begin_inset Formula $x\to10$
+\end_inset
+
+, we will focus on the inequality 
+\begin_inset Formula $x>2$
+\end_inset
+
+.
+ Thus we have that 
+\begin_inset Formula $0<\abs{x-10}<8$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the largest 
+\begin_inset Formula $\delta$
+\end_inset
+
+ that represents a proper response to 
+\begin_inset Formula $\epsilon=\frac{1}{50}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We begin with scratch work.
 \begin_inset Formula 
 \begin{align*}
-\abs{\frac{m}{n}} & \geq\frac{\abs m}{\frac{1}{\epsilon}}\\
- & =\abs m\epsilon\\
- & \geq\epsilon
+\abs{\frac{1}{\left[\left[x\right]\right]}-\frac{1}{10}} & <\frac{1}{50}\\
+-\frac{1}{50}+\frac{1}{10}<\frac{1}{\left[\left[x\right]\right]} & <\frac{1}{50}+\frac{1}{10}\\
+\frac{4}{50}<\frac{1}{\left[\left[x\right]\right]}< & \frac{6}{50}\\
+\frac{2}{25}<\frac{1}{\left[\left[x\right]\right]}< & \frac{3}{25}\\
+\frac{25}{2}>\left[\left[x\right]\right] & >\frac{25}{3},
 \end{align*}
 
 \end_inset
 
+which is equivalent to 
+\begin_inset Formula 
+\[
+13>\left[\left[x\right]\right]>8,
+\]
 
+\end_inset
+
+in other words
+\begin_inset Formula 
+\[
+13>x\geq9
+\]
+
+\end_inset
+
+thus we get that 
+\begin_inset Formula $0<\abs{x-10}<1$
+\end_inset
+
+, thus 
+\begin_inset Formula $\delta=1$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
+\begin_layout Enumerate
+Find the largest 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ for which there is no suitable 
+\begin_inset Formula $\delta$
+\end_inset
+
+ response possible.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since the function 
+\begin_inset Formula $\left[\left[x\right]\right]$
+\end_inset
+
+ rounds the value of 
+\begin_inset Formula $x$
+\end_inset
+
+ to the largest integer equal to or lower than 
+\begin_inset Formula $x$
+\end_inset
+
+, using the smallest possible value of 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, we get that 
+\begin_inset Formula $0<\abs{x-10}<\delta$
+\end_inset
+
+.
+ Which is equivalent to 
+\begin_inset Formula $10-\delta<x<10+\delta$
+\end_inset
+
+ and 
+\begin_inset Formula $x\neq10$
+\end_inset
+
+.
+ Thus, for the best possible value of 
+\begin_inset Formula $\delta$
+\end_inset
+
+, we get 
+\begin_inset Formula 
+\begin{align*}
+\left[\left[10-\delta\right]\right] & \leq\left[\left[x\right]\right]\leq\left[\left[10+\delta\right]\right]\\
+9 & \leq\left[\left[x\right]\right]\leq10.
+\end{align*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\left[\left[x\right]\right]$
+\end_inset
+
+ can take on the value of 
+\begin_inset Formula $9$
+\end_inset
+
+, we must consider it when finding the epsilon neighborhood.
+ Using the definition of the limit of a function, we calculate 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{1}{9}-\frac{1}{10}} & =\abs{\frac{10-9}{90}}\\
+ & =\abs{\frac{1}{90}},
+\end{align*}
+
+\end_inset
+
+thus the smallest 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ is the next larger number to 
+\begin_inset Formula $\frac{1}{90}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: Use definition 4.2.1 to supply a proper proof for the following limit statements.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to2}\left(3x+4\right)=10$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, we choose 
+\begin_inset Formula $\delta>\frac{\epsilon}{3}$
+\end_inset
+
+, then when 
+\begin_inset Formula $0<\abs{x-1}<\delta$
+\end_inset
+
+, we get 
+\begin_inset Formula 
+\begin{align*}
+\abs{3x+4-10} & =\abs{3x-6}\\
+ & =3\abs{x-2}\\
+ & <3\frac{\epsilon}{3}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Thus, 
+\begin_inset Formula $\lim_{x\to2}\left(3x+4\right)=10$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to0}x^{3}=0$
+\end_inset
+
 
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, we choose 
+\begin_inset Formula $\delta=\min\left(\epsilon,1\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\abs{x-0}<1.
+\]
+
+\end_inset
+
+Using this, when 
+\begin_inset Formula $0<\abs x<\delta$
+\end_inset
+
+, we get that 
+\begin_inset Formula 
+\begin{align*}
+\abs{x^{3}-0} & =\abs{x^{3}}\leq\abs x,\;\text{since \ensuremath{\abs x<1}}\\
+ & <\epsilon.
+\end{align*}
+
+\end_inset
+
+Thus 
+\begin_inset Formula $\lim_{x\to0}x^{3}=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to2}\left(x^{2}+x-1\right)=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, we choose 
+\begin_inset Formula $\delta=\min\left(\frac{\epsilon}{6},1\right)$
+\end_inset
+
+, then when 
+\begin_inset Formula $0<\abs{x-2}<\delta$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+\abs{x^{2}+x-1-5} & =\abs{x^{2}+x-6}\\
+ & =\abs{x-2}\abs{x+3}\\
+ & =\abs{x-2}\abs{x-2+5}\\
+ & \leq\abs{x-2}\left(\abs{x-2}+5\right)\quad\text{since \ensuremath{\abs{x-2}<\delta}}\\
+ & <\abs{x-2}\left(1+5\right)\\
+ & =6\abs{x-2}\\
+ & <\epsilon.
+\end{align*}
+
+\end_inset
+
+Thus, 
+\begin_inset Formula $\lim_{x\to2}\left(x^{2}+x-1\right)=5$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to3}\frac{1}{x}=\frac{1}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Given and 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, we choose 
+\begin_inset Formula $\delta=\min\left(\epsilon,1\right)$
+\end_inset
+
+, then when 
+\begin_inset Formula $0<\abs{x-3}<\delta$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{1}{x}-\frac{1}{3}} & =\abs{\frac{3-x}{3x}}\\
+ & <\frac{\abs{x-3}}{3\cdot2}\\
+ & <\abs{x-3}\\
+ & <\epsilon.
+\end{align*}
+
+\end_inset
+
+Thus 
+\begin_inset Formula $\lim_{x\to3}\frac{1}{x}=\frac{1}{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
