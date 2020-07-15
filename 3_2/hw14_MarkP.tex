@@ -1,0 +1,332 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english,onecolumn]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\theoremstyle{plain}
+\newtheorem{thm}{\protect\theoremname}
+\theoremstyle{definition}
+\newtheorem{xca}[thm]{\protect\exercisename}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+
+\makeatother
+
+\usepackage{babel}
+\providecommand{\exercisename}{Exercise}
+\providecommand{\theoremname}{Theorem}
+
+\begin{document}
+
+\title{Homework 14 Section 3.3}
+
+
+\IEEEaftertitletext{Exercises 9,10,11,12,14}
+
+
+\author{Mark Petersen}
+
+\maketitle
+\begin{center}
+07/08/2020
+\par\end{center}
+
+\global\long\def\R{\mathbb{R}}
+
+
+\global\long\def\I{\mathbb{I}}
+
+
+\global\long\def\Q{\mathbb{Q}}
+
+
+\global\long\def\N{\mathbb{N}}
+
+
+\global\long\def\Z{\mathbb{Z}}
+
+
+\global\long\def\abs#1{\left\lvert #1\right\lvert }
+
+
+\global\long\def\pair#1{\left(#1\right)}
+
+\begin{xca}
+\textbf{(Q9)}: A proof for De Morgan's Laws in the case of two sets
+is outlined in Exercise 1.2.5. The general argument is similar.\end{xca}
+\begin{enumerate}
+\item Given a collection of sets $\left\{ E_{\lambda}\,:\lambda\in\Lambda\right\} $,
+show that 
+\[
+\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}=\cap_{\lambda\in\Lambda}E_{\lambda}^{c}
+\]
+and
+\[
+\left(\cap_{\lambda\in\Lambda}E_{\lambda}\right)^{c}=\cup_{\lambda\in\Lambda}E_{\lambda}^{c}.
+\]
+
+
+\begin{IEEEproof}
+We will first show that $\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}=\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$.
+Since this is an equality, we must show that $\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}\subseteq\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$
+and $\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}\supseteq\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$.
+
+$\left(\subseteq\right):$ Let $x\in\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}$,
+then $x\notin\cup_{\lambda\in\Lambda}E_{\lambda}$. In other words,
+$x\in E_{\lambda}^{c}$ for all $\lambda\in\Lambda$. Therefore, $x\in\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$.
+
+$\left(\supseteq\right):$ Let $x\in\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$,
+then $x\in E_{\lambda}^{c}$ for all $\lambda\in\Lambda$. This indicates
+that $x\notin E_{\lambda}$ for any $\lambda\in\Lambda$. Thus $x\notin\cup_{\lambda\in\Lambda}E_{\lambda}$,
+and so $x\in\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}$. 
+
+Since both inclusions hold, we have that $\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}=\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$.
+
+We next show that $\left(\cap_{\lambda\in\Lambda}E_{\lambda}\right)^{c}=\cup_{\lambda\in\Lambda}E_{\lambda}^{c}.$
+Since this is an equality statement, we must show that $\left(\cap_{\lambda\in\Lambda}E_{\lambda}\right)^{c}\subseteq\cup_{\lambda\in\Lambda}E_{\lambda}^{c}$
+and $\left(\cap_{\lambda\in\Lambda}E_{\lambda}\right)^{c}\supseteq\cup_{\lambda\in\Lambda}E_{\lambda}^{c}.$
+
+$\left(\subseteq\right):$ Let $x\in\left(\cap_{\lambda\in\Lambda}E_{\lambda}\right)^{c}$,
+then $x\notin\cap_{\lambda\in\Lambda}E_{\lambda}$. In other words,
+$x\notin E_{k}$ for some $k\in\Lambda$. Thus $x\in E_{k}^{c}$,
+and so $x\in\cup_{\lambda\in\Lambda}E_{\lambda}^{c}$.
+
+$\left(\supseteq\right):$ Let $x\in\cup_{\lambda\in\Lambda}E_{\lambda}^{c}$,
+then $x\in E_{\lambda}^{c}$ for all $\lambda\in\Lambda$. Thus $x\notin E_{\lambda}$
+for all $\Lambda$. Which implies that $x\notin\cap_{\lambda\in\Lambda}E_{\lambda}$.
+Therefore, $x\in\left(\cap_{\lambda\in\Lambda}E_{\lambda}\right)^{c}$.
+
+Since both inclusions hold, we have that $\left(\cap_{\lambda\in\Lambda}E_{\lambda}\right)^{c}=\cup_{\lambda\in\Lambda}E_{\lambda}^{c}.$
+\end{IEEEproof}
+\item Now, provide the details for the proof of Theorem 3.2.14. 
+
+\begin{IEEEproof}
+From Theorem 3.2.3 we know that (i) The union of an arbitrary collection
+of open sets is open, and (ii) The intersection of a finite collection
+of open sets is open. Let $\left\{ O_{\lambda}\,:\,\lambda\in\Lambda\right\} $
+be an arbitrary collection of open and let $O=\cup_{\lambda\in\Lambda}O_{\lambda}$.
+Taking the complements of both sides gives 
+\begin{align*}
+O^{c} & =\left(\cup_{\lambda\in\Lambda}O_{\lambda}\right)^{c}\\
+ & =\cap_{\lambda\in\Lambda}O_{\lambda}^{c},
+\end{align*}
+thus, the intersection of a arbitrary collection of closed sets is
+closed. Now let $\left\{ O_{1},O_{2},\ldots,O_{n}\right\} $ be a
+finite collection of open sets and $O=\cap_{k=1}^{n}O_{k}$. Taking
+the complement of both sides yields 
+\begin{align*}
+O^{c} & =\left(\cap_{k=1}^{n}O_{k}\right)^{c}\\
+ & =\cup_{k=1}^{n}O_{k}^{c};
+\end{align*}
+thus, the finite union of closed sets is closed. 
+\end{IEEEproof}
+\end{enumerate}
+\begin{xca}
+\textbf{(Q10)}: Only one of the following three descriptions can be
+realized. Provide an example that illustrates the viable description,
+and explain why the other two cannot exist. \end{xca}
+\begin{enumerate}
+\item A countable set contained in $\left[0,1\right]$ with no limit points. 
+
+\begin{enumerate}
+\item This cannot exist. Since the set is bounded, by the Bolzano-Weierstrass
+theorem, there exists a limit point in the set. 
+\end{enumerate}
+\item A countable set contained in $\left[0,1\right]$ with no isolated
+points. 
+
+\begin{enumerate}
+\item This can exist. Let $A=\left\{ x\in\Q\,:\,x\in\left[0,1\right]\right\} $.
+Since the rational numbers don't have any isolated points, $A$ won't. 
+\end{enumerate}
+\item A set with an uncountable number of isolated points. 
+
+\begin{enumerate}
+\item This cannot exist. Let $A$ be the set and $B=\left\{ x_{\lambda}\,:\,\lambda\in\Lambda\right\} $
+be the set of all of the isolated points of $A$. Then for each $x_{\lambda}$,
+there exists an $\epsilon>0$ such that $V_{\epsilon}\left(x_{\lambda}\right)\cap A=\left\{ x_{\lambda}\right\} $.
+Due to the density or $\R$, there exists at least one rational number
+$q_{\lambda}\in V_{\epsilon}\left(x_{\lambda}\right)$ such that $q_{\lambda}\neq x_{\lambda}$.
+By taking one rational number within the set of each neighborhood,
+$V_{\epsilon}\left(x_{\lambda}\right)$, we can construct the set
+$C=\left\{ q_{\lambda}:\lambda\in\Lambda\right\} $ and the bijection
+$f:C\to A$. Where $f\left(q_{\lambda}\right)=x_{\lambda}$. Since
+$C$ is not an uncountable set, there cannot exist an uncountable
+number of isolate points. 
+\end{enumerate}
+\end{enumerate}
+\begin{xca}
+\textbf{(Q11)}: Do the following.\end{xca}
+\begin{enumerate}
+\item Prove that $\overline{A\cup B}=\overline{A}\cup\overline{B}$.
+
+\begin{IEEEproof}
+This is an equality of sets, so we must show inclusion both ways. 
+
+$\left(\implies\right):$ Suppose $y\in\overline{A\cup B}$, then
+$y\in A\cup B\cup L_{AB}$, with $L_{AB}$ denoting the set of limit
+points of $A\cup B$. Let $L_{A}$ and $L_{B}$ denote the set of
+limit points of $A$ (respectively $B$). Let $x\in L_{AB}$, then
+for an arbitrary $\epsilon-$neighborhood, there is an element $a$
+such that $a\in V_{\epsilon}\left(x\right)\cap\left(A\cup B\right)$
+which is equivalent to 
+\[
+a\in\left(V_{\epsilon}\left(x\right)\cap A\right)\cup\left(V_{\epsilon}\left(x\right)\cap B\right),
+\]
+thus $x$ must be a limit point of $A$ and/or $B$. Which means that
+$x\in L_{A}\cup L_{B}$. Using this fact, we get that 
+\begin{align*}
+y & \in A\cup B\cup L_{AB}\\
+ & \in A\cup B\cup L_{A}\cup L_{B}\\
+ & \in\overline{A}\cup\overline{B}.
+\end{align*}
+Hence, $\overline{A\cup B}\subseteq\overline{A}\cup\overline{B}$. 
+
+$\left(\impliedby\right):$ Suppose $y\in\overline{A}\cup\overline{B}$,
+then $y\in A\cup B\cup L_{A}\cup L_{B}$. Let $x\in L_{A}\cup L_{B}$,
+then given an arbitrary $\epsilon-$neighborhood, there is an element
+$a$ such that $a\in\left(V_{\epsilon}\left(x\right)\cap A\right)\cup\left(V_{\epsilon}\left(x\right)\cap B\right)$
+which is equivalent to 
+\[
+a\in V_{\epsilon}\left(x\right)\cap\left(A\cup B\right),
+\]
+thus $x\in L_{AB}$, So 
+\begin{align*}
+y & \in A\cup B\cup L_{AB}\\
+ & \in\overline{A\cup B}.
+\end{align*}
+Hence $\overline{A\cup B}\supseteq\overline{A}\cup\overline{B}$.
+Since we have shown inclusions for both sides, $\overline{A\cup B}=\overline{A}\cup\overline{B}$.
+\end{IEEEproof}
+\item Does this result about closures extend to infinite unions of sets?
+
+\begin{enumerate}
+\item No. Consider the sets $A_{i}=\left\{ \frac{1}{i}\right\} $ where
+$i\in\N$. Since each $A_{i}$ has only one element, it doesn't contain
+any limit points. Thus $A_{i}=\overline{A}_{i}$, and therefore, 
+\[
+\cup_{i\in\N}\overline{A}_{i}=\left\{ 1,\frac{1}{2},\frac{1}{3},\cdots\right\} .
+\]
+Now consider the set $B=\cup_{i\in\N}A_{i}$, which has a limit point
+$0$. Thus $\overline{B}=B\cup\left\{ 0\right\} $ which is not equivalent
+to $\cup_{i\in\N}\overline{A}_{i}$.
+\end{enumerate}
+\end{enumerate}
+\begin{xca}
+\textbf{(Q12)}: Let $A$ be an uncountable set and let $B$ be the
+set of real numbers that divides $A$ into two uncountable sets; that
+is, $s\in B$ if both $\left\{ x\,:\,x\in A\text{ and }x<s\right\} $
+and $\left\{ x\,:\,x\in A\text{ and }x>s\right\} $ are uncountable.
+Show that $B$ is nonempty and open. \end{xca}
+\begin{IEEEproof}
+Let $X_{r}=\left\{ x\,:\,x\in A\text{ and }x<r\right\} $ and $Y_{r}=\left\{ x\,:\,x\in A\text{ and }x>r\right\} $.
+Let $T_{l}$ be the set of all $r\in\R$ such that $X_{r}$ is countable
+and $T_{u}$ be the set of all $r\in\R$ such that $Y_{r}$ is countable.
+Next, let $t_{l}=\sup\left(T_{l}\right)$ and $t_{u}=\inf\left(T_{u}\right)$.
+Since $X_{t_{l}}$ and $Y_{t_{u}}$ are countable sets, their union
+is countable, thus $A\neq X_{t_{l}}\cup Y_{t_{u}}$ since $A$ is
+uncountable. This means that there is still an uncountable many elements
+of $A$ that are in the interval $\left(t_{l},t_{u}\right)$. Thus
+we see that $t_{l}<t_{u}$. Let $\epsilon>0$, since $t_{l}=\sup\left(T_{l}\right)$
+and $t_{u}=\inf\left(T_{u}\right)$, the sets $X_{t_{l}+\epsilon}$
+and $X_{t_{u}-\epsilon}$ are uncountable. Therefore, let $b\in\left(t_{l},t_{u}\right)$,
+then $X_{b}$ and $Y_{b}$ are uncountable, thus $b\in B$ which means
+that $B$ is not empty. Since this is true for any $b\in\left(t_{l},t_{u}\right)$,
+$B=\left(t_{l},t_{u}\right)$. Which shows that $B$ is open. \end{IEEEproof}
+\begin{xca}
+\textbf{(Q14)}: A dual notation to the closure of a set is the interior
+of a set. The interior of $E$ is denoted $E^{o}$ and is defined
+as 
+\[
+E^{o}=\left\{ x\in E\,:\,\text{there exists }V_{\epsilon}\left(x\right)\subseteq E\right\} .
+\]
+Results about closures and interiors possess a useful symmetry. \end{xca}
+\begin{enumerate}
+\item Show that $E$ is closed if and only if $\overline{E}=E$. Show that
+$E$ is open if and only if $E^{o}=E$. 
+
+\begin{IEEEproof}
+We start by showing that $E$ is closed if and only if $\overline{E}=E$.
+Since this is a biconditional statement, we must prove both ways.
+
+$\left(\implies\right):$ Let $E$ be closed, then $E$ contains all
+of it's limit points. Let $L$ denote the set of the limit points
+of $E$, then $L\subseteq E$. Hence $\overline{E}=E$.
+
+$\left(\impliedby\right):$ Suppose that $\overline{E}=E$. Then all
+of the limit points of $E$ must be contained in $E$. Thus $E$ is
+closed. 
+
+Since both implications are true, $E$ is closed if and only if $\overline{E}=E$. 
+
+Next we show that $E$ is open if and only if $E^{o}=E$. Since this
+is a biconditional statement, we must prove both ways.
+
+$\left(\implies\right):$ Let $E$ be open, then for every $x\in E$,
+there exists $V_{\epsilon}\left(x\right)\subseteq E$. Therefore,
+every $x\in E$ is also an element of $E^{0}$. Since $E^{o}\subseteq E$,
+$E^{o}=E$.
+
+$\left(\impliedby\right):$ Suppose that $E^{o}=E$, then there exists
+a $V_{\epsilon}\left(x\right)\subseteq E$ for every $x\in E$. By
+definition, $E$ is open. 
+\end{IEEEproof}
+\item Show that $\overline{E}^{c}=\left(E^{c}\right)^{o}$, and similarly
+that $\left(E^{o}\right)^{c}=\overline{E^{c}}$.
+
+\begin{IEEEproof}
+We start by showing that $\overline{E}^{c}=\left(E^{c}\right)^{o}$.
+Since this is an equivalent statement between sets, we must show inclusion
+both ways.
+
+$\left(\subseteq\right):$ Let $x\in\overline{E}^{c}$, then $x\notin\overline{E}$.
+In other words, $x\notin E\cup L$ where $L$ is the set of the limit
+points of $E$. That means, for every $x\in E^{c}$, there exists
+an open $\epsilon-$neighborhood such that $V_{\epsilon}\left(x\right)\subseteq E^{c}$.
+This is because $x$ is not a limit point of $E$ so it cannot be
+arbitrarily close to an element of $E$. Therefore, $x\in\left(E^{c}\right)^{o}$.
+
+$\left(\supseteq\right):$ Let $x\in\left(E^{c}\right)^{o}$, then
+for every $x\in E^{c}$, there exists an $\epsilon-$neighborhood
+such that $V_{\epsilon}\left(x\right)\subseteq E^{c}$. Since a neighborhood
+in entirely contained in $E^{c}$, it cannot be a limit point of $E$.
+Thus $x\notin E\cup L$ where $L$ is the set of the limit points
+of $E$. In other words, $x\notin\overline{E}$, thus $x\in\overline{E}^{c}$.
+
+Since both inclusions hold, $\overline{E}^{c}=\left(E^{c}\right)^{o}$.
+
+Next we show that $\left(E^{o}\right)^{c}=\overline{E^{c}}$. Since
+this is an equivalent statement between sets, we must show inclusion
+both ways.
+
+$\left(\subseteq\right):$ Let $x\in\left(E^{o}\right)^{c}$, then
+$x\notin E^{o}$. In other words, there does not exist an $\epsilon-$neighborhood
+such that $V_{\epsilon}\left(x\right)\subseteq E^{o}$. This means
+that $x$ is either an isolated point of $E$ or not in $E$. An isolate
+point of $E$ is a limit point of it's complement since there is a
+point in $E^{c}$ that is arbitrarily close to any isolated point
+of $E$. Thus $x\in E^{c}$ or $x\in L_{c}$ where $L_{c}$ is the
+set of limit points of $E^{c}$. Therefore, $x\in\overline{E^{c}}$
+, which shows that $\left(E^{o}\right)^{c}\subseteq\overline{E^{c}}$.
+
+$\left(\supseteq\right):$ Let $x\in\overline{E^{c}}$, then $x\in E^{c}\cup L_{c}$
+where $L_{c}$ is the set of limit points of $E^{c}$. Since $x\in E^{c}$
+or there exists an $\epsilon-$neighborhood such that there is another
+element $a\in E^{c}$ such that $a\in V_{\epsilon}\left(x\right)$,
+$x$ cannot be an interior point of $E$, thus $x\notin E^{o}$. Hence,
+$x\in\left(E^{o}\right)^{c}$. Therefore, $\left(E^{o}\right)^{c}\supseteq\overline{E^{c}}$. 
+
+Since both inclusions hold, $\left(E^{o}\right)^{c}=\overline{E^{c}}$.\end{IEEEproof}
+\end{enumerate}
+
+\end{document}
