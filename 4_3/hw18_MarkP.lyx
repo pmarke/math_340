@@ -1358,16 +1358,91 @@ For any two elements
 
 \end_inset
 
-Since 
-\begin_inset Formula $\abs c<1$
+Note that for a given interval 
+\begin_inset Formula $g=n-m$
 \end_inset
 
-, as 
+, the term 
+\begin_inset Formula $\abs{y_{n-m}-y_{1}}$
+\end_inset
+
+ is fixed, so let 
+\begin_inset Formula $\abs{y_{n-m}-y_{1}}=M$
+\end_inset
+
+.
+ Thus we get 
+\begin_inset Formula 
+\[
+\abs{y_{n}-y_{m}}\leq c^{m}\abs{y_{n-m}-y_{1}}.
+\]
+
+\end_inset
+
+Since as 
 \begin_inset Formula $m\to\infty$
 \end_inset
 
 , 
 \begin_inset Formula $c^{m}\to0$
+\end_inset
+
+, as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+ as the same rate as 
+\begin_inset Formula $m\to\infty$
+\end_inset
+
+ (i.e.
+ so that 
+\begin_inset Formula $g$
+\end_inset
+
+ is constant), given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, we can find an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that when 
+\begin_inset Formula $m>N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+c^{m}M<\epsilon
+\]
+
+\end_inset
+
+which means that 
+\begin_inset Formula 
+\[
+\abs{y_{n}-y_{m}}<\epsilon.
+\]
+
+\end_inset
+
+Thus, 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+ Of course this value of 
+\begin_inset Formula $N$
+\end_inset
+
+ is dependent on the value of 
+\begin_inset Formula $g$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon$
 \end_inset
 
 .

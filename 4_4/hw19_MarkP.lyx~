@@ -1100,32 +1100,12 @@ for some
 \begin_inset Formula 
 \begin{align*}
 \abs{\sqrt{x}-\sqrt{y}} & \leq M\abs{\sqrt{x}+\sqrt{y}}\abs{\sqrt{x}-\sqrt{y}}\\
-1 & \leq M\abs{\sqrt{x}+\sqrt{y}}.
+1 & \leq M\abs{\sqrt{x}+\sqrt{y}}
 \end{align*}
 
 \end_inset
 
-For this inequality to hold for when 
-\begin_inset Formula $x$
-\end_inset
 
- and 
-\begin_inset Formula $y$
-\end_inset
-
- are arbitrarily small, 
-\begin_inset Formula $M$
-\end_inset
-
- would have to be arbitrarily big, i.e.
- unbounded.
- Thus, no 
-\begin_inset Formula $M$
-\end_inset
-
- exists.
- Therefore, not all uniformly continuous functions are Lipschitz.
- 
 \end_layout
 
 \end_deeper
