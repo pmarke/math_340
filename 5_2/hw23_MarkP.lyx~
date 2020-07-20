@@ -1,0 +1,421 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 23 Section 5.2
+\end_layout
+
+\begin_layout After Title Text
+Exercises: 7,8,9,11,12
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+07/20/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q7)
+\series default
+: Let 
+\begin_inset Formula 
+\[
+g_{a}\left(x\right)=\begin{cases}
+x^{a}\sin\left(1/x\right) & \text{if \ensuremath{x\neq0}}\\
+0 & \text{if x=0}
+\end{cases}.
+\]
+
+\end_inset
+
+Find a particular (potentially noninterger value) for 
+\begin_inset Formula $a$
+\end_inset
+
+ so that 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g_{a}$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $\R$
+\end_inset
+
+ but such that 
+\begin_inset Formula $g'_{a}$
+\end_inset
+
+ is unbounded on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Differentiating 
+\begin_inset Formula $x^{a}\sin\left(1/x\right)$
+\end_inset
+
+ gives us 
+\begin_inset Formula 
+\[
+ax^{a-1}\sin\left(1/x\right)-x^{a-2}\cos\left(1/x\right),
+\]
+
+\end_inset
+
+which gets large on the interval 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ for any 
+\begin_inset Formula $a<2$
+\end_inset
+
+.
+ Recall from exercise (5.2.5) that 
+\begin_inset Formula $x^{a}$
+\end_inset
+
+ is differentiable as long as 
+\begin_inset Formula $a>1$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\sin\left(1/x\right)$
+\end_inset
+
+ is differentiable everywhere, the function 
+\begin_inset Formula 
+\[
+x^{a}\sin\left(1/x\right)
+\]
+
+\end_inset
+
+is differentiable as long as 
+\begin_inset Formula $a>1$
+\end_inset
+
+.
+ Thus, let 
+\begin_inset Formula $a\in\left(1,2\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $g_{a}\left(x\right)$
+\end_inset
+
+ is differentiable but unbounded on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $g_{a}$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $\R$
+\end_inset
+
+ with 
+\begin_inset Formula $g'_{a}$
+\end_inset
+
+ continuous but not differentiable at 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+In order to have 
+\begin_inset Formula $g_{a}$
+\end_inset
+
+ to be differentiable on 
+\begin_inset Formula $\R$
+\end_inset
+
+ with 
+\begin_inset Formula $g'_{a}$
+\end_inset
+
+ continuous, we need 
+\begin_inset Formula $a>2$
+\end_inset
+
+.
+ Recall 
+\begin_inset Formula 
+\[
+g'_{a}\left(x\right)=ax^{a-1}\sin\left(1/x\right)-x^{a-2}\cos\left(1/x\right).
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $g'_{a}$
+\end_inset
+
+ to be differentiable, we need 
+\begin_inset Formula $ax^{a-1}\sin\left(1/x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{a-2}\cos\left(1/x\right)$
+\end_inset
+
+ to be differentiable at 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\left(ax^{a-1}\sin\left(1/x\right)\right)'=a\left(a-1\right)x^{a-2}\sin\left(1/x\right)-ax^{a-3}\cos\left(1/x\right)
+\]
+
+\end_inset
+
+which is not differentiable at 
+\begin_inset Formula $a<3$
+\end_inset
+
+.
+ So let 
+\begin_inset Formula $a=2.5$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $g_{a}$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $\R$
+\end_inset
+
+ with 
+\begin_inset Formula $g'_{a}$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $\R$
+\end_inset
+
+, but such that 
+\begin_inset Formula $g_{a}''$
+\end_inset
+
+ is not continuous at zero.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+In order for 
+\begin_inset Formula $g'_{a}$
+\end_inset
+
+ to be differentiable on 
+\begin_inset Formula $\R$
+\end_inset
+
+, we need 
+\begin_inset Formula $a>4$
+\end_inset
+
+, since 
+\begin_inset Formula 
+\[
+\left(x^{a-2}\cos\left(1/x\right)\right)'=\left(a-2\right)x^{a-3}\cos\left(1/x\right)+x^{a-4}\sin\left(1/x\right).
+\]
+
+\end_inset
+
+Thus, let 
+\begin_inset Formula $a=5$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+g'_{a}\left(x\right)=\left(9x^{3}-x\right)\sin\left(1/x\right)-\left(x^{3}+3x^{2}\right)\cos\left(1/x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q8)
+\series default
+:
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1199 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 22 Section 5.2
+\end_layout
+
+\begin_layout After Title Text
+Exercises: 2,3,4,5,6
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+07/20/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q2)
+\series default
+: Exactly one of the following requests is impossible.
+ Decide which it is, and provide examples for the other three.
+ In each case, let's assume the functions are defined on all of 
+\begin_inset Formula $\R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Functions 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ not differentiable at zero but where 
+\begin_inset Formula $fg$
+\end_inset
+
+ is differentiable at zero.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Possible.
+ Let 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+2 & \text{if \ensuremath{x\geq0}}\\
+\frac{1}{2} & \text{else}
+\end{cases},
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+g\left(x\right)=\begin{cases}
+\frac{1}{2} & \text{if \ensuremath{x\geq0}}\\
+2 & \text{else}
+\end{cases},
+\]
+
+\end_inset
+
+be two piecewise functions not continuous at 
+\begin_inset Formula $0$
+\end_inset
+
+, thus they are not differentiable at 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ However, 
+\begin_inset Formula 
+\[
+fg=2,
+\]
+
+\end_inset
+
+which is differentiable.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A function 
+\begin_inset Formula $f$
+\end_inset
+
+ not differentiable at zeros and a function 
+\begin_inset Formula $g$
+\end_inset
+
+ differentiable at zero where 
+\begin_inset Formula $fg$
+\end_inset
+
+ is differentiable at zero.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Possible.
+ Let
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+2 & \text{if \ensuremath{x\geq0}}\\
+\frac{1}{2} & \text{else}
+\end{cases},
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula $g\left(x\right)=0$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(x\right)g\left(x\right)=0$
+\end_inset
+
+ which is differentiable everywhere.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A function 
+\begin_inset Formula $f$
+\end_inset
+
+ not differentiable at zero and a function 
+\begin_inset Formula $g$
+\end_inset
+
+ differentiable at zero where 
+\begin_inset Formula $f+g$
+\end_inset
+
+ is differentiable at zero.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Not possible.
+ According to the Algebraic Differentiability Theorem, since 
+\begin_inset Formula $g$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(f+g\right)$
+\end_inset
+
+ are differentiable at zero, the function 
+\begin_inset Formula $\left(\left(f+g\right)-g\right)$
+\end_inset
+
+ is also differentiable; however, 
+\begin_inset Formula 
+\[
+\left(\left(f+g\right)-g\right)=f,
+\]
+
+\end_inset
+
+which 
+\begin_inset Formula $f$
+\end_inset
+
+ is not differentiable.
+ This is a contradiction, and thus the request is impossible.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A function 
+\begin_inset Formula $f$
+\end_inset
+
+ differentiable at zero but not differentiable at any other point.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Possible.
+ Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be define as 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+x & \text{if \ensuremath{x\in\Q}}\\
+0 & \text{else}
+\end{cases}.
+\]
+
+\end_inset
+
+This function is only continuous at 
+\begin_inset Formula $x=0$
+\end_inset
+
+, so it can't be differentiable anywhere else.
+ To show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $0$
+\end_inset
+
+, we take
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+f'\left(0\right)=\lim_{x\to0}f\left(x\right)=\lim_{x\to0}\begin{cases}
+x & \text{if \ensuremath{x\in\Q}}\\
+0 & \text{else}
+\end{cases}=0
+\]
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $f'\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q3)
+\series default
+: Complete the following.
+\end_layout
+
+\begin_layout Enumerate
+Use definition 5.2.1 to produce the proper formula for the derivative 
+\begin_inset Formula $h\left(x\right)=\frac{1}{x},$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+h^{'}\left(c\right)=\lim_{x\to c}\,\frac{\frac{1}{x}-\frac{1}{c}}{x-c} & =\lim_{x\to c}\,\frac{\frac{c-x}{xc}}{x-c}\\
+ & =\lim_{x\to c}\,\frac{-\left(x-c\right)}{xc\left(x-c\right)}\\
+ & =\lim_{x\to c}\,-\frac{1}{xc}\\
+ & =-\frac{1}{c^{2}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Combine the result in part (a) with the Chain Rule to supply a proof for
+ part (iv) of Theorem 5.2.4
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose that 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are functioned defined on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+ and that both are differentiable at some point 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, 
+\begin_inset Formula $g\left(c\right)\neq0$
+\end_inset
+
+, and let 
+\begin_inset Formula $h\left(x\right)=\frac{1}{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $h'\left(x\right)=-\frac{1}{x^{2}}$
+\end_inset
+
+ then 
+\begin_inset Formula 
+\begin{align*}
+\left(f/g\right)' & =\left(fh\left(g\right)\right)'\\
+ & =f'h\left(g\right)+fh'\left(g\right)g'\\
+ & =f'/g-f/g^{2}g'\\
+ & =\frac{f'g-fg'}{g^{2}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Supply a direct proof of Theorem 5.2.4 (iv) by algebraically manipulating
+ the difference quotient for 
+\begin_inset Formula $\left(f/g\right)$
+\end_inset
+
+ in a style similar to the proof of Theorem 5.2.4 (iii).
+\end_layout
+
+\begin_layout Proof
+We suppose that 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are functioned defined on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+ and that both are differentiable at some point 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $g\left(c\right)\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\left(f/g\right)' & =\lim_{x\to c}\frac{\frac{f\left(x\right)}{g\left(x\right)}-\frac{f\left(c\right)}{g\left(c\right)}}{x-c}\\
+ & =\lim_{x\to c}\frac{\frac{g\left(c\right)f\left(x\right)-g\left(x\right)f\left(c\right)}{g\left(x\right)g\left(c\right)}}{x-c}\\
+ & =\lim_{x\to c}\frac{g\left(c\right)f\left(x\right)-g\left(x\right)f\left(c\right)}{g\left(x\right)g\left(c\right)\left(x-c\right)}\\
+ & =\lim_{x\to c}\frac{g\left(c\right)f\left(x\right)-g\left(x\right)f\left(c\right)-g\left(c\right)f\left(c\right)+g\left(c\right)f\left(c\right)}{g\left(x\right)g\left(c\right)\left(x-c\right)}\\
+ & =\lim_{x\to c}\frac{g\left(c\right)\left(f\left(x\right)-f\left(c\right)\right)-f\left(c\right)\left(g\left(x\right)-g\left(c\right)\right)}{g\left(x\right)g\left(c\right)\left(x-c\right)}\\
+ & =\lim_{x\to c}\frac{g\left(c\right)}{g\left(x\right)g\left(c\right)}\frac{\left(f\left(x\right)-f\left(c\right)\right)}{\left(x-c\right)}-\lim_{x\to c}\frac{f\left(c\right)}{g\left(x\right)g\left(c\right)}\frac{\left(g\left(x\right)-g\left(c\right)\right)}{\left(x-c\right)}\\
+ & =\lim_{x\to c}\frac{g\left(c\right)}{g\left(x\right)g\left(c\right)}f'\left(c\right)-\lim_{x\to c}\frac{f\left(c\right)}{g\left(x\right)g\left(c\right)}g'\left(c\right)\\
+ & =\frac{g\left(c\right)f'\left(c\right)-f\left(c\right)g'\left(c\right)}{g\left(c\right)^{c}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Follow these steps to provide a slightly modified proof of the Chain rule.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Show that a function 
+\begin_inset Formula $h:A\to\R$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ if and only if there exists a function 
+\begin_inset Formula $l:A\to\R$
+\end_inset
+
+ which is continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+ and satisfies 
+\begin_inset Formula 
+\[
+h\left(x\right)-h\left(a\right)=l\left(x\right)\left(x-a\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+This is a biconditional statement so we must prove both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $h:A\to\R$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+h'\left(a\right)=\lim_{x\to a}\,\frac{h\left(x\right)-h\left(a\right)}{x-a},
+\]
+
+\end_inset
+
+exists and 
+\begin_inset Formula $h$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ We can construct the function 
+\begin_inset Formula 
+\[
+l\left(x\right)=\frac{h\left(x\right)-h\left(a\right)}{x-a},
+\]
+
+\end_inset
+
+such that 
+\begin_inset Formula $h'\left(a\right)=\lim_{x\to c}l\left(x\right)$
+\end_inset
+
+ which implies that 
+\begin_inset Formula $l\left(x\right)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ We can then multiply 
+\begin_inset Formula $l\left(x\right)$
+\end_inset
+
+ by 
+\begin_inset Formula $\left(x-a\right)$
+\end_inset
+
+ to get 
+\begin_inset Formula 
+\begin{align*}
+l\left(x\right)\left(x-a\right) & =\frac{h\left(x\right)-h\left(a\right)}{\left(x-a\right)}\left(x-a\right)\\
+ & =h\left(x\right)-h\left(a\right).
+\end{align*}
+
+\end_inset
+
+thus, if 
+\begin_inset Formula $h$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $l\left(x\right)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $h\left(x\right)-h\left(a\right)=l\left(x\right)\left(x-a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We suppose directly that 
+\begin_inset Formula $l:A\to\R$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+ and satisfies 
+\begin_inset Formula 
+\[
+h\left(x\right)-h\left(a\right)=l\left(x\right)\left(x-a\right).
+\]
+
+\end_inset
+
+it is trivial that 
+\begin_inset Formula $g\left(x\right)=x-a$
+\end_inset
+
+ is also continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $l\left(x\right)$
+\end_inset
+
+ are continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+, then 
+\begin_inset Formula $l\left(x\right)g\left(x\right)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+ which implies that the 
+\begin_inset Formula $\lim_{x\to c}\,l\left(x\right)/g\left(x\right)$
+\end_inset
+
+ exists and is 
+\begin_inset Formula 
+\[
+\lim_{x\to a}\frac{l\left(x\right)}{g\left(x\right)}=\lim_{x\to a}\frac{h\left(x\right)-h\left(a\right)}{\left(x-a\right)}
+\]
+
+\end_inset
+
+which means that 
+\begin_inset Formula $h$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use this criterion for differentiability (in both directions) to prove Theorem
+ 5.2.5.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $f:A\to\R$
+\end_inset
+
+ and 
+\begin_inset Formula $g:B\to\R$
+\end_inset
+
+ satisfy 
+\begin_inset Formula $f\left(A\right)\subseteq B$
+\end_inset
+
+ so that the composition 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ is defined.
+ We also suppose that 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $g\left(y\left(c\right)\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $f\left(c\right)$
+\end_inset
+
+, there exists a continuous function at 
+\begin_inset Formula $f\left(c\right)$
+\end_inset
+
+, 
+\begin_inset Formula $l\left(y\right)$
+\end_inset
+
+, such that
+\begin_inset Formula 
+\[
+g\left(y\right)-g\left(f\left(c\right)\right)=l\left(y\right)\left(y-f\left(c\right)\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $y\in B$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $y$
+\end_inset
+
+ is any arbitrary element of 
+\begin_inset Formula $B$
+\end_inset
+
+, we can choose an element 
+\begin_inset Formula $f\left(t\right)\in f\left(A\right)$
+\end_inset
+
+, with 
+\begin_inset Formula $t\in A$
+\end_inset
+
+, in order to get 
+\begin_inset Formula 
+\[
+g\left(f\left(t\right)\right)-g\left(f\left(c\right)\right)=l\left(f\left(t\right)\right)\left(f\left(t\right)-f\left(c\right)\right).
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $t\neq c$
+\end_inset
+
+, then we can divide both sides by 
+\begin_inset Formula $t-c$
+\end_inset
+
+ to get 
+\begin_inset Formula 
+\[
+\frac{g\left(f\left(t\right)\right)-g\left(f\left(c\right)\right)}{t-c}=\frac{l\left(f\left(t\right)\right)\left(f\left(t\right)-f\left(c\right)\right)}{t-c},
+\]
+
+\end_inset
+
+taking the limit at 
+\begin_inset Formula $t\to c$
+\end_inset
+
+ gives us 
+\begin_inset Formula 
+\[
+\left(g\circ f\right)'\left(c\right)=g'\left(f\left(c\right)\right)f'\left(c\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: Let 
+\begin_inset Formula 
+\[
+f_{a}\left(x\right)=\begin{cases}
+x^{a} & \text{if \ensuremath{x>0}}\\
+0 & \text{if \ensuremath{x\leq0}}
+\end{cases}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For which values of 
+\begin_inset Formula $a$
+\end_inset
+
+ is 
+\begin_inset Formula $f$
+\end_inset
+
+ continuous at zero.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous for all values of 
+\begin_inset Formula $a>0$
+\end_inset
+
+ .
+ If 
+\begin_inset Formula $a>0$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\lim_{x\to0^{+}}x^{a}=0,
+\]
+
+\end_inset
+
+however, if 
+\begin_inset Formula $a=0$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{x\to0^{+}}x^{0}=1$
+\end_inset
+
+ which is not zero.
+ And, if 
+\begin_inset Formula $a<0$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{x\to0^{+}}x^{a}$
+\end_inset
+
+ does not exist.
+ Thus 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous for all values of 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+For which values of 
+\begin_inset Formula $a$
+\end_inset
+
+ is 
+\begin_inset Formula $f$
+\end_inset
+
+ differentiable at zero? In this case, is the derivative function continuous?
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable for all 
+\begin_inset Formula $a>1$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+f'=\begin{cases}
+\lim_{x\to0}\frac{0-0}{x-0} & \text{if \ensuremath{x\leq0}}\\
+\lim_{x\to0}\frac{x^{a}-0}{x-0} & \text{if \ensuremath{x>0}}
+\end{cases}.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\lim_{x\to0}\frac{0}{x}=1$
+\end_inset
+
+ when 
+\begin_inset Formula $x\leq0$
+\end_inset
+
+, we only have left to verify when 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\lim_{x\to0}\frac{x^{a}}{x}=\lim_{x\to0}\,x^{a-1}.
+\]
+
+\end_inset
+
+There are three cases to consider.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose that 
+\begin_inset Formula $a\leq1$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{x\to0}\,x^{a-1}$
+\end_inset
+
+ doesn't exist since 
+\begin_inset Formula $f_{a}$
+\end_inset
+
+ is not continuous for all values of 
+\begin_inset Formula $a\leq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Case
+Suppose 
+\begin_inset Formula $a>1$
+\end_inset
+
+, then 
+\begin_inset Formula $x-a>0$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\lim_{x\to0}\,x^{a-1}=0.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+For which values of 
+\begin_inset Formula $a$
+\end_inset
+
+ is 
+\begin_inset Formula $f$
+\end_inset
+
+ twice-differentiable?
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+It a similar way to the previous proof, it can be shown that if 
+\begin_inset Formula $a>2$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is twice differentiable.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q6)
+\series default
+: Let 
+\begin_inset Formula $g$
+\end_inset
+
+ be defined on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+, and let 
+\begin_inset Formula $c\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Explain why 
+\begin_inset Formula $g'\left(c\right)$
+\end_inset
+
+ in Definition 5.2.1 could have been given by 
+\begin_inset Formula 
+\[
+g'\left(c\right)=\lim_{h\to0}\frac{g\left(c+h\right)-g\left(c\right)}{h}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+According to definition 5.2.1,
+\begin_inset Formula 
+\[
+g'\left(c\right)=\lim_{x\to c}\frac{g\left(x\right)-g\left(c\right)}{x-c}.
+\]
+
+\end_inset
+
+By using a change of variables 
+\begin_inset Formula $x=c+h$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+g'\left(c\right) & =\lim_{c+h\to c}\frac{g\left(c+h\right)-g\left(c\right)}{c+h-c}\\
+ & =\lim_{h\to0}\frac{g\left(c+h\right)-g\left(c\right)}{h}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Assume 
+\begin_inset Formula $A$
+\end_inset
+
+ is open.
+ If 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, show
+\begin_inset Formula 
+\[
+g'\left(c\right)=\lim_{h\to0}\frac{g\left(c+h\right)-g\left(c-h\right)}{2h}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $A$
+\end_inset
+
+ is open and that 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+.
+ Then there exists a neighborhood 
+\begin_inset Formula $V_{\epsilon}\left(c\right)\in A$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $h$
+\end_inset
+
+ be chosen such that 
+\begin_inset Formula $c+h,c-h\in V_{\epsilon}\left(c\right)$
+\end_inset
+
+.
+ Thus we can take the limit
+\begin_inset Formula 
+\[
+\lim_{h\to0}\frac{g\left(c+h\right)-g\left(c-h\right)}{2h},
+\]
+
+\end_inset
+
+which is equivalent to 
+\begin_inset Formula 
+\begin{align*}
+\lim_{h\to0}\frac{g\left(c+h\right)-g\left(c-h\right)+g\left(c\right)-g\left(c\right)}{2h} & =\lim_{h\to0}\frac{g\left(c+h\right)-g\left(c\right)}{2h}+\lim_{h\to0}\frac{g\left(c\right)-g\left(c-h\right)}{2h}\\
+ & =\frac{1}{2}\left(\lim_{h\to0}\frac{g\left(c+h\right)-g\left(c\right)}{h}+\lim_{h\to0}\frac{g\left(c\right)-g\left(c-h\right)}{h}\right)\\
+ & =\frac{1}{2}\left(g'\left(c\right)+\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
