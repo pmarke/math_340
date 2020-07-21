@@ -1,0 +1,1689 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Midterm 2 
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+07/21/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Prove that the function 
+\begin_inset Formula $f:\left[0,\infty\right)\to\R$
+\end_inset
+
+ defined by 
+\begin_inset Formula $f\left(x\right)=\sqrt{x}$
+\end_inset
+
+ is continuous at every 
+\begin_inset Formula $c>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We will show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[1,\infty\right)$
+\end_inset
+
+, and thereby continuous on 
+\begin_inset Formula $\left[0,\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left[0,1\right]:$
+\end_inset
+
+ Given an 
+\begin_inset Formula $\epsilon_{1}>0$
+\end_inset
+
+, let 
+\begin_inset Formula $\delta_{1}=2\epsilon_{1}$
+\end_inset
+
+, then when 
+\begin_inset Formula $\abs{x-c}<\delta_{1},$
+\end_inset
+
+ we get by manipulation
+\begin_inset Formula 
+\begin{align*}
+\abs{x-c} & =\abs{\sqrt{x}-\sqrt{c}}\abs{\sqrt{x}+\sqrt{c}}\\
+ & \leq\abs{\sqrt{x}-\sqrt{c}}\abs 2,
+\end{align*}
+
+\end_inset
+
+which means that 
+\begin_inset Formula 
+\begin{align*}
+2\abs{\sqrt{x}-\sqrt{c}} & <\delta_{1}\\
+2\abs{\sqrt{x}-\sqrt{c}} & <2\epsilon_{1}\\
+\abs{\sqrt{x}-\sqrt{c}} & <\epsilon_{1},
+\end{align*}
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous (in fact uniformly continuous) on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left[1,\infty\right):$
+\end_inset
+
+ Given an 
+\begin_inset Formula $\epsilon_{2}>0$
+\end_inset
+
+, let 
+\begin_inset Formula $\delta_{2}=\epsilon_{2}$
+\end_inset
+
+, then when 
+\begin_inset Formula $\abs{x-c}<\delta_{2}$
+\end_inset
+
+, we get by manipulation
+\begin_inset Formula 
+\begin{align*}
+\abs{\sqrt{x}-\sqrt{c}} & =\frac{\abs{x-c}}{\sqrt{x}+\sqrt{c}}\\
+ & <\frac{\abs{x-c}}{\sqrt{c}}\\
+ & <\abs{x-c}\\
+ & <\delta_{2}\\
+ & =\epsilon_{2},
+\end{align*}
+
+\end_inset
+
+which shows that 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous (in fact uniformly continuous) on 
+\begin_inset Formula $\left[1,\infty\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[1,\infty\right)$
+\end_inset
+
+, it is uniformly continuous on 
+\begin_inset Formula $\left[0,\infty\right)$
+\end_inset
+
+, and thus continuous on 
+\begin_inset Formula $\left[0,\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+By directly using the definition of the limit of a sequence (without using
+ any theorems about limits) show that if 
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=3$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{n\to\infty}\frac{x_{n}+2}{x_{n}}=\frac{5}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=3$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N_{1}\in\N$
+\end_inset
+
+, such that whenever 
+\begin_inset Formula $n>N_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\abs{x_{n}-3}<\epsilon$
+\end_inset
+
+, which implies that there exists an 
+\begin_inset Formula $N_{2}\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n>N_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\abs{x_{n}-3}<1$
+\end_inset
+
+.
+ This is equivalent to 
+\begin_inset Formula 
+\[
+2<x_{n}<4.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+By choosing 
+\begin_inset Formula $N=\max\left(N_{1},N_{2}\right)$
+\end_inset
+
+, whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{x_{n}+2}{x_{n}}-\frac{5}{3}} & =\abs{\frac{3x_{n}+6-5x_{n}}{3x_{n}}}\\
+ & =2\abs{\frac{x_{n}-3}{3x_{n}}}\\
+ & \leq2\frac{\abs{x_{n}-3}}{3\cdot2}\quad\text{Since \ensuremath{N\leq N_{2}}}\\
+ & <\abs{x_{n}-3}\\
+ & <\epsilon\quad\text{Since \ensuremath{N\leq N_{1}.}}
+\end{align*}
+
+\end_inset
+
+Thus if 
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=3$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim_{n\to\infty}\frac{x_{n}+2}{x_{n}}=\frac{5}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+By directly using the definition of a Cauchy sequence (without using theorems
+ about Cauchy sequences) show that if 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence satisfying 
+\begin_inset Formula $-5<x_{n}<-2$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\left(\frac{x_{n}^{2}}{1+x_{n}}\right)
+\]
+
+\end_inset
+
+is also a Cauchy sequence.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence satisfying 
+\begin_inset Formula $-5<x_{n}<-2$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n,m>N$
+\end_inset
+
+, 
+\begin_inset Formula $\abs{x_{n}-x_{m}}<\frac{\epsilon}{35}$
+\end_inset
+
+.
+ Now to show that 
+\begin_inset Formula $\left(\frac{x_{n}^{2}}{1+x_{n}}\right)$
+\end_inset
+
+ is a Cauchy sequence, we use the definition of a Cauchy sequence.
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{x_{n}^{2}}{1+x_{n}}-\frac{x_{m}^{2}}{1+x_{m}}} & =\abs{\frac{x_{n}^{2}+x_{n}^{2}x_{m}-x_{m}^{2}-x_{m}^{2}x_{n}}{\left(1+x_{n}\right)\left(1+x_{n}\right)}}\\
+ & =\abs{\frac{\left(x_{n}-x_{m}\right)\left(x_{n}+x_{m}\right)-x_{n}x_{m}\left(x_{n}-x_{m}\right)}{\left(1+x_{n}\right)\left(1+x_{m}\right)}}\\
+ & \leq\abs{\frac{\abs{\left(x_{n}-x_{m}\right)\left(x_{n}+x_{m}\right)}+\abs{x_{n}x_{m}\left(x_{n}+x_{m}\right)}}{\left(1+x_{n}\right)\left(1+x_{m}\right)}}\quad\text{Since 2<\abs x<5}\\
+ & \leq35\abs{x_{n}-x_{m}}\\
+ & <\frac{35\epsilon}{35}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore, 
+\begin_inset Formula $\left(\frac{x_{n}^{2}}{1+x_{n}}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+By directly using the 
+\begin_inset Formula $\epsilon-\delta$
+\end_inset
+
+ definition of the limit show that 
+\begin_inset Formula 
+\[
+\lim_{x\to2}\frac{1}{x^{3}}=\frac{1}{8}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $\delta=\min\left(1,\frac{8}{19}\epsilon\right)$
+\end_inset
+
+, then when 
+\begin_inset Formula $0<\abs{x-2}<\delta$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $\abs{x-2}<1$
+\end_inset
+
+ which is equivalent to 
+\begin_inset Formula 
+\[
+1<x<3.
+\]
+
+\end_inset
+
+Using the definition of the limit, we get 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{1}{x^{3}}-\frac{1}{8}} & =\abs{\frac{x^{3}-8}{8x^{3}}}\\
+ & =\abs{\frac{\left(x-2\right)\left(x^{2}+2x+4\right)}{8x^{3}}}\\
+ & \leq\frac{\abs{x-2}\abs{3^{2}+2\cdot3+4}}{8\cdot1^{3}}\\
+ & =\frac{19}{8}\abs{x-2}\\
+ & <\frac{19}{8}\frac{8\epsilon}{19}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore, 
+\begin_inset Formula $\lim_{x\to2}\frac{1}{x^{3}}=\frac{1}{8}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+By directly using the 
+\begin_inset Formula $\epsilon-\delta$
+\end_inset
+
+ definition of the limit show that 
+\begin_inset Formula 
+\[
+\lim_{x\to2}\frac{x}{x^{2}-1}=\frac{2}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $\delta=\min\left(\frac{1}{2},\frac{5}{4}\epsilon\right)$
+\end_inset
+
+, then when 
+\begin_inset Formula $0<\abs{x-2}<\delta$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $\abs{x-2}<\frac{1}{2}$
+\end_inset
+
+ which implies 
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{2} & <x-1<\frac{3}{2},\\
+\frac{5}{2} & <x+1<\frac{7}{2},
+\end{align*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\[
+4<2x+1<6.
+\]
+
+\end_inset
+
+Using the definition of the limit, we get 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{x}{x^{2}-1}-\frac{2}{3}} & =\abs{\frac{3x-2x^{2}+2}{3\left(x^{2}-1\right)}}\\
+ & =\abs{\frac{\left(x-2\right)\left(2x+1\right)}{3\left(x-1\right)\left(x-2\right)}}\\
+ & \leq\frac{\abs{x-2}6}{3\cdot\frac{1}{2}\cdot\frac{5}{2}}\\
+ & =\frac{4}{5}\abs{x-2}\\
+ & <\frac{4}{5}\cdot\frac{5}{4}\epsilon\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore, 
+\begin_inset Formula $\lim_{x\to2}\frac{x}{x^{2}-1}=\frac{2}{3}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Prove exactly one of the following theorem:
+\end_layout
+
+\begin_layout Exercise
+I am choosing the nested compact interval property.
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $K_{i}$
+\end_inset
+
+ is a compact set with 
+\begin_inset Formula $i\in\N$
+\end_inset
+
+, and that 
+\begin_inset Formula 
+\[
+K_{1}\supseteq K_{2}\supseteq K_{3}\supseteq\cdots
+\]
+
+\end_inset
+
+is a nested sequence of nonempty compact set.
+ Since 
+\begin_inset Formula $K_{i}$
+\end_inset
+
+ is compact, any sequence in 
+\begin_inset Formula $K_{i}$
+\end_inset
+
+ contains a subsequence that converges to a point in that set.
+ Since all of the sets are nonempty, we can construct a sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $x_{n}\in K_{n}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left(x_{n}\right)\subseteq K_{1}$
+\end_inset
+
+, it must contain a subsequence 
+\begin_inset Formula $\left(x_{n_{k}}\right)$
+\end_inset
+
+ that converges to a point 
+\begin_inset Formula $c\in K_{1}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is contained in any 
+\begin_inset Formula $K_{i}$
+\end_inset
+
+ except for a finite number of terms at the beginning of the sequence, (we
+ will refer to this sequence as 
+\begin_inset Formula $\left(x_{i}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(x_{i}\right)\subseteq\left(x_{n}\right)$
+\end_inset
+
+), then 
+\begin_inset Formula $\left(x_{i}\right)$
+\end_inset
+
+ must have a convergent subsequence 
+\begin_inset Formula $\left(x_{i_{k}}\right)$
+\end_inset
+
+ that converges to the point 
+\begin_inset Formula $c\in K_{i}$
+\end_inset
+
+.
+ Since the sequence 
+\begin_inset Formula $\left(x_{i}\right)$
+\end_inset
+
+ contains an infinite number of terms and 
+\begin_inset Formula $i$
+\end_inset
+
+ is arbitrary, it must be that the limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ is an element of every set 
+\begin_inset Formula $K_{i}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula 
+\[
+\cap_{n=1}^{\infty}K_{n}
+\]
+
+\end_inset
+
+ is not empty since it contains at least the point 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Assume that 
+\begin_inset Formula $f:\left(a,c\right)\to\R$
+\end_inset
+
+ is uniformly continuous on each of the intervals 
+\begin_inset Formula $\left(a,b\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[b,c\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $a<b<c$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly continuous on the interval 
+\begin_inset Formula $\left(a,c\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $x\in\left(a,b\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in\left[b,c\right)$
+\end_inset
+
+.
+ We assume directly that 
+\begin_inset Formula $f:\left(a,c\right)\to\R$
+\end_inset
+
+ is uniformly continuous on each of the intervals 
+\begin_inset Formula $\left(a,b\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[b,c\right)$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta_{1},\delta_{2}$
+\end_inset
+
+ such that when 
+\begin_inset Formula 
+\[
+\abs{x-b}<\delta_{1},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{f\left(x\right)-f\left(b\right)}<\frac{\epsilon}{2},
+\]
+
+\end_inset
+
+and when 
+\begin_inset Formula 
+\[
+\abs{b-y}<\delta_{2},
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula 
+\[
+\abs{f\left(b\right)-f\left(y\right)}<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Thus, given any 
+\begin_inset Formula $k,m\in\left(a,c\right)$
+\end_inset
+
+, by letting 
+\begin_inset Formula $\delta=\min\left(\delta_{1},\delta_{2}\right)$
+\end_inset
+
+ we have three cases to consider.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Suppose 
+\begin_inset Formula $k,m\in\left(a,b\right]$
+\end_inset
+
+, then it is uniformly continuous by our assumption.
+\end_layout
+
+\begin_layout Case
+Suppose 
+\begin_inset Formula $k,m\in\left[b,c\right)$
+\end_inset
+
+, then it is uniformly continuous by our assumption.
+\end_layout
+
+\begin_layout Case
+Suppose, without loss in generality, that 
+\begin_inset Formula $k\in\left(a,b\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $m\in\left[b,c\right)$
+\end_inset
+
+, then when 
+\begin_inset Formula $\abs{k-m}<\delta$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{k-b}<\delta_{1}<\delta
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\abs{b-m}<\delta_{2}<\delta
+\]
+
+\end_inset
+
+thus
+\begin_inset Formula 
+\[
+\abs{f\left(k\right)-f\left(b\right)}<\frac{\epsilon}{2},
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\abs{f\left(b\right)-f\left(m\right)}<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+Adding them together and using the triangle inequality we get that 
+\begin_inset Formula 
+\[
+\abs{f\left(k\right)-f\left(m\right)}<\epsilon.
+\]
+
+\end_inset
+
+Therefore, 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Prove that the function 
+\begin_inset Formula $f:\R\to\R$
+\end_inset
+
+ given by...
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename X.jpg
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Let 
+\begin_inset Formula $F\subsetneq\R$
+\end_inset
+
+ be a nonempty closed set.
+ Let 
+\begin_inset Formula $F^{c}=\left\{ x\in\R\,:\,x\notin F\right\} $
+\end_inset
+
+ be the complement of 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $F^{c}$
+\end_inset
+
+ is open.
+ 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename X.jpg
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Show that 
+\begin_inset Formula $f\left(x\right)=\frac{1}{x^{2}}$
+\end_inset
+
+ is uniformly continuous on the set 
+\begin_inset Formula $\left[1,\infty\right)$
+\end_inset
+
+, but not on the set 
+\begin_inset Formula $\left(0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+We will first show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly continuous on the set 
+\begin_inset Formula $\left[1,\infty\right)$
+\end_inset
+
+.
+ Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $\delta=\epsilon/2$
+\end_inset
+
+, then when 
+\begin_inset Formula $\abs{x-c}<\delta$
+\end_inset
+
+, it follows that 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{1}{x^{2}}-\frac{1}{c^{2}}} & =\abs{\frac{x^{2}-c^{2}}{x^{2}c^{2}}}\\
+ & =\abs{\frac{\abs{x-c}\abs{x+c}}{x^{2}c^{2}}}\\
+ & \leq\frac{\abs{x-c}\abs x}{\abs{x^{2}c^{2}}}+\frac{\abs{x-c}\abs c}{\abs{x^{2}c^{2}}}\\
+ & =\frac{\abs{x-c}}{\abs{xc^{2}}}+\frac{\abs{x-c}}{\abs{x^{2}c}}\\
+ & \leq\abs{x-c}+\abs{x-c}\\
+ & <\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Now we will show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is not uniformly continuous on the set 
+\begin_inset Formula $\left(0,1\right]$
+\end_inset
+
+ using sequences.
+ Let 
+\begin_inset Formula $a_{n}=\frac{1}{\sqrt{n+1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{n}=\frac{1}{\sqrt{n}}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left(a_{n}-b_{n}\right)=0,
+\]
+
+\end_inset
+
+but 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\abs{f\left(a_{n}\right)-f\left(b_{n}\right)} & =\lim_{n\to\infty}\abs{\frac{1}{\frac{1}{\left(\sqrt{n+1}\right)^{2}}}-\frac{1}{\frac{1}{\left(\sqrt{n}\right)}^{2}}}\\
+ & =\lim_{n\to\infty}\abs{n+1-n}\\
+ & =1,
+\end{align*}
+
+\end_inset
+
+thus there exists an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, such that for every 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{f\left(a_{n}\right)-f\left(b_{n}\right)}>\epsilon.
+\]
+
+\end_inset
+
+This shows that 
+\begin_inset Formula $f$
+\end_inset
+
+ is not uniformly continuous on the set 
+\begin_inset Formula $\left(0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+For each of the following statement, circle True or False.
+ No justification is needed.
+ 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+For any set 
+\begin_inset Formula $A\subseteq\R$
+\end_inset
+
+, 
+\begin_inset Formula $\left(\overline{A}\right)^{c}$
+\end_inset
+
+ is open
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A set 
+\begin_inset Formula $A$
+\end_inset
+
+ is closed if and only if 
+\begin_inset Formula $A=\overline{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a bounded set, then 
+\begin_inset Formula $s=\sup\left(A\right)$
+\end_inset
+
+ is a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An open set that contains every rational number must necessarily be all
+ of 
+\begin_inset Formula $\R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An arbitrary intersection of compact sets is compact
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+If 
+\begin_inset Formula $F_{1}\supseteq F_{2}\supseteq F_{3}\supseteq\cdots$
+\end_inset
+
+ is a nested sequence of nonempty closed sets, then the intersection 
+\begin_inset Formula $\cap_{n=1}^{\infty}F_{n}\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The notation 
+\begin_inset Formula $V_{\delta}\left(c\right)$
+\end_inset
+
+ in the textbook denotes the interval 
+\begin_inset Formula $\left(c-\delta,c+\delta\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Cantor set is compact.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Any finite set is compact.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+True
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The set 
+\begin_inset Formula $S=\left\{ \frac{1}{n}\,:\,n\in\N\right\} $
+\end_inset
+
+ is compact.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Complete the following.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\left\{ E_{\lambda}\,:\,\lambda\in\Lambda\right\} $
+\end_inset
+
+ be any collection of sets.
+ Prove the De Morgan Law
+\begin_inset Formula 
+\[
+\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}=\cap_{\lambda\in\Lambda}E_{\lambda}^{c}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+This is an equivalence statement between sets.
+ We must show inclusions both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\subseteq\right):$
+\end_inset
+
+ Let 
+\begin_inset Formula $x\in\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}$
+\end_inset
+
+, then 
+\begin_inset Formula $x\notin\cup_{\lambda\in\Lambda}E_{\lambda}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $x\notin E_{\lambda}$
+\end_inset
+
+ for every 
+\begin_inset Formula $\lambda\in\Lambda$
+\end_inset
+
+, which implies that 
+\begin_inset Formula $x\in E_{\lambda}^{c}$
+\end_inset
+
+ for every 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Hence, 
+\begin_inset Formula $x\in\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}\subseteq\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\supseteq\right):$
+\end_inset
+
+ Let 
+\begin_inset Formula $x\in\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$
+\end_inset
+
+, then 
+\begin_inset Formula $x\in E_{\lambda}^{c}$
+\end_inset
+
+ for every 
+\begin_inset Formula $\lambda\in\Lambda$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $x\notin E_{\lambda}$
+\end_inset
+
+ for every 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, and hence 
+\begin_inset Formula $x\notin\cup_{\lambda\in\Lambda}E_{\lambda}$
+\end_inset
+
+.
+ Hence, 
+\begin_inset Formula $x\in\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}\supseteq\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since we have shown inclusion both ways, it must be that 
+\begin_inset Formula $\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}=\cap_{\lambda\in\Lambda}E_{\lambda}^{c}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\left\{ F_{\lambda}\,:\,\lambda\in\Lambda\right\} $
+\end_inset
+
+ be a collection of closed sets.
+ Prove that 
+\begin_inset Formula 
+\[
+\cap_{\lambda\in\Lambda}F_{\lambda}
+\]
+
+\end_inset
+
+is a closed set.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $\left\{ E_{\lambda}\,:\,\lambda\in\Lambda\right\} $
+\end_inset
+
+ be a collection of open sets.
+ We want to show that 
+\begin_inset Formula $\cup_{\lambda\in\Lambda}E_{\lambda}$
+\end_inset
+
+ is open.
+ Well, let 
+\begin_inset Formula $x\in\cup_{\lambda\in\Lambda}E_{\lambda}$
+\end_inset
+
+, then 
+\begin_inset Formula $x$
+\end_inset
+
+ must be an element of at least one 
+\begin_inset Formula $E_{\lambda}$
+\end_inset
+
+ and possibly more.
+ For every 
+\begin_inset Formula $E_{\lambda}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\in E_{\lambda}$
+\end_inset
+
+, there exists a neighborhood 
+\begin_inset Formula $V_{\delta}\left(x\right)\subseteq E_{\lambda}$
+\end_inset
+
+ since 
+\begin_inset Formula $E_{\lambda}$
+\end_inset
+
+ is open.
+ This implies that 
+\begin_inset Formula $V_{\delta}\left(x\right)\subseteq\cup_{\lambda\in\Lambda}E_{\lambda}$
+\end_inset
+
+, hence 
+\begin_inset Formula $\cup_{\lambda\in\Lambda}E_{\lambda}$
+\end_inset
+
+ is open.
+ Since 
+\begin_inset Formula $\cup_{\lambda\in\Lambda}E_{\lambda}$
+\end_inset
+
+ is open, according to De Morgan Law
+\begin_inset Formula 
+\[
+\left(\cup_{\lambda\in\Lambda}E_{\lambda}\right)^{c}=\cap_{\lambda\in\Lambda}E_{\lambda}^{c},
+\]
+
+\end_inset
+
+which is a closed set since the complement of an open set is closed.
+ Also not that 
+\begin_inset Formula $E_{\lambda}^{c}$
+\end_inset
+
+ is also closed since each 
+\begin_inset Formula $E_{\lambda}$
+\end_inset
+
+ was assumed open.
+ This proves that the intersection of an arbitrary collection of closes
+ sets is a closed set.
+ 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
