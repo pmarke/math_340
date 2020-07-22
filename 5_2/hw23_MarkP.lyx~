@@ -414,7 +414,837 @@ g'_{a}\left(x\right)=\left(9x^{3}-x\right)\sin\left(1/x\right)-\left(x^{3}+3x^{2
 \series bold
 (Q8)
 \series default
-:
+: Review the definition of uniform continuity.
+ Given a differentiable function 
+\begin_inset Formula $f:A\to\R$
+\end_inset
+
+, let's say that 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly differentiable on 
+\begin_inset Formula $A$
+\end_inset
+
+ if, given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\abs{\frac{f\left(x\right)-f\left(y\right)}{x-y}-f'\left(y\right)}<\epsilon\quad\text{whenever }0<\abs{x-y}<\delta.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+ uniformly differentiable on 
+\begin_inset Formula $\R$
+\end_inset
+
+? How about 
+\begin_inset Formula $g\left(x\right)=x^{3}$
+\end_inset
+
+?
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $\delta=\epsilon$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $0<\abs{x-y}<\delta$
+\end_inset
+
+, it follows that 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{x^{2}-y^{2}}{x-y}-2y} & =\abs{\frac{\left(x+y\right)\left(x-y\right)}{x-y}-2y}\\
+ & =\abs{x-y}\\
+ & <\delta\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is uniformly differentiable on 
+\begin_inset Formula $\R$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $g\left(x\right)=x^{3}$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $\delta=?$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $0<\abs{x-y}<\delta$
+\end_inset
+
+, it follows that 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{x^{3}-y^{3}}{x-y}-3y^{2}} & =\abs{\frac{\left(x-y\right)\left(x^{2}+xy+y^{2}\right)}{x-y}-3y^{2}}\\
+ & =\abs{x^{2}+xy-2y^{2}}\\
+ & =\abs{\left(x-y\right)\left(x+2y\right)},
+\end{align*}
+
+\end_inset
+
+since the domain is not bounded, 
+\begin_inset Formula $\delta$
+\end_inset
+
+ will be a function of 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ Thus it is not uniformly differentiable on 
+\begin_inset Formula $\R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Show that if a function is uniformly differentiable on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+, then the derivative must be continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We assume directly that 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly differentiable on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+, then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $\abs{x-y}<\delta$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{\frac{f\left(x\right)-f\left(y\right)}{x-y}-f'\left(y\right)}<\epsilon/2.
+\]
+
+\end_inset
+
+It follows that 
+\begin_inset Formula 
+\begin{align*}
+\abs{f'\left(x\right)-f'\left(y\right)} & =\abs{f'\left(x\right)-\frac{f\left(x\right)-f\left(y\right)}{x-y}+\frac{f\left(x\right)-f\left(y\right)}{x-y}-f'\left(y\right)}\\
+ & \leq\abs{f'\left(x\right)-\frac{f\left(x\right)-f\left(y\right)}{x-y}}+\abs{\frac{f\left(x\right)-f\left(y\right)}{x-y}-f'\left(y\right)}\\
+ & <\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & <\epsilon,
+\end{align*}
+
+\end_inset
+
+thus the derivative is continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Is there a theorem analogous to Theorem 4.4.7 for differentiation? Are functions
+ that are differentiable on a closed interval 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ necessarily uniformly differentiable.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ We want to show by example that functions that are differentiable on a
+ closed interval 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ are not necessarily uniformly differentiable.
+ Since uniformly differentiable implies that the derivative is continuous,
+ we just need to find a function whose derivative exists on the interval
+ but is not continuous.
+ Using the findings from exercise 
+\begin_inset Formula $7$
+\end_inset
+
+, let 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+x^{2}\sin\left(1/x\right) & \text{if \ensuremath{x\neq0}}\\
+0 & \text{else}
+\end{cases}
+\]
+
+\end_inset
+
+be defined on the closed interval 
+\begin_inset Formula $\left[-2,2\right]$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is differentiable, but the derivative is not continuous.
+ Hence the statement is false.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q9)
+\series default
+: Decide whether each conjecture is true or false.
+ Provide an argument for those that are not true and a counterexample for
+ each one that is false.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $f'$
+\end_inset
+
+ exists on an interval and is not constant, then 
+\begin_inset Formula $f'$
+\end_inset
+
+ must take on some irrational values.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+True! Since 
+\begin_inset Formula $f'$
+\end_inset
+
+ is not constant but exists, 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous and there must exist an 
+\begin_inset Formula $a,b$
+\end_inset
+
+ in the interval such that 
+\begin_inset Formula $a<b$
+\end_inset
+
+ (or 
+\begin_inset Formula $b>a$
+\end_inset
+
+) and 
+\begin_inset Formula $f'\left(a\right)\neq f'\left(b\right)$
+\end_inset
+
+.
+ According to Darboux' theorem, given any 
+\begin_inset Formula $\alpha\in\left(f'\left(a\right),f'\left(b\right)\right)$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f'\left(c\right)=\alpha$
+\end_inset
+
+.
+ Due to the density of the real numbers, we can pick 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ to be an irrational number.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $f'$
+\end_inset
+
+ exists on an open interval and there is some point 
+\begin_inset Formula $c$
+\end_inset
+
+ where 
+\begin_inset Formula $f'\left(c\right)>0$
+\end_inset
+
+, then there exists a 
+\begin_inset Formula $\delta-$
+\end_inset
+
+neighborhood 
+\begin_inset Formula $V_{\delta}\left(c\right)$
+\end_inset
+
+ around 
+\begin_inset Formula $c$
+\end_inset
+
+ is which 
+\begin_inset Formula $f'\left(x\right)>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in V_{\delta}\left(c\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+ Consider the function 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+x+x^{2}\sin\left(1/x\right) & \text{if \ensuremath{x\neq0}}\\
+0 & \text{else}
+\end{cases},
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula 
+\[
+f'\left(x\right)=\begin{cases}
+\frac{1}{4}+2x\sin\left(1/x\right)-\cos\left(1/x\right) & \text{if }x\neq0\\
+\frac{1}{4} & \text{else}
+\end{cases}.
+\]
+
+\end_inset
+
+Thus, 
+\begin_inset Formula $f'\left(0\right)>0$
+\end_inset
+
+.
+ Now consider the 
+\begin_inset Formula $\epsilon-$
+\end_inset
+
+neighborhood, 
+\begin_inset Formula $V_{\epsilon}\left(0\right)$
+\end_inset
+
+.
+ We need to show that there exists an 
+\begin_inset Formula $x\in V_{\epsilon}\left(0\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f'\left(x\right)<0$
+\end_inset
+
+.
+ Consider the sequence 
+\begin_inset Formula $x_{n}=\frac{1}{2\pi n}$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\left(x_{n}\right)\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $n\to0$
+\end_inset
+
+.
+ So, there will always exists some 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ such that 
+\begin_inset Formula $x_{N}\in V_{\epsilon}\left(0\right)$
+\end_inset
+
+.
+ Well, 
+\begin_inset Formula $f'\left(x_{N}\right)=\frac{1}{4}+2\frac{1}{2\pi N}\sin\left(2\pi N\right)-\cos\left(2\pi N\right)=-\frac{3}{4}$
+\end_inset
+
+.
+ Thus, for every 
+\begin_inset Formula $V_{\epsilon}\left(0\right)$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $x\in V_{\epsilon}\left(0\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f'\left(x\right)<0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on an interval containing zero and if 
+\begin_inset Formula $\lim_{x\to0}f'\left(x\right)=L$
+\end_inset
+
+, then it must be that 
+\begin_inset Formula $L=f'\left(0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Disproof
+\end_layout
+
+\end_inset
+
+False, since there is no guarantee that 
+\begin_inset Formula $f'$
+\end_inset
+
+ is continuous, the statement won't necessarily hold.
+ For example, consider the function 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+x^{2}\sin\left(1/x\right) & \text{if \ensuremath{x\neq0}}\\
+0 & \text{else}
+\end{cases}
+\]
+
+\end_inset
+
+which is differentiable on the interval 
+\begin_inset Formula $\left[-2,2\right]$
+\end_inset
+
+.
+ Now, take the sequence 
+\begin_inset Formula $x_{n}=\frac{1}{2\pi n}$
+\end_inset
+
+.
+ The sequence 
+\begin_inset Formula $\left(x_{n}\right)\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, but 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}f'\left(x_{n}\right) & =\lim_{n\to\infty}2x_{n}\sin\left(1/x_{n}\right)-\cos\left(1/x_{n}\right)\\
+ & =\lim_{n\to\infty}\left(-\cos\left(2\pi n\right)\right)\\
+ & =-1,
+\end{align*}
+
+\end_inset
+
+which is not 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+.
+ Thus the statement is false.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Example
+
+\series bold
+(Q11)
+\series default
+: Assume that 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable of 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ and satisfies 
+\begin_inset Formula $g'\left(a\right)<0<g'\left(b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Show that there exists a point 
+\begin_inset Formula $x\in\left(a,b\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $g\left(a\right)>g\left(x\right)$
+\end_inset
+
+, and a point 
+\begin_inset Formula $y\in\left(a,b\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $g\left(y\right)<g\left(b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+By definition 
+\begin_inset Formula 
+\[
+g'\left(a\right)=\lim_{x\to a}\frac{g\left(x\right)-g\left(a\right)}{x-a}.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $g'\left(a\right)<0$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\lim_{x\to a}\frac{g\left(x\right)-g\left(a\right)}{x-a}<0.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $x>a$
+\end_inset
+
+, the denominator must be positive.
+ This implies that 
+\begin_inset Formula $g\left(x\right)<g\left(a\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $x\to a$
+\end_inset
+
+.
+ Thus there exists an 
+\begin_inset Formula $x$
+\end_inset
+
+ arbitrarily close to 
+\begin_inset Formula $a$
+\end_inset
+
+ such that 
+\begin_inset Formula $g\left(a\right)>g\left(x\right)$
+\end_inset
+
+.
+ The proof is similar to show that there exists a 
+\begin_inset Formula $y\in\left(a,b\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $g\left(y\right)<g\left(b\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now complete the proof of Darboux's Theorem started earlier.
+ (The first part of the proof is taken from the book)
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We first simplify matters by defining a new function 
+\begin_inset Formula $g\left(x\right)=f\left(x\right)-\alpha x$
+\end_inset
+
+ on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ Notice that 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ with 
+\begin_inset Formula $g'\left(x\right)=f'\left(x\right)-\alpha$
+\end_inset
+
+.
+ In terms of 
+\begin_inset Formula $g$
+\end_inset
+
+, our hypothesis states that 
+\begin_inset Formula $g'\left(a\right)<0<g'\left(b\right)$
+\end_inset
+
+, and we hope to show that 
+\begin_inset Formula $g'\left(c\right)=0$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+.
+ According to part (1), the function 
+\begin_inset Formula $g$
+\end_inset
+
+ has a minimum on the interval 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, thus for some 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $g'\left(c\right)=0$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula 
+\begin{align*}
+g'\left(c\right) & =f'\left(c\right)-\alpha=0\\
+ & \implies f'\left(c\right)=\alpha,
+\end{align*}
+
+\end_inset
+
+so there exists a 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f'\left(c\right)=\alpha$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Example
+
+\series bold
+(Q12)
+\series default
+: If 
+\begin_inset Formula $f:\left[a,b\right]\to\R$
+\end_inset
+
+ is one-to-one, then there exists an inverse function 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ defined on the range of 
+\begin_inset Formula $f$
+\end_inset
+
+ given by 
+\begin_inset Formula $f^{-1}\left(y\right)=x$
+\end_inset
+
+ where 
+\begin_inset Formula $y=f\left(x\right)$
+\end_inset
+
+.
+ In exercise 4.5.8 we saw that if 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $\left[a,b\right],$
+\end_inset
+
+ then 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ is continuous on its domain.
+ Let's add the assumption that 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ with 
+\begin_inset Formula $f'\left(x\right)\neq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ is differentiable with 
+\begin_inset Formula 
+\[
+\left(f^{-1}\right)'\left(y\right)=\frac{1}{f'\left(y\right)}\quad\text{where }y=f\left(x\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Using the definition of the derivative
+\begin_inset Formula 
+\[
+\left(f^{-1}\right)'=\lim_{z\to y}\frac{f^{-1}\left(z\right)-f^{-1}\left(y\right)}{z-y},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $z\in f\left(\left[a,b\right]\right)$
+\end_inset
+
+.
+ This is possible since 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous, thus 
+\begin_inset Formula $f\left(\left[a,b\right]\right)$
+\end_inset
+
+ is a closed interval.
+ 
 \end_layout
 
 \end_body

@@ -1,0 +1,795 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 24 Section 5.3
+\end_layout
+
+\begin_layout After Title Text
+Exercises: 1,2,3,4
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+07/22/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1)
+\series default
+: Recall from Exercise 4.4.9 that a function 
+\begin_inset Formula $f:A\to\R$
+\end_inset
+
+ is Lipschitz on 
+\begin_inset Formula $A$
+\end_inset
+
+ if there exists an 
+\begin_inset Formula $M>0$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\abs{\frac{f\left(x\right)-f\left(y\right)}{x-y}}\leq M
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Show that if 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on a closed interval 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ and if 
+\begin_inset Formula $f'$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is Lipschitz on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Since 
+\begin_inset Formula $f'$
+\end_inset
+
+ is continuous, then 
+\begin_inset Formula $f'\left(\left[a,b\right]\right)$
+\end_inset
+
+ is compact and thus bounded by some 
+\begin_inset Formula $M\geq0$
+\end_inset
+
+.
+ Using the mean value theorem, there exists a 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\frac{f\left(b\right)-f\left(a\right)}{b-a}=f'\left(c\right).
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\abs{f'\left(c\right)}\leq M$
+\end_inset
+
+, it follows that 
+\begin_inset Formula 
+\[
+\abs{\frac{f\left(b\right)-f\left(a\right)}{b-a}}\leq M.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Review the definition of a contractive function in Exercise 4.3.11.
+ If we add the assumption that 
+\begin_inset Formula $\abs{f'\left(x\right)}<1$
+\end_inset
+
+ on 
+\begin_inset Formula $\left[a,b\right],$
+\end_inset
+
+ does it follow that 
+\begin_inset Formula $f$
+\end_inset
+
+ is contractive on this set?
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Yes! Let 
+\begin_inset Formula $M=1$
+\end_inset
+
+, then 
+\begin_inset Formula $\abs{f'\left(x\right)}<M$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+.
+ It follows that 
+\begin_inset Formula 
+\[
+\abs{f\left(b\right)-f\left(a\right)}<M\abs{b-a},
+\]
+
+\end_inset
+
+which implies 
+\begin_inset Formula 
+\[
+\abs{f\left(b\right)-f\left(a\right)}\leq c\abs{b-a}
+\]
+
+\end_inset
+
+ for some 
+\begin_inset Formula $0<c<M$
+\end_inset
+
+.
+ By the contraction mapping theorem, 
+\begin_inset Formula $f$
+\end_inset
+
+ is contractive on this set.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q2)
+\series default
+: Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be differentiable on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $f'\left(x\right)\neq0$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+, show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is one-to-one on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Provide an example to show that the converse statement need not be true.
+ 
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $f'\left(x\right)\neq0$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+, then (according to the mean value theorem) for all 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\frac{f\left(b\right)-f\left(a\right)}{b-a}=z
+\]
+
+\end_inset
+
+ with 
+\begin_inset Formula $z\neq0$
+\end_inset
+
+, thus 
+\begin_inset Formula $f\left(b\right)\neq f\left(a\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are arbitrary, this shows that 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective.
+ 
+\end_layout
+
+\begin_layout Proof
+An example to show that the converse need not be true.
+ Let 
+\begin_inset Formula $A=\left[0,1\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $f=x^{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is injective on 
+\begin_inset Formula $A$
+\end_inset
+
+ but 
+\begin_inset Formula $f'\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q3)
+\series default
+: Let 
+\begin_inset Formula $h$
+\end_inset
+
+ be a differentiable function defined on the interval 
+\begin_inset Formula $\left[0,3\right],$
+\end_inset
+
+ and assume that 
+\begin_inset Formula $h\left(0\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(1\right)=2$
+\end_inset
+
+, and 
+\begin_inset Formula $h\left(3\right)=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Argue that there exists a point 
+\begin_inset Formula $d\in\left[0,3\right]$
+\end_inset
+
+ where 
+\begin_inset Formula $h\left(d\right)=d$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Consider the continuous function 
+\begin_inset Formula $f\left(x\right)=h\left(x\right)-x$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $f\left(0\right)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(3\right)=-1$
+\end_inset
+
+, then by the intermediate value property, there exists a 
+\begin_inset Formula $d\in\left(0,3\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(d\right)=0$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula $h\left(d\right)-d=0$
+\end_inset
+
+.
+ Thus, there exists a 
+\begin_inset Formula $d\in\left[0,3\right]$
+\end_inset
+
+ such that 
+\begin_inset Formula $h\left(d\right)=d$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Argue that at some point 
+\begin_inset Formula $c$
+\end_inset
+
+ we have 
+\begin_inset Formula $h'\left(c\right)=\frac{1}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Using the mean value theorem, there is a 
+\begin_inset Formula $c\in\left[0,3\right]$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+h'\left(c\right)=\frac{h\left(3\right)-h\left(0\right)}{3-0}=\frac{1}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Argue that 
+\begin_inset Formula $h'\left(x\right)=\frac{1}{4}$
+\end_inset
+
+ at some point in the domain.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Since 
+\begin_inset Formula $h\left(1\right)=2$
+\end_inset
+
+ and 
+\begin_inset Formula $h\left(3\right)=2$
+\end_inset
+
+, there is a point 
+\begin_inset Formula $c\in\left(1,3\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $h'\left(c\right)=0$
+\end_inset
+
+ according to the MVT.
+ Also, since 
+\begin_inset Formula $h\left(0\right)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $h\left(1\right)=2$
+\end_inset
+
+, there exists a point 
+\begin_inset Formula $b\in\left(0,1\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $h'\left(b\right)=1$
+\end_inset
+
+.
+ Now, since 
+\begin_inset Formula $b<c$
+\end_inset
+
+ and 
+\begin_inset Formula $h'\left(b\right)>h'\left(c\right)$
+\end_inset
+
+, according to Darboux' theorem, there exists a 
+\begin_inset Formula $k\in\left(b,c\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $h'\left(k\right)=\frac{1}{4}$
+\end_inset
+
+ since 
+\begin_inset Formula $h'\left(c\right)<\frac{1}{4}<h'\left(b\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q4)
+\series default
+: Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be differentiable on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+ containing zero, and assume 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ is a sequence in 
+\begin_inset Formula $A$
+\end_inset
+
+ with 
+\begin_inset Formula $\left(x_{n}\right)\to0$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{n}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $f\left(x_{n}\right)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, show 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $f'\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous.
+ Also, since 
+\begin_inset Formula $\left(x_{n}\right)\to0$
+\end_inset
+
+, then 
+\begin_inset Formula $f\left(x_{n}\right)\to f\left(0\right)$
+\end_inset
+
+ which shows that 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+.
+ Now since 
+\begin_inset Formula $f\left(x_{n}\right)=f\left(x_{n+1}\right)=0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $y_{n}\in\left(x_{n},x_{n+1}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f'\left(y_{n}\right)=0$
+\end_inset
+
+ an 
+\begin_inset Formula $y_{n}\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $x_{n}\to0$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula $\lim\,f'\left(y_{n}\right)=0$
+\end_inset
+
+ which proves that 
+\begin_inset Formula $f'\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Add the assumption that 
+\begin_inset Formula $f$
+\end_inset
+
+ is twice-differentiable at zero and show that 
+\begin_inset Formula $f''\left(0\right)=0$
+\end_inset
+
+ as well.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+This proof is similar to the one above.
+ We know that a sequence 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ exists such that 
+\begin_inset Formula $f'\left(y_{n}\right)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+ and that 
+\begin_inset Formula $f'$
+\end_inset
+
+ is continuous.
+ Applying the mean mean value theorem, there exists a 
+\begin_inset Formula $z_{n}\in\left(y_{n},y_{n+1}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f''\left(z_{n}\right)=\frac{f'\left(y_{n+1}\right)-f'\left(y_{n}\right)}{y_{n+1}-y_{n}}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(z_{n}\right)\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $\left(y_{n}\right)\to0$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula $\lim\,f''\left(z_{n}\right)=0$
+\end_inset
+
+ which proves that 
+\begin_inset Formula $f''\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
