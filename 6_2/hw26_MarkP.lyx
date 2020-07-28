@@ -1,0 +1,1009 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 26 Section 6.2
+\end_layout
+
+\begin_layout After Title Text
+Exercises: 3,7,9,12
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+07/28/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q3)
+\series default
+: For each 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in\left[0,\infty\right)$
+\end_inset
+
+, let 
+\begin_inset Formula 
+\[
+g_{n}\left(x\right)=\frac{x}{1+x^{n}},\quad\text{and}\quad h_{n}\left(x\right)=\begin{cases}
+1 & \text{if }x\geq1/n\\
+nx & \text{if }0\leq x\leq1/n
+\end{cases}.
+\]
+
+\end_inset
+
+Answer the following questions for the sequences 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(h_{n}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Find the point-wise limit on 
+\begin_inset Formula $\left[0,\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+: The point wise limit for 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+ is dependent on the domain.
+ 
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to\infty}g_{n}\left(x<1\right) & =\lim_{x\to\infty}\frac{x}{1+x^{n}}=x\\
+\lim_{x\to\infty}g_{n}\left(x=1\right) & =\lim_{x\to\infty}\frac{1}{1+1^{n}}=\frac{1}{2}\\
+\lim_{x\to\infty}g_{n}\left(x>1\right) & =\lim_{x\to\infty}\frac{1}{1+x^{n}}=0
+\end{align*}
+
+\end_inset
+
+In summary
+\begin_inset Formula 
+\[
+g\left(x\right)=\begin{cases}
+x & \text{if }0<x<1\\
+\frac{1}{2} & \text{if }x=1\\
+0 & \text{if }x>1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(h_{n}\right):$
+\end_inset
+
+ The point wise limit for 
+\begin_inset Formula $\left(h_{n}\right)$
+\end_inset
+
+ is dependent on the domain.
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to\infty}h_{n}\left(x>0\right) & =\lim_{x\to\infty}1=1\\
+\lim_{x\to\infty}h_{n}\left(x=0\right) & =nx=0.
+\end{align*}
+
+\end_inset
+
+In summary
+\begin_inset Formula 
+\[
+h\left(x\right)=\begin{cases}
+1 & \text{if }x>0\\
+0 & \text{if }x=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Explain how we know that the convergence cannot be uniform on 
+\begin_inset Formula $\left[0,\infty\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ are not continuous on the interval 
+\begin_inset Formula $\left[0,\infty\right)$
+\end_inset
+
+, there cannot be sequence of functions that converge uniformly to 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+.
+ Otherwise it would contradict the continuous limit theorem.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Choose smaller sets over which the convergence is uniform and supply an
+ argument to show that this is indeed the case.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+ converges uniformly to 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $A=\left[0,1\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+We will first show that 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+ converges uniformly to 
+\begin_inset Formula $g\left(a\right)$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+, and then for 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(A\right):$
+\end_inset
+
+ Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $N=?$
+\end_inset
+
+, then whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{x}{1+x^{n}}-x} & =\abs{\frac{-x^{n}}{1+x^{n}}}\\
+ & \leq\frac{1}{2}\abs{x^{n}}.
+\end{align*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\abs x<1$
+\end_inset
+
+, we can find an 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs{x^{n}}<\epsilon$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+, which shows convergence.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(h_{n}\right)$
+\end_inset
+
+ converges uniformly on the interval 
+\begin_inset Formula $A=\left[a,0\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ Given an 
+\begin_inset Formula $a>n$
+\end_inset
+
+, due to the Archimedean property, there exists an 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+ such that 
+\begin_inset Formula $\frac{1}{n}<a$
+\end_inset
+
+.
+ Thus by choosing 
+\begin_inset Formula $N=\frac{1}{a}$
+\end_inset
+
+, whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+, we get 
+\begin_inset Formula 
+\[
+\abs{1-1}=0,
+\]
+
+\end_inset
+
+which is less than any 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q7)
+\series default
+: Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be uniformly continuous on all of 
+\begin_inset Formula $\R$
+\end_inset
+
+, and define a sequence of functions by 
+\begin_inset Formula $f_{n}\left(x\right)=f\left(x+\frac{1}{n}\right)$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ uniformly.
+ Give an example to show that this proposition fails if 
+\begin_inset Formula $f$
+\end_inset
+
+ is only assumed to be continuous.
+ 
+\end_layout
+
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly continuous, then given and 
+\begin_inset Formula $\epsilon_{1}>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $x,c\in\R$
+\end_inset
+
+ whenever 
+\begin_inset Formula $\abs{x-c}<\delta_{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{f\left(x\right)-f\left(c\right)}<\epsilon_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $\frac{1}{n}\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, we can pick and 
+\begin_inset Formula $N$
+\end_inset
+
+ such that 
+\begin_inset Formula $\frac{1}{n}<\delta_{1}$
+\end_inset
+
+ whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula 
+\[
+\abs{f_{n}\left(x\right)-f\left(x\right)}<\epsilon_{1}
+\]
+
+\end_inset
+
+ whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ uniformly.
+ 
+\end_layout
+
+\begin_layout Proof
+To show that this proposition fails if 
+\begin_inset Formula $f$
+\end_inset
+
+ is only assumed to be continuous, let 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{n}\left(x\right)=f\left(x+\frac{1}{n}\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{f_{n}\left(x\right)-f\left(x\right)} & =\abs{x^{2}+2\frac{x}{n}+\frac{1}{n^{2}}-x^{2}}\\
+ & =\abs{2\frac{x}{n}+\frac{1}{n^{2}}}.
+\end{align*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $x$
+\end_inset
+
+ can be arbitrarily large, there does not exist a finite 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\abs{2\frac{x}{n}+\frac{1}{n^{2}}}<\epsilon
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x$
+\end_inset
+
+ because surely there is an 
+\begin_inset Formula $x\in\R$
+\end_inset
+
+ such that 
+\begin_inset Formula $\frac{x}{n}>\epsilon$
+\end_inset
+
+ for any 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q9)
+\series default
+: Assume 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+ are uniformly convergent sequence of functions.
+\end_layout
+
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $\left(f_{n}+g_{n}\right)$
+\end_inset
+
+ is uniformly convergent sequence of functions.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+ are uniformly convergent.
+ Then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{f_{n}\left(x\right)-f}<\epsilon/2,
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\abs{g_{n}\left(x\right)-g\left(x\right)}<\epsilon/2
+\]
+
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+ in the domain.
+ Now consider the term
+\begin_inset Formula 
+\begin{align*}
+\abs{f_{n}\left(x\right)-f+g_{n}\left(x\right)-g\left(x\right)} & \leq\abs{f_{n}\left(x\right)-f}+\abs{g_{n}\left(x\right)-g\left(x\right)}\\
+ & \leq\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+thus the sum of two uniformly convergent sequence is a uniformly convergent
+ sequence.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Give an example to show that the product 
+\begin_inset Formula $\left(f_{n}g_{n}\right)$
+\end_inset
+
+ may not converge uniformly.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula 
+\[
+f_{n}\left(x\right)=g_{n}\left(x\right)=x+\frac{1}{n},
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula 
+\[
+f_{n}\left(x\right)g_{n}\left(x\right)=x^{2}+2\frac{x}{n}+\frac{1}{n^{2}},
+\]
+
+\end_inset
+
+which point wise converges to 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+, but notice that 
+\begin_inset Formula 
+\[
+\abs{f_{n}\left(x\right)g_{n}\left(x\right)-x^{2}}=2\frac{x}{n}+\frac{1}{n^{2}}.
+\]
+
+\end_inset
+
+Because of the term 
+\begin_inset Formula $\frac{x}{n}$
+\end_inset
+
+, there is no 
+\begin_inset Formula $N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+, 
+\begin_inset Formula $\abs{2\frac{x}{n}+\frac{1}{n^{2}}}<\epsilon$
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\left(f_{n}g_{n}\right)$
+\end_inset
+
+ may not converge uniformly.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prove that if there exists an 
+\begin_inset Formula $M>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs{f_{n}}\leq M$
+\end_inset
+
+ and 
+\begin_inset Formula $\abs{g_{n}}\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(f_{n}g_{n}\right)$
+\end_inset
+
+does converge uniformly.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We suppose directly that 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+ are uniformly convergent.
+ Then given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{f_{n}\left(x\right)-f}<\frac{\epsilon}{2M},
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\abs{g_{n}\left(x\right)-g\left(x\right)}<\frac{\epsilon}{2M}
+\]
+
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+ in the domain.
+ Since 
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ uniformly, 
+\begin_inset Formula $\abs f\leq M$
+\end_inset
+
+ as well.
+ Using this, we get 
+\begin_inset Formula 
+\begin{align*}
+\abs{f_{n}g_{n}-fg} & =\abs{f_{n}g_{n}-fg-fg_{n}+fg_{n}}\\
+ & \leq\abs{g_{n}}\abs{f_{n}-f}+\abs f\abs{g_{n}-g}\\
+ & \leq M\abs{f_{n}-f}+M\abs{g_{n}-g}\\
+ & \leq M\frac{\epsilon}{2M}+M\frac{\epsilon}{2M}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $\left(f_{n}g_{n}\right)$
+\end_inset
+
+ converges uniformly to 
+\begin_inset Formula $fg$
+\end_inset
+
+ when they are bounded.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q12)
+\series default
+: Review the construction of the Cantor set 
+\begin_inset Formula $C\subseteq\left[0,1\right]$
+\end_inset
+
+ from section 3.1.
+ This exercise makes use of results and notation from this discussion.
+\end_layout
+
+\begin_layout Enumerate
+Define 
+\begin_inset Formula $f_{0}\left(x\right)=x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left[0,1\right]$
+\end_inset
+
+.
+ Now, let 
+\begin_inset Formula 
+\[
+f_{1}\left(x\right)=\begin{cases}
+\left(3/2\right)x & \text{for }0\leq x\leq1/3\\
+\left(1/2\right) & \text{for }1/3<x<2/3\\
+\left(3/2\right)x-1/2 & \text{for }2/3\leq x\leq1
+\end{cases}
+\]
+
+\end_inset
+
+Sketch 
+\begin_inset Formula $f_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ over 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ and observe that 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ is continuous, increasing, and constant on the middle third 
+\begin_inset Formula $\left(1/3,2/3\right)=\left[0,1\right]\backslash C_{1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename e12.jpg
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Construct 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ by imitating this process of flattening out the middle third of each nonconstan
+t segment of 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+.
+ Specifically, let
+\begin_inset Formula 
+\[
+f_{2}\left(x\right)=\begin{cases}
+\left(1/2\right)f_{1}\left(3x\right) & \text{for }0\leq x\leq1/3\\
+f_{1}\left(x\right) & \text{for }1/3<x<2/3\\
+\left(1/2\right)f_{1}\left(3x-2\right)+\frac{1}{2} & \text{for }2/3\leq x\leq1
+\end{cases}
+\]
+
+\end_inset
+
+If we continue this process, show that the resulting sequence 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The function 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ can be written as 
+\begin_inset Formula 
+\[
+f_{2}\left(x\right)=\begin{cases}
+9/4x & \text{for }0\leq x\leq1/9\\
+1/4 & \text{for }1/9<x<2/9\\
+9/4x-1/4 & \text{for }2/9\leq x\leq1/3\\
+\left(1/2\right) & \text{for }1/3<x<2/3\\
+\left(9/4\right)x-1 & \text{for }2/3\leq x\leq7/9\\
+3/4 & \text{for }7/9<x<8/9\\
+\left(9/4\right)x-\frac{5}{4} & \text{for }8/9\leq x\leq1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
