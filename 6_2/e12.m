@@ -1,4 +1,4 @@
-t = 0:0.01:1;
+t = 0:0.001:1;
 
 f = t;
 
@@ -6,11 +6,13 @@ f = t;
 
 f1 = zeros(1,length(t));
 f2 = zeros(1,length(t));
+f3 = f2;
 
 for ii = 1:length(t)
     
 f1(ii) = F1(t(ii));
 f2(ii) = F2(t(ii));
+f3(ii) = F3(t(ii));
     
 end
 
@@ -19,6 +21,7 @@ hold on
 plot(t,f);
 plot(t,f1);
 plot(t,f2);
+plot(t,f3);
 legend('f_0','f_1','f_2')
 
 
@@ -47,6 +50,21 @@ function y = F2(x)
         y = F1(x);
     else
         y = 1/2*F1(3*x-2) + 1/2;
+    end
+
+
+
+end
+
+function y = F3(x)
+
+
+    if x <= 1/3
+        y = 1/2*F2(3*x);
+    elseif x < 2/3
+        y = F2(x);
+    else
+        y = 1/2*F2(3*x-2) + 1/2;
     end
 
 

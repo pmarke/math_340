@@ -993,15 +993,274 @@ f_{2}\left(x\right)=\begin{cases}
 1/4 & \text{for }1/9<x<2/9\\
 9/4x-1/4 & \text{for }2/9\leq x\leq1/3\\
 \left(1/2\right) & \text{for }1/3<x<2/3\\
- & \text{for }2/3\leq x\leq7/9\\
+\left(9/4\right)x-1 & \text{for }2/3\leq x\leq7/9\\
 3/4 & \text{for }7/9<x<8/9\\
- & \text{for }8/9\leq x\leq1
+\left(9/4\right)x-\frac{5}{4} & \text{for }8/9\leq x\leq1
 \end{cases}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+By the construction of the sequence of functions, it can be seen that 
+\begin_inset Formula 
+\[
+\abs{f_{m}-f_{n}}\leq\abs{f_{n+1}-f_{n}}
+\]
+
+\end_inset
+
+for any 
+\begin_inset Formula $m,n\in\N$
+\end_inset
+
+ such that 
+\begin_inset Formula $m>n$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\abs{f_{n+1}-f_{n}}$
+\end_inset
+
+ serves as an upper bound.
+ We then have three cases to consider:
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+Assume that 
+\begin_inset Formula $\left(0\leq x\leq1/9\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{f_{m}-f_{n}} & \leq\abs{f_{n+1}-f_{n}}=\abs{\left(1/2\right)f_{n}\left(3x\right)-\left(1,2\right)f_{n-1}\left(3x\right)}\\
+ & =\frac{1}{2}\abs{f_{n}\left(3x\right)-f_{n-1}\left(3x\right)}.
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $\left(1/3<x<2/3\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\abs{f_{m}-f_{n}}=\frac{1}{2}-\frac{1}{2}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Case
+Assume that 
+\begin_inset Formula $\left(2/3\leq x\leq1\right)$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{f_{m}-f_{n}} & \leq\abs{f_{n+1}-f_{n}}=\abs{\left(1/2\right)f_{n}\left(3x-2\right)+\frac{1}{2}-\left(1,2\right)f_{n-1}\left(3x-2\right)-\frac{1}{2}}\\
+ & =\frac{1}{2}\abs{f_{n}\left(3x-2\right)-f_{n-1}\left(3x-2\right)}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Thus we see that for each case 
+\begin_inset Formula 
+\[
+\abs{f_{m}-f_{n}}\leq\frac{1}{2}\abs{f_{n}-f_{n-1}}\leq\frac{1}{2^{n}}\abs{f_{1}-f_{0}}.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\abs{f_{1}-f_{0}}$
+\end_inset
+
+ is bounded, we can choose 
+\begin_inset Formula $N$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\frac{1}{2^{N}}\abs{f_{1}-f_{0}}<\epsilon
+\]
+
+\end_inset
+
+for any 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+ This proves that 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f=\lim\,f_{n}$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is a continuous, increasing function on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ with 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(1\right)=1$
+\end_inset
+
+ that satisfies 
+\begin_inset Formula $f'\left(x\right)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+ in the open set 
+\begin_inset Formula $\left[0,1\right]\backslash C$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+From part (2), we proved that 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly, thus 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous.
+ Since 
+\begin_inset Formula $f_{n}\left(0\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{n}\left(1\right)=1$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(1\right)=1$
+\end_inset
+
+ by the sequence convergence property.
+ Now we need to show that 
+\begin_inset Formula $f'\left(x\right)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left[0,1\right]\backslash C$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $A=\left[0,1\right]\backslash C$
+\end_inset
+
+ is a union of open intervals.
+ Let 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ denote the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ open interval such that 
+\begin_inset Formula $A=\cup_{i\in\N}A_{i}$
+\end_inset
+
+.
+ By the construction of 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(A_{i}\right)=c_{i}$
+\end_inset
+
+ where 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ is a constant.
+ In other words, 
+\begin_inset Formula $f\left(A_{i}\right)$
+\end_inset
+
+ is flat.
+ Thus for any 
+\begin_inset Formula $x,y\in A_{i}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\to y}\frac{f\left(x\right)-f\left(y\right)}{x-y}=\frac{c_{i}-c_{i}}{x-y}=0.
+\]
+
+\end_inset
+
+Therefore, 
+\begin_inset Formula $f'\left(x\right)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_deeper
