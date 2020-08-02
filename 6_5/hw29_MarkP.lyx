@@ -676,6 +676,26 @@ Show that if
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+Since 
+\begin_inset Formula $\abs x<\frac{1}{L}$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\abs{\frac{a_{n+1}x^{n+1}}{a_{n}x^{n}}} & =\lim_{n\to\infty}\abs{\frac{a_{n+1}}{a_{n}}}\abs x\\
+ & <L\frac{1}{L}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+By the ratio test, the series converges absolutely.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Show that if 
 \begin_inset Formula $L=0$
@@ -688,5 +708,106 @@ Show that if
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+Using the same process as above, we get 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\abs{\frac{a_{n+1}x^{n+1}}{a_{n}x^{n}}} & =\lim_{n\to\infty}\abs{\frac{a_{n+1}}{a_{n}}}\abs x\\
+ & <L\abs x\\
+ & =0.
+\end{align*}
+
+\end_inset
+
+By the ratio test, the series converges absolutely.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Show that (a) and (b) continue to hold if 
+\begin_inset Formula $L$
+\end_inset
+
+ is replaced by the limit
+\begin_inset Formula 
+\[
+L'=\lim_{n\to\infty}s_{n}\quad\text{where}\quad s_{n}=\sup\left\{ \abs{\frac{a_{k+1}}{a_{k}}:k\geq n}\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, for all 
+\begin_inset Formula $L'+\epsilon$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{\frac{a_{n+1}}{a_{n}}}<L'+\epsilon.
+\]
+
+\end_inset
+
+By letting 
+\begin_inset Formula $x\in\left(-\frac{1}{L'},\frac{1}{L}\right)$
+\end_inset
+
+ and choosing 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs x<\frac{1}{L'}-\delta$
+\end_inset
+
+, it follows that 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{a_{n+1}x^{n+1}}{a_{n}x^{n}}} & <\left(L'+\epsilon\right)\left(\frac{1}{L'}-\delta\right)\\
+ & =1+\epsilon\left(\frac{1}{L'}-\delta\right)-\delta L'.
+\end{align*}
+
+\end_inset
+
+We can choose 
+\begin_inset Formula 
+\[
+\epsilon<\frac{\delta L'}{\left(\frac{1}{L'}-\delta\right)}
+\]
+
+\end_inset
+
+so that 
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{a_{n+1}x^{n+1}}{a_{n}x^{n}}} & <1+\frac{\delta L'}{\left(\frac{1}{L'}-\delta\right)}\left(\frac{1}{L'}-\delta\right)-\delta L'\\
+ & =1
+\end{align*}
+
+\end_inset
+
+which shows that the series converges absolutely by the ratio test.
+ 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

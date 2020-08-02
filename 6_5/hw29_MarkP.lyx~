@@ -676,6 +676,26 @@ Show that if
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+Since 
+\begin_inset Formula $\abs x<\frac{1}{L}$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\abs{\frac{a_{n+1}x^{n+1}}{a_{n}x^{n}}} & =\lim_{n\to\infty}\abs{\frac{a_{n+1}}{a_{n}}}\abs x\\
+ & <L\frac{1}{L}\\
+ & =1
+\end{align*}
+
+\end_inset
+
+By the ratio test, the series converges absolutely.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Show that if 
 \begin_inset Formula $L=0$
@@ -688,6 +708,22 @@ Show that if
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Proof
+Using the same process as above, we get 
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\abs{\frac{a_{n+1}x^{n+1}}{a_{n}x^{n}}} & =\lim_{n\to\infty}\abs{\frac{a_{n+1}}{a_{n}}}\abs x\\
+ & <L\abs x\\
+ & =0.
+\end{align*}
+
+\end_inset
+
+By the ratio test, the series converges absolutely.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Show that (a) and (b) continue to hold if 
 \begin_inset Formula $L$
