@@ -1,0 +1,708 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 30 Section 6.6
+\end_layout
+
+\begin_layout After Title Text
+Exercises: 1,2,5,10
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+08/02/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\pair}[1]{\left(#1\right)}
+{\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1)
+\series default
+: The derivation in Example 6.6.1 shows the Taylor series for 
+\begin_inset Formula $\arctan\left(x\right)$
+\end_inset
+
+ is valid for all 
+\begin_inset Formula $x\in\left(-1,1\right)$
+\end_inset
+
+.
+ Notice, however, that the series also converges when 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+ Assuming that 
+\begin_inset Formula $\arctan\left(x\right)$
+\end_inset
+
+ is continuous, explain why the value of the series at 
+\begin_inset Formula $x=1$
+\end_inset
+
+ must necessarily be 
+\begin_inset Formula $\arctan\left(1\right)$
+\end_inset
+
+.
+ What interesting identity do we get in this case?
+\end_layout
+
+\begin_layout Exercise
+We note that 
+\begin_inset Formula $\arctan\left(x\right)=\sum_{n=0}^{\infty}\frac{x^{2n+1}}{2n+1}\left(-1\right)^{n}$
+\end_inset
+
+.
+ We want to show that the series 
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\frac{x^{2n+1}}{2n+1}\left(-1\right)^{n}
+\]
+
+\end_inset
+
+converges at 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $x=1$
+\end_inset
+
+, we get 
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=0}^{\infty}\frac{1^{2n+1}}{2n+1}\left(-1\right)^{n} & =\sum_{n=0}^{\infty}\frac{\left(-1\right)^{n}}{2n+1}
+\end{align*}
+
+\end_inset
+
+which converges by the alternating series test.
+ Since the series converges at 
+\begin_inset Formula $x=1$
+\end_inset
+
+, according to Abel's Theorem, the series converges uniformly on the interval
+ 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ which means that it converges to a continuous function that is continuous
+ on the interval 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\begin{align*}
+\arctan\left(x\right) & =\lim_{x\to1^{-1}}\sum_{n=0}^{\infty}\frac{x^{2n+1}}{2n+1}\left(-1\right)^{n}\\
+ & =\sum_{n=0}^{\infty}\frac{\left(-1\right)^{n}}{2n+1}.
+\end{align*}
+
+\end_inset
+
+According to section 6.1, we get that 
+\begin_inset Formula 
+\[
+\frac{\pi}{4}=\sum_{n=0}^{\infty}\frac{\left(-1\right)^{n}}{2n+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q2)
+\series default
+: Starting from one of the previously generated series in this section,
+ use manipulations similar to those in Example 6.6.1 to find Taylor series
+ representations for each of the following functions.
+ For precisely what values of 
+\begin_inset Formula $x$
+\end_inset
+
+ is each series representation valid?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\cos\left(x^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We know that 
+\begin_inset Formula $\cos\left(y\right)=\sum_{n=0}^{\infty}\left(-1\right)^{n}\frac{y^{2n}}{\left(2n\right)!}$
+\end_inset
+
+.
+ Substituting 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ for 
+\begin_inset Formula $y$
+\end_inset
+
+ and multiplying the series by 
+\begin_inset Formula $x$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+x\sum_{n=0}^{\infty}\left(-1\right)^{n}\frac{x^{4n}}{\left(2n\right)!} & =\sum_{n=0}^{\infty}\left(-1\right)^{n}\frac{x^{5n}}{\left(2n\right)!}.
+\end{align*}
+
+\end_inset
+
+Using the ratio test, we get that 
+\begin_inset Formula 
+\[
+\abs{\frac{\frac{x^{5(n+1)}}{\left(2\left(n+1\right)\right)!}}{\frac{x^{5n}}{\left(2n\right)!}}}=\abs{\frac{x^{5}}{\left(2n+1\right)\left(2n+1\right)}}
+\]
+
+\end_inset
+
+which is less than 
+\begin_inset Formula $1$
+\end_inset
+
+ as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.
+ Thus the series converges for all of 
+\begin_inset Formula $x\in\R$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{x}{\left(1+4x^{2}\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We know that 
+\begin_inset Formula $\frac{1}{\left(1-y\right)^{2}}=\sum_{n=0}^{\infty}\left(n+1\right)y^{n}$
+\end_inset
+
+ which converges when 
+\begin_inset Formula $\abs y<1$
+\end_inset
+
+.
+ Substituting in 
+\begin_inset Formula $-4x^{2}$
+\end_inset
+
+ for 
+\begin_inset Formula $y$
+\end_inset
+
+ and multiplying by 
+\begin_inset Formula $x$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{align*}
+x\sum_{n=0}^{\infty}\left(n+1\right)\left(-4x^{2}\right)^{n} & =\sum_{n=0}^{\infty}\left(n+1\right)\left(-1\right)^{n}4^{n}x^{2n+1}
+\end{align*}
+
+\end_inset
+
+which converges when 
+\begin_inset Formula $\abs{4x^{2}}<1$
+\end_inset
+
+ which is equivalent to when 
+\begin_inset Formula $\abs{2x}<1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\log\left(1+x^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We know that 
+\begin_inset Formula $\log\left(1+y\right)=\sum_{n=1}^{\infty}\left(-1\right)^{n+1}\frac{y^{n}}{n}$
+\end_inset
+
+ which converges when 
+\begin_inset Formula $y\in\left(-1,1\right]$
+\end_inset
+
+.
+ Substituting in 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ for 
+\begin_inset Formula $y$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\left(-1\right)^{n+1}\frac{x^{2n}}{n}
+\]
+
+\end_inset
+
+which converges for 
+\begin_inset Formula $\abs x\leq1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: Complete the following.
+\end_layout
+
+\begin_layout Enumerate
+Generate the Taylor coefficients for the exponential function 
+\begin_inset Formula $f\left(x\right)=e^{x}$
+\end_inset
+
+, and then prove that the corresponding Taylor series converges uniformly
+ to 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ on any interval of the form 
+\begin_inset Formula $\left[-R,R\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+The Taylor series coefficients are generated by 
+\begin_inset Formula 
+\[
+a_{n}=\frac{f^{(n)}\left(0\right)}{n!}.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\frac{d}{dx}e^{x}=e^{x}$
+\end_inset
+
+ we can reduce the coefficients to 
+\begin_inset Formula 
+\[
+a_{n}=\frac{1}{n!}
+\]
+
+\end_inset
+
+ which means that 
+\begin_inset Formula 
+\[
+e^{x}=\sum_{n=0}^{\infty}\frac{1}{n!}x^{n}.
+\]
+
+\end_inset
+
+For some 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+, we can calculate the error function 
+\begin_inset Formula 
+\[
+E_{N}=\frac{e^{c}}{\left(N+1\right)!}x^{N+1}
+\]
+
+\end_inset
+
+ for some 
+\begin_inset Formula $c$
+\end_inset
+
+ between 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $e^{c}$
+\end_inset
+
+ is finite and fixed, and that factorials grow much faster than exponentials,
+ it follows that 
+\begin_inset Formula $E_{N}\to0$
+\end_inset
+
+.
+ Thus the series converges uniformly to 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Verify the formula 
+\begin_inset Formula $f'\left(x\right)=e^{x}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Taking the derivative of the power series representation of 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{dx}\sum_{n=0}^{\infty}\frac{1}{n!}x^{n} & =\frac{d}{dx}\left(1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\cdots\right)\\
+ & =\left(1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\cdots\right)\\
+ & =e^{x}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use a substitution to generate the series for 
+\begin_inset Formula $e^{-x}$
+\end_inset
+
+, and then informally calculate 
+\begin_inset Formula $e^{x}\cdot e^{-x}$
+\end_inset
+
+ by multiplying together the two series and collecting common powers of
+ 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+By substituting
+\begin_inset Formula 
+\[
+e^{-x}=\sum_{n=0}^{\infty}\frac{1}{n!}\left(-x\right)^{n}.
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{align*}
+e^{-x}\cdot e^{x} & =\left(\sum_{n=0}^{\infty}\frac{1}{n!}\left(-x\right)^{n}\right)\left(\sum_{n=0}^{\infty}\frac{1}{n!}x^{n}\right)\\
+ & =\left(1-x+\frac{x^{2}}{2!}-\frac{x^{3}}{3!}+\cdots\right)\left(1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\cdots\right)\\
+ & =1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}-x-x^{2}-\frac{x^{3}}{2!}+\frac{x^{2}}{2!}+\frac{x^{3}}{2!}+\dots\\
+ & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(10)
+\series default
+: Consider 
+\begin_inset Formula $f\left(x\right)=\frac{1}{\sqrt{1-x}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Generate the Taylor series for 
+\begin_inset Formula $f$
+\end_inset
+
+ centered at zero, and use Lagrange's Remainder Theorem to show the series
+ converges to 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $\left[0,\frac{1}{2}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+We first generate the Taylor series for 
+\begin_inset Formula $f$
+\end_inset
+
+ centered at zero by generating the Taylor series coefficients.
+ Differentiating 
+\begin_inset Formula $f$
+\end_inset
+
+ we get 
+\begin_inset Formula 
+\begin{align*}
+f'\left(x\right) & =\frac{1}{2\left(1-x\right)^{\frac{3}{2}}}\\
+f''\left(x\right) & =\frac{1\cdot3}{3^{2}\left(1-x\right)^{\frac{5}{2}}}\\
+f'''\left(x\right) & =\frac{1\cdot3\cdot5}{2^{3}\left(1-x\right)^{\frac{7}{2}}}\\
+ & \vdots\\
+f^{\left(n\right)}\left(x\right) & =\frac{1\cdot3\cdot5\cdots\left(2n-1\right)}{2^{n}\left(1-x\right)^{2n+1}}
+\end{align*}
+
+\end_inset
+
+Evaluating each term at 
+\begin_inset Formula $x=0$
+\end_inset
+
+, we get that the Taylor series is 
+\begin_inset Formula 
+\[
+f\left(x\right)=1+\frac{1}{2}x+\frac{3}{2^{2}2!}+\frac{15}{2^{3}3!}x^{3}+\frac{15\cdot7}{2^{4}4!}x^{4}\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Given an 
+\begin_inset Formula $N\in\N$
+\end_inset
+
+ a 
+\begin_inset Formula $x\in\left[0,\frac{1}{2}\right]$
+\end_inset
+
+ and a 
+\begin_inset Formula $c\in\left(0,x\right)$
+\end_inset
+
+, the Lagrange's Remainder is 
+\begin_inset Formula 
+\begin{align*}
+E_{N} & =\frac{1\cdot3\cdots\left(2\left(N+1\right)-1\right)}{2^{\left(N+1\right)}\left(N+1\right)!\left(1-c\right)^{\left(2N+1\right)/2}}x^{N+1}\\
+ & \leq\frac{1\cdot3\cdots\left(2N+1\right)}{2^{\left(N+1\right)}\left(N+1\right)!}
+\end{align*}
+
+\end_inset
+
+Using the same procedure we get that 
+\begin_inset Formula 
+\[
+E_{N+1}\leq\frac{1\cdot3\cdots\left(2N+1\right)\left(2N+3\right)}{2^{\left(N+2\right)}\left(N+2\right)!}.
+\]
+
+\end_inset
+
+Note that 
+\begin_inset Formula 
+\[
+\frac{E_{N+1}}{E_{N}}=\frac{\left(2N+3\right)}{2\left(N+2\right)}<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
