@@ -679,9 +679,94 @@ Given an
 \begin_inset Formula 
 \begin{align*}
 E_{N} & =\frac{1\cdot3\cdots\left(2\left(N+1\right)-1\right)}{2^{\left(N+1\right)}\left(N+1\right)!\left(1-c\right)^{\left(2N+1\right)/2}}x^{N+1}\\
- & \leq\frac{1\cdot3\cdots\left(2N+1\right)}{2^{\left(N+1\right)}\left(N+1\right)!}\\
- & =
+ & \leq\frac{1\cdot3\cdots\left(2N+1\right)}{2^{\left(N+1\right)}\left(N+1\right)!}
 \end{align*}
+
+\end_inset
+
+Using the same procedure we get that 
+\begin_inset Formula 
+\[
+E_{N+1}\leq\frac{1\cdot3\cdots\left(2N+1\right)\left(2N+3\right)}{2^{\left(N+2\right)}\left(N+2\right)!}.
+\]
+
+\end_inset
+
+Note that 
+\begin_inset Formula 
+\[
+\frac{E_{N+1}}{E_{N}}=\frac{\left(2N+3\right)}{2\left(N+2\right)}<1.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $0<E_{n}$
+\end_inset
+
+, is bounded and 
+\begin_inset Formula $E_{n}>E_{n+1}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\N$
+\end_inset
+
+, by the monotone convergence theorem, 
+\begin_inset Formula $\left(E_{n}\right)\to1$
+\end_inset
+
+.
+ Thus the Taylor series for 
+\begin_inset Formula $f$
+\end_inset
+
+ converges centered at 
+\begin_inset Formula $0$
+\end_inset
+
+ and on 
+\begin_inset Formula $\left[0,\frac{1}{2}\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Use Cauchy's Remainder Theorem proved in Exercise 6.6.9 to show that the series
+ representation of 
+\begin_inset Formula $f$
+\end_inset
+
+ holds on 
+\begin_inset Formula $\left[0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $c\in\left[0,\frac{1}{2}\right]$
+\end_inset
+
+.
+ The remainder term is 
+\begin_inset Formula 
+\begin{align*}
+R_{n} & =\frac{\left(x-c\right)^{N}}{N!}xf^{\left(N+1\right)}\left(c\right)\\
+ & =\frac{\left(x-c\right)^{N}}{N!}x\cdot\frac{1\cdot3\cdot5\cdots\left(2N+1\right)}{2^{n}\left(1-x\right)^{2N+3}}
+\end{align*}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+E_{N}=\frac{f^{(N+1)}\left(0\right)}{N!}\left(x-0\right)^{N}x
+\]
 
 \end_inset
 
