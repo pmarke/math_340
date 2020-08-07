@@ -1,0 +1,920 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+\usepackage{enumitem}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\options onecolumn
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Homework 32 Section 7.3
+\end_layout
+
+\begin_layout After Title Text
+Exercises: 1,3,5,7,8
+\end_layout
+
+\begin_layout Author
+Mark Petersen
+\end_layout
+
+\begin_layout Standard
+\align center
+08/06/2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\R}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\I}{\mathbb{I}}
+{\mathbb{I}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Q}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\N}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\Z}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\abs}[1]{\left\lvert #1\right\lvert }
+{\left\lvert #1\right\lvert }
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q1)
+\series default
+: Consider the function 
+\begin_inset Formula 
+\[
+h\left(x\right)=\begin{cases}
+1 & \text{for }0\leq x<1\\
+2 & \text{for }x=1
+\end{cases}
+\]
+
+\end_inset
+
+over the interval 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $L\left(f,P\right)=1$
+\end_inset
+
+ for every partition 
+\begin_inset Formula $P$
+\end_inset
+
+ of 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $P=\left\{ x_{0},x_{1},\ldots,x_{n}\right\} $
+\end_inset
+
+ be a partition of the interval 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+, then 
+\begin_inset Formula $x_{n}=1$
+\end_inset
+
+.
+ Any closed subinterval of 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ that does not include 
+\begin_inset Formula $1$
+\end_inset
+
+ will have an infimum of 
+\begin_inset Formula $1$
+\end_inset
+
+ since 
+\begin_inset Formula $1$
+\end_inset
+
+ is the only value 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+ will take take on the subinterval.
+ Any closed subinterval 
+\begin_inset Formula $\left[x_{n-1},x_{n}\right]$
+\end_inset
+
+ will include an element other than 
+\begin_inset Formula $1$
+\end_inset
+
+, thus 
+\begin_inset Formula $\inf\left[x_{n-1},x_{n}\right]=1$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula 
+\begin{align*}
+L\left(f,P\right) & =\sum_{k=1}^{n}m_{k}\left(x_{k}-x_{k-1}\right)\\
+ & =1\sum_{k=1}^{n}\left(x_{k}-x_{k-1}\right)\\
+ & =1\left(x_{n}-x_{0}\right)\\
+ & =1.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Construct a partition 
+\begin_inset Formula $P$
+\end_inset
+
+ for which 
+\begin_inset Formula $U\left(f,P\right)<1+\frac{1}{10}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $P=\left\{ 0,1-\frac{1}{20},1\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+U\left(f,P\right) & =1\left(1-\frac{1}{20}-0\right)+2\left(1-1+\frac{1}{20}\right)\\
+ & =1+\frac{2}{20}-\frac{1}{20}\\
+ & =1+\frac{1}{20}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, construct a partition 
+\begin_inset Formula $P_{\epsilon}$
+\end_inset
+
+ for which 
+\begin_inset Formula $U\left(f,P_{\epsilon}\right)<1+\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $P_{\epsilon}=\left\{ 0,1-\frac{\epsilon}{2},1\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+U\left(f,P\right) & =1\left(1-\frac{\epsilon}{2}\right)+2\left(1-1+\frac{\epsilon}{2}\right)\\
+ & =1+\frac{\epsilon}{2}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q3)
+\series default
+: Let 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+1 & \text{if }x=\frac{1}{n}\text{ for some }n\in\N\\
+0 & \text{else}
+\end{cases}.
+\]
+
+\end_inset
+
+Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ and compute 
+\begin_inset Formula $\int_{0}^{1}f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $A=\left\{ \frac{1}{n}:n\in\N\text{ and }\frac{1}{n}>\frac{\epsilon}{2}\right\} $
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is finite.
+ Let 
+\begin_inset Formula $M=\abs A$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ be the smallest element of 
+\begin_inset Formula $A$
+\end_inset
+
+, and let 
+\begin_inset Formula $P$
+\end_inset
+
+ be the partition defined as 
+\begin_inset Formula 
+\[
+P=\left\{ 0,\frac{\epsilon}{2},y-\frac{\epsilon}{4M},y+\frac{\epsilon}{4M},\ldots,\frac{1}{3}-\frac{\epsilon}{4M},\frac{1}{3}+\frac{\epsilon}{4M},\frac{1}{2}-\frac{\epsilon}{4M},\frac{1}{2}+\frac{\epsilon}{4M},1-\frac{\epsilon}{2M},1\right\} ,
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula 
+\begin{align*}
+U\left(f,P\right) & =1\left(\frac{\epsilon}{2}\right)+\sum_{k=2}^{M}\left(\frac{1}{k}+\frac{\epsilon}{4M}-\left(\frac{1}{k}-\frac{\epsilon}{4M}\right)\right)+\left(1-\left(1-\frac{\epsilon}{2M}\right)\right)\quad\text{all other terms are \ensuremath{0}}\\
+ & =\frac{\epsilon}{2}+\left(M-1\right)\left(\frac{2\epsilon}{4M}\right)+\frac{\epsilon}{2M}\\
+ & =\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $L\left(f,P\right)=0$
+\end_inset
+
+ for any partition, we get that 
+\begin_inset Formula 
+\[
+U\left(f,P\right)-L\left(f,P\right)<\epsilon.
+\]
+
+\end_inset
+
+Therefore, according to the integrability criterion, 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable.
+ 
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(Q5)
+\series default
+: Provide and example or give a reason why the request is impossible.
+ 
+\end_layout
+
+\begin_layout Enumerate
+A sequence 
+\begin_inset Formula $\left(f_{n}\right)\to f$
+\end_inset
+
+ pointwise, where each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ has at most a finite number of discontinuities but 
+\begin_inset Formula $f$
+\end_inset
+
+ is not integrable.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $A=\left\{ r_{n}\right\} _{n\in\N}$
+\end_inset
+
+ be an enumeration of the rationals in 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ that contains only 
+\begin_inset Formula $n$
+\end_inset
+
+ rational numbers, and let 
+\begin_inset Formula $f_{n}:\left[0,1\right]\to\R$
+\end_inset
+
+ be defined as 
+\begin_inset Formula 
+\[
+f_{n}\left(x\right)=\begin{cases}
+1 & \text{if }x\in A\\
+0 & \text{else}
+\end{cases}
+\]
+
+\end_inset
+
+the for any 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ has a finite number of discontinuities, but 
+\begin_inset Formula 
+\[
+f\left(x\right)=\begin{cases}
+1 & \text{if }x\in\Q\cap\left[0,1\right]\\
+0 & \text{else}
+\end{cases}
+\]
+
+\end_inset
+
+is not integrable since for any partition 
+\begin_inset Formula $P$
+\end_inset
+
+, 
+\begin_inset Formula $U\left(f,P\right)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $L\left(f,P\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A sequence 
+\begin_inset Formula $\left(g_{n}\right)\to g$
+\end_inset
+
+ uniformly where each 
+\begin_inset Formula $g_{n}$
+\end_inset
+
+ has at most a finite number of discontinuities and 
+\begin_inset Formula $g$
+\end_inset
+
+ is not integrable.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Not possible.
+ By uniform convergence 
+\begin_inset Formula $g$
+\end_inset
+
+ also has a finite number of continuities.
+ On any compact set, 
+\begin_inset Formula $g$
+\end_inset
+
+ is integrable.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A sequence 
+\begin_inset Formula $\left(h_{n}\right)\to h$
+\end_inset
+
+ uniformly where each 
+\begin_inset Formula $h_{n}$
+\end_inset
+
+ is not integrable but 
+\begin_inset Formula $h$
+\end_inset
+
+ is integrable.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $h_{n}:\left[0,1\right]\to\R$
+\end_inset
+
+ be define as 
+\begin_inset Formula 
+\[
+h_{n}\left(x\right)=\begin{cases}
+\frac{1}{n} & \text{if }x\in\Q\\
+0 & \text{else}
+\end{cases},
+\]
+
+\end_inset
+
+then each 
+\begin_inset Formula $h_{n}$
+\end_inset
+
+ is not Riemann integrable.
+ However, as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, 
+\begin_inset Formula $h_{n}\to0$
+\end_inset
+
+ and 
+\begin_inset Formula $h=0$
+\end_inset
+
+ is Riemann integrable.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q7)
+\series default
+: Assume 
+\begin_inset Formula $f:\left[a,b\right]\to\R$
+\end_inset
+
+ is integrable.
+\end_layout
+
+\begin_layout Enumerate
+Show that if 
+\begin_inset Formula $g$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $g\left(x\right)=f\left(x\right)$
+\end_inset
+
+ for all but a finite number of points in 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, then 
+\begin_inset Formula $g$
+\end_inset
+
+ is integrable as well.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Let 
+\begin_inset Formula $M=\sup\left\{ g\left(x\right)-g\left(y\right)\,:\,x,y\in\left[a,b\right]\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $N$
+\end_inset
+
+ be the number of points at which 
+\begin_inset Formula $g\neq f$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a partition 
+\begin_inset Formula $P$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(f,P\right)-L\left(f,P\right)<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+We can construct a partition 
+\begin_inset Formula $P$
+\end_inset
+
+ such that the intervals 
+\begin_inset Formula $\Delta x_{k}<\frac{\epsilon}{2MN}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $Q$
+\end_inset
+
+ be the collection of intervals where 
+\begin_inset Formula $g\neq f$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+ be the rest, then 
+\begin_inset Formula 
+\begin{align*}
+U\left(g,P\right)-L\left(g,P\right) & =U\left(g,Q\right)-L\left(g,Q\right)+U\left(g,R\right)-U\left(g,R\right)\\
+ & <U\left(g,Q\right)-L\left(g,Q\right)+U\left(f,R\right)-U\left(f,R\right)\\
+ & <NM\frac{\epsilon}{2MN}+\frac{\epsilon}{2}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula $g$
+\end_inset
+
+ is also integrable.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find an example to show that 
+\begin_inset Formula $g$
+\end_inset
+
+ may fail to be integrable if it differs from 
+\begin_inset Formula $f$
+\end_inset
+
+ at a countable number of points.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ be functions whose domain is 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ and let 
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+g\left(x\right)=\begin{cases}
+1 & \text{if }x\in\Q\\
+0 & \text{else}
+\end{cases}.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\Q$
+\end_inset
+
+ is a countable set, then 
+\begin_inset Formula $g$
+\end_inset
+
+ differs from 
+\begin_inset Formula $f$
+\end_inset
+
+ a countable number of times, but we already know that 
+\begin_inset Formula $g$
+\end_inset
+
+ is not integrable.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Exercise
+
+\series bold
+(Q8)
+\series default
+: As in Exercise 7.3.6, let 
+\begin_inset Formula $\left\{ r_{1,}r_{2},r_{3},\ldots\right\} $
+\end_inset
+
+ be an enumeration of the rationals in 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+, but this time define
+\begin_inset Formula 
+\[
+h_{n}\left(x\right)=\begin{cases}
+1 & \text{if }r_{n}<x\leq1\\
+0 & \text{if }0\leq x\leq r_{n}
+\end{cases}
+\]
+
+\end_inset
+
+Show 
+\begin_inset Formula $H\left(x\right)=\sum_{n=1}^{\infty}h_{n}\left(x\right)/2^{n}$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ even though it had discontinuities at every rational point.
+ 
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $h_{n}\left(x\right)\leq\frac{1}{2^{n}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{2^{n}}$
+\end_inset
+
+ converges, by the Weierstrass M-test, the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}h_{n}\left(x\right)/2^{n}$
+\end_inset
+
+ converges uniformly.
+ Then according to Cauchy criterion for uniform convergence, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $m\in\N$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\abs{\sum_{k=m}^{\infty}h_{k}\left(x\right)}<\frac{\epsilon}{2}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x\in\left[0,1\right]$
+\end_inset
+
+.
+ Thus, for any partition 
+\begin_inset Formula $Q$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+U\left(\sum_{k=m}^{\infty}h_{k}\left(x\right),Q\right)<\frac{\epsilon}{2},
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+L\left(\sum_{k=m}^{\infty}h_{k}\left(x\right),Q\right)\geq0,
+\]
+
+\end_inset
+
+thus 
+\begin_inset Formula 
+\[
+U\left(\sum_{k=m}^{\infty}h_{k}\left(x\right),Q\right)-L\left(\sum_{k=m}^{\infty}h_{k}\left(x\right),Q\right)<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $G\left(x\right)=\sum_{n=1}^{m-1}h_{n}\left(x\right)/2^{n}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $h_{n}$
+\end_inset
+
+ is integrable, there exists a partition 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(h_{n},P_{n}\right)-L\left(h_{n},P_{n}\right)<\frac{\epsilon}{2\left(m-1\right)}.
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $P=\cup_{k=1}^{m-1}P_{n}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+U\left(G\left(x\right),P\right)-L\left(G\left(x\right),P\right) & =\sum_{n=1}^{m-1}U\left(h_{n},P\right)-L\left(h_{n},P\right)\\
+ & <\frac{\epsilon\left(m-1\right)}{2\left(m-1\right)}\\
+ & =\frac{\epsilon}{2}.
+\end{align*}
+
+\end_inset
+
+Thus
+\begin_inset Formula 
+\begin{align*}
+U\left(H\left(x\right),P\right)-L\left(H\left(x\right),P\right) & =U\left(G\left(x\right),P\right)-L\left(G\left(x\right),P\right)+U\left(\sum_{k=m}^{\infty}h_{k}\left(x\right),Q\right)-L\left(\sum_{k=m}^{\infty}h_{k}\left(x\right),Q\right)\\
+ & <\frac{\epsilon}{2}+\frac{\epsilon}{2}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
