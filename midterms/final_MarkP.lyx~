@@ -804,7 +804,405 @@ Thus the differentiated series
 \end_layout
 
 \begin_layout Exercise
+Prove the Sequential Criterion for Integrability: A bounded function 
+\begin_inset Formula $f:\left[a,b\right]\to\R$
+\end_inset
 
+ is integrable on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ if an only if there exists a sequence of partitions 
+\begin_inset Formula $\left(P_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ satisfying
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left[U\left(f,P_{n}\right)-L\left(f,P_{n}\right)\right]=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Since this is a biconditional statement we must prove both ways.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\implies\right):$
+\end_inset
+
+ We assume directly that 
+\begin_inset Formula $f:\left[a,b\right]\to\R$
+\end_inset
+
+ is a bounded function that is integrable on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, then according to the integrability Criterion, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a partition 
+\begin_inset Formula $P_{\epsilon}$
+\end_inset
+
+ of 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(f,P_{\epsilon}\right)-L\left(f,P_{\epsilon}\right)<\epsilon.
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $\left(\epsilon_{n}\right)$
+\end_inset
+
+ be a monotonic sequence of 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\lim_{n\to\infty}\epsilon_{n}=0$
+\end_inset
+
+, then there exists a partition 
+\begin_inset Formula $P_{\epsilon_{n}}$
+\end_inset
+
+ for every 
+\begin_inset Formula $\epsilon_{n}$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(f,P_{\epsilon_{n}}\right)-L\left(f,P_{\epsilon_{n}}\right)<\epsilon_{n}.
+\]
+
+\end_inset
+
+We can then construct the sequence of partitions 
+\begin_inset Formula $\left(P_{n}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $P_{n}=P_{\epsilon_{n}}$
+\end_inset
+
+.
+ Hence
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left[U\left(f,P_{n}\right)-L\left(f,P_{n}\right)\right]=\lim_{n\to\infty}\left[U\left(f,P_{\epsilon_{n}}\right)-L\left(f,P_{\epsilon_{n}}\right)\right]=0.
+\]
+
+\end_inset
+
+Therefore there exists a sequence of partitions 
+\begin_inset Formula $\left(P_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ satisfying
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left[U\left(f,P_{n}\right)-L\left(f,P_{n}\right)\right]=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\left(\impliedby\right):$
+\end_inset
+
+ We assume directly that there exists a sequence of partitions 
+\begin_inset Formula $\left(P_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ satisfying 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left[U\left(f,P_{n}\right)-L\left(f,P_{n}\right)\right]=0.
+\]
+
+\end_inset
+
+By the definition of a limit, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\R$
+\end_inset
+
+ such that when 
+\begin_inset Formula $n>N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{U\left(f,P_{n}\right)-L\left(f,P_{n}\right)}<\epsilon.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $U\left(f,P_{n}\right)\geq L\left(f,P_{n}\right)$
+\end_inset
+
+ for any partition, we can drop the absolute value sign to get 
+\begin_inset Formula 
+\[
+U\left(f,P_{n}\right)-L\left(f,P_{n}\right)<\epsilon.
+\]
+
+\end_inset
+
+This shows that for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a partition 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(f,P_{n}\right)-L\left(f,P_{n}\right)<\epsilon.
+\]
+
+\end_inset
+
+Therefore, by the integrability criterion, 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ And in this case, since
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left[U\left(f,P_{n}\right)-L\left(f,P_{n}\right)\right]=0
+\]
+
+\end_inset
+
+we get 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=\lim_{n\to\infty}U\left(f,P_{n}\right)=\lim_{n\to\infty}L\left(f,P_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Assume 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable of 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+.
+ Define 
+\begin_inset Formula $g:\left[a,b\right]\to\R$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+g\left(x\right)=\begin{cases}
+f\left(x\right) & \text{if }x\in\left[a,b\right]\text{ and }x\neq c\\
+d & \text{if }x=c
+\end{cases}.
+\]
+
+\end_inset
+
+Prove that 
+\begin_inset Formula $g$
+\end_inset
+
+ is integrable of 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\int_{a}^{b}g=\int_{a}^{b}f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a partition 
+\begin_inset Formula $P_{\epsilon}$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(f,P_{\epsilon}\right)-L\left(f,P_{\epsilon}\right)<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $P=P_{\epsilon}\cup\left\{ c-\frac{\epsilon}{\abs d4},c+\frac{\epsilon}{\abs d4}\right\} $
+\end_inset
+
+ be a refinement, we can write 
+\begin_inset Formula 
+\begin{align*}
+U\left(g,P\right)-L\left(g,P\right) & =\sum_{k=1}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k}\\
+ & =\sum_{k=1}^{\ell}\left(M_{k}-m_{k}\right)\Delta x_{k}+\sum_{k=\ell+2}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k}+\left(N_{\ell+1}-n_{\ell+1}\right)\Delta x_{\ell+1}
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $M_{k}$
+\end_inset
+
+ is the supremem of 
+\begin_inset Formula $f$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $\Delta x_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $m_{k}$
+\end_inset
+
+ is the infimum of 
+\begin_inset Formula $f$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $\Delta x_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta x_{\ell+1}$
+\end_inset
+
+ is the interval that contains 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{\ell+1}$
+\end_inset
+
+ and 
+\begin_inset Formula $n_{\mathbf{\ell+1}}$
+\end_inset
+
+ is the infimum and supremem of the interval 
+\begin_inset Formula $\Delta x_{\ell+1}$
+\end_inset
+
+.
+ By the construction of the partition 
+\begin_inset Formula $P$
+\end_inset
+
+, we know that 
+\begin_inset Formula $\Delta x_{\ell+1}\leq\frac{\epsilon}{2\abs d}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $n_{\ell+1}<d<N_{\ell+1}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+U\left(g,P\right)-L\left(g,P\right)=U\left(f,P\right)-L\left(f,P\right)<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $d\geq N_{\ell+1}$
+\end_inset
+
+ or 
+\begin_inset Formula $d\leq n_{\ell+1}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\left(N_{\ell+1}-n_{\ell+1}\right)\leq\left(M_{\ell+1}-m_{\ell+1}\right)+\abs d,
+\]
+
+\end_inset
+
+hence
+\begin_inset Formula 
+\begin{align*}
+U\left(g,P\right)-L\left(g,P\right) & \leq U\left(f,P\right)-L\left(f,P\right)+\abs d\Delta x_{\ell+1}\\
+ & <\frac{\epsilon}{2}+\abs d\frac{\epsilon}{2\abs d}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+Thus 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ is integrable.
+ 
 \end_layout
 
 \end_body

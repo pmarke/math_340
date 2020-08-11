@@ -1087,20 +1087,20 @@ Since
  such that 
 \begin_inset Formula 
 \[
-U\left(f,P_{\epsilon}\right)-L\left(f,P_{\epsilon}\right)<\frac{\epsilon}{2}.
+U\left(f,P_{\epsilon}\right)-L\left(f,P_{\epsilon}\right)<\frac{\epsilon}{}.
 \]
 
 \end_inset
 
 Let 
-\begin_inset Formula $P=P_{\epsilon}\cup\left\{ c-\frac{\epsilon}{\abs d4},c+\frac{\epsilon}{\abs d4}\right\} $
+\begin_inset Formula $P=P_{\epsilon}\cup\left\{ c-\frac{\epsilon}{d4},c+\frac{\epsilon}{d4}\right\} $
 \end_inset
 
  be a refinement, we can write 
 \begin_inset Formula 
 \begin{align*}
-U\left(g,P\right)-L\left(g,P\right) & =\sum_{k=1}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k}\\
- & =\sum_{k=1}^{\ell}\left(M_{k}-m_{k}\right)\Delta x_{k}+\sum_{k=\ell+2}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k}+\left(N_{\ell+1}-n_{\ell+1}\right)\Delta x_{\ell+1}
+U\left(f,P\right)-L\left(f,P\right) & =\sum_{k=1}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k}\\
+ & =\sum_{k=1}^{\ell}\left(M_{k}-m_{k}\right)\Delta x_{k}+\sum_{k=\ell+2}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k}+\left(N_{k}-n_{k}\right)\Delta x_{\ell+1}
 \end{align*}
 
 \end_inset
@@ -1109,130 +1109,7 @@ where
 \begin_inset Formula $M_{k}$
 \end_inset
 
- is the supremem of 
-\begin_inset Formula $f$
-\end_inset
-
- on the interval 
-\begin_inset Formula $\Delta x_{k}$
-\end_inset
-
-, 
-\begin_inset Formula $m_{k}$
-\end_inset
-
- is the infimum of 
-\begin_inset Formula $f$
-\end_inset
-
- on the interval 
-\begin_inset Formula $\Delta x_{k}$
-\end_inset
-
-, 
-\begin_inset Formula $\Delta x_{\ell+1}$
-\end_inset
-
- is the interval that contains 
-\begin_inset Formula $c$
-\end_inset
-
- and 
-\begin_inset Formula $N_{\ell+1}$
-\end_inset
-
- and 
-\begin_inset Formula $n_{\mathbf{\ell+1}}$
-\end_inset
-
- is the infimum and supremem of the interval 
-\begin_inset Formula $\Delta x_{\ell+1}$
-\end_inset
-
-.
- By the construction of the partition 
-\begin_inset Formula $P$
-\end_inset
-
-, we know that 
-\begin_inset Formula $\Delta x_{\ell+1}\leq\frac{\epsilon}{2\abs d}$
-\end_inset
-
-.
- If 
-\begin_inset Formula $n_{\ell+1}<d<N_{\ell+1}$
-\end_inset
-
-, then 
-\begin_inset Formula 
-\[
-U\left(g,P\right)-L\left(g,P\right)=U\left(f,P\right)-L\left(f,P\right)<\frac{\epsilon}{2}.
-\]
-
-\end_inset
-
-If 
-\begin_inset Formula $d\geq N_{\ell+1}$
-\end_inset
-
- or 
-\begin_inset Formula $d\leq n_{\ell+1}$
-\end_inset
-
-, then 
-\begin_inset Formula 
-\[
-\left(N_{\ell+1}-n_{\ell+1}\right)\leq\left(M_{\ell+1}-m_{\ell+1}\right)+\abs d,
-\]
-
-\end_inset
-
-hence
-\begin_inset Formula 
-\begin{align*}
-U\left(g,P\right)-L\left(g,P\right) & \leq U\left(f,P\right)-L\left(f,P\right)+\abs d\Delta x_{\ell+1}\\
- & <\frac{\epsilon}{2}+\abs d\frac{\epsilon}{2\abs d}\\
- & =\epsilon,
-\end{align*}
-
-\end_inset
-
-Thus 
-\begin_inset Formula $g\left(x\right)$
-\end_inset
-
- is integrable.
- We note that 
-\begin_inset Formula 
-\begin{align*}
-U\left(g,P\right) & \leq U\left(f,P\right)+\abs d\Delta x_{\ell+1}\\
- & =U\left(f,P\right)+\abs d\frac{\epsilon}{2\abs d}\\
- & =U\left(f,P\right)+\epsilon.
-\end{align*}
-
-\end_inset
-
-Since 
-\begin_inset Formula $\epsilon$
-\end_inset
-
- can be arbitrarily small, we get 
-\begin_inset Formula 
-\[
-U\left(g,P\right)=U\left(f,P\right),
-\]
-
-\end_inset
-
-thus 
-\begin_inset Formula 
-\[
-\int_{a}^{b}g=\int_{a}^{b}f
-\]
-
-\end_inset
-
-
+ is the suprem
 \end_layout
 
 \end_body
