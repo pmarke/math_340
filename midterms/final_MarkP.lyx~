@@ -181,7 +181,7 @@ Since
 \end_inset
 
  such that when 
-\begin_inset Formula $n>N_{2}$
+\begin_inset Formula $n>N_{1}$
 \end_inset
 
 ,
@@ -241,7 +241,7 @@ It follows that by choosing
 \begin{align*}
 \abs{\frac{1}{7-a_{n}^{2}}-\frac{1}{3}} & =\abs{\frac{3-7+a_{n}^{2}}{3\left(7-a_{n}^{2}\right)}}\\
  & =\abs{\frac{a_{n}^{2}-4}{3\left(7-a_{n}^{2}\right)}}\\
- & =\abs{\frac{\left(a_{n}-2\right)\left(a_{n}+2\right)}{3\left(7-a_{n}^{2}\right)}}\\
+ & =\abs{\frac{\left(a_{n}-2\right)\left(a_{n}+2\right)}{3\left(7-a_{n}^{2}\right)}}\quad\text{note that \ensuremath{\left(7-a_{n}^{2}\right)\neq0} for our choice of \ensuremath{N}.}\\
  & \leq\abs{\frac{\left(a_{n}-2\right)\frac{9}{2}}{3\left(\frac{3}{4}\right)}}\\
  & =\abs{2\left(a_{n}-2\right)}\\
  & <2\frac{\epsilon}{2}\\
@@ -343,7 +343,7 @@ is a bound for the sequence
 \begin_inset Formula $\left(b_{n}\right)$
 \end_inset
 
-.
+, thus every Cauchy sequence is bounded.
 \end_layout
 
 \begin_layout --Separator--
@@ -380,11 +380,11 @@ Since
 
 \end_inset
 
-also let 
+where 
 \begin_inset Formula $M$
 \end_inset
 
- be a bound on the sequence such that 
+ is a bound on the sequence such that 
 \begin_inset Formula $\abs{a_{n}}\leq M$
 \end_inset
 
@@ -411,7 +411,7 @@ also let
 \abs{\frac{a_{k}^{3}}{a_{k}^{2}+1}-\frac{a_{m}^{3}}{a_{m}^{2}+1}} & =\abs{\frac{a_{k}^{2}a_{m}^{2}\left(a_{k}-a_{m}\right)+a_{k}^{3}-a_{m}^{3}}{\left(a_{k}^{2}+1\right)\left(a_{m}^{2}+1\right)}}\\
  & =\abs{\frac{a_{k}^{2}a_{m}^{2}\left(a_{k}-a_{m}\right)+\left(a_{k}-a_{m}\right)\left(a_{k}^{2}+a_{k}a_{m}+a_{k}^{2}\right)}{\left(a_{k}^{2}+1\right)\left(a_{m}^{2}+1\right)}}\\
  & \leq\abs{a_{k}^{2}}\abs{a_{m}^{2}}\abs{a_{k}-a_{m}}+\abs{a_{k}^{2}+a_{k}a_{m}+a_{k}^{2}}\abs{a_{k}-a_{m}}\\
- & \leq\abs{a_{k}^{2}}\abs{a_{m}^{2}}\abs{a_{k}-a_{m}}+\abs{a_{k}^{2}+\abs{a_{k}}\abs{a_{m}}+a_{k}^{2}}\abs{a_{k}-a_{m}}\\
+ & \leq\abs{a_{k}^{2}}\abs{a_{m}^{2}}\abs{a_{k}-a_{m}}+\left(a_{k}^{2}+\abs{a_{k}}\abs{a_{m}}+a_{k}^{2}\right)\abs{a_{k}-a_{m}}\\
  & \leq\left(M^{4}+3M^{2}\right)\abs{a_{k}-a_{m}}\\
  & <\left(M^{4}+3M^{2}\right)\frac{\epsilon}{M^{4}+3M^{2}}\\
  & =\epsilon.
@@ -650,7 +650,7 @@ This is equivalent to
 
 \end_inset
 
-Not that for any 
+Note that for any 
 \begin_inset Formula $x\in\left[-c,c\right]$
 \end_inset
 
@@ -867,11 +867,11 @@ Let
 \begin_inset Formula $\left(\epsilon_{n}\right)$
 \end_inset
 
- be a monotonic sequence of 
-\begin_inset Formula $\epsilon>0$
+ be a monotonic decreasing sequence such that 
+\begin_inset Formula $\epsilon_{1}>\epsilon_{2}>\cdots>\epsilon_{n}>0$
 \end_inset
 
- such that 
+ and so that 
 \begin_inset Formula $\lim_{n\to\infty}\epsilon_{n}=0$
 \end_inset
 
@@ -1056,7 +1056,7 @@ Prove that
 \begin_inset Formula $g$
 \end_inset
 
- is integrable of 
+ is integrable on 
 \begin_inset Formula $\left[a,b\right]$
 \end_inset
 
@@ -1099,7 +1099,7 @@ Let
  be a refinement, we can write 
 \begin_inset Formula 
 \begin{align*}
-U\left(g,P\right)-L\left(g,P\right) & =\sum_{k=1}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k}\\
+U\left(g,P\right)-L\left(g,P\right) & =\sum_{k=1}^{n}\left(N_{k}-n_{k}\right)\Delta x_{k}\\
  & =\sum_{k=1}^{\ell}\left(M_{k}-m_{k}\right)\Delta x_{k}+\sum_{k=\ell+2}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k}+\left(N_{\ell+1}-n_{\ell+1}\right)\Delta x_{\ell+1}
 \end{align*}
 
@@ -1138,15 +1138,19 @@ where
 \end_inset
 
  and 
-\begin_inset Formula $N_{\ell+1}$
+\begin_inset Formula $N_{k}$
 \end_inset
 
  and 
-\begin_inset Formula $n_{\mathbf{\ell+1}}$
+\begin_inset Formula $n_{\mathbf{k}}$
 \end_inset
 
- is the infimum and supremem of the interval 
-\begin_inset Formula $\Delta x_{\ell+1}$
+ is the infimum and supremem of 
+\begin_inset Formula $g$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $\Delta x_{k}$
 \end_inset
 
 .
@@ -1165,9 +1169,10 @@ where
 
 , then 
 \begin_inset Formula 
-\[
-U\left(g,P\right)-L\left(g,P\right)=U\left(f,P\right)-L\left(f,P\right)<\frac{\epsilon}{2}.
-\]
+\begin{align*}
+U\left(g,P\right)-L\left(g,P\right) & =U\left(f,P\right)-L\left(f,P\right)<\frac{\epsilon}{2}.\\
+ & <\epsilon
+\end{align*}
 
 \end_inset
 
@@ -1202,7 +1207,675 @@ Thus
 \end_inset
 
  is integrable.
+ We note that 
+\begin_inset Formula 
+\begin{align*}
+U\left(g,P\right) & \leq U\left(f,P\right)+\abs d\Delta x_{\ell+1}\\
+ & =U\left(f,P\right)+\abs d\frac{\epsilon}{2\abs d}\\
+ & =U\left(f,P\right)+\epsilon.
+\end{align*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ can be arbitrarily small, we get 
+\begin_inset Formula 
+\[
+U\left(g,P\right)=U\left(f,P\right),
+\]
+
+\end_inset
+
+thus 
+\begin_inset Formula 
+\[
+\int_{a}^{b}g=\int_{a}^{b}f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Prove the Integrable Limit Theorem: Assume that 
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ and that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is integrable.
+ Then 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable and 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\int_{a}^{b}f_{n}=\int_{a}^{b}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+We will first show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable.
+ Since 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is integrable, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a partition 
+\begin_inset Formula $P_{\epsilon}$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(f_{n},P_{\epsilon}\right)-L\left(f_{n},P_{\epsilon}\right)<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+Also, since 
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ uniformly, given the same 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ as above, there exists an 
+\begin_inset Formula $N\in\R$
+\end_inset
+
+ such that when 
+\begin_inset Formula $n>N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{f_{n}\left(x\right)-f\left(x\right)}<\frac{\epsilon}{b-a}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula 
+\[
+f_{n}\left(x\right)-\frac{\epsilon}{2\left(b-a\right)}<f\left(x\right)<f_{n}\left(x\right)+\frac{\epsilon}{4\left(b-a\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+By definition 
+\begin_inset Formula 
+\[
+U\left(f_{n},P_{\epsilon}\right)-L\left(f_{n},P_{\epsilon}\right)=\sum_{k=1}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $M_{k}$
+\end_inset
+
+ is the supremem of 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $\Delta x_{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{k}$
+\end_inset
+
+ is the infimum of 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $\Delta x_{k}$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula 
+\begin{align*}
+U\left(f,P_{\epsilon}\right)-L\left(f,P_{\epsilon}\right) & \leq\sum_{k=1}^{n}\left(M_{k}+\frac{\epsilon}{4\left(b-a\right)}-m_{k}-\frac{\epsilon}{4\left(b-a\right)}\right)\Delta x_{k}\\
+ & =\sum_{k=1}^{n}\left(M_{k}-m_{k}\right)\Delta x_{k}+\frac{\epsilon}{2\left(b-a\right)}\left(b-a\right)\\
+ & =U\left(f_{n},P_{\epsilon}\right)-L\left(f_{n},P_{\epsilon}\right)+\frac{\epsilon}{2}\\
+ & <\frac{\epsilon}{2}+\frac{\epsilon}{2}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore, by the integrability criterion, 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on the interval 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ Now that we have shown that 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable, we wish to show that 
+\begin_inset Formula $\int_{a}^{b}f=\lim_{n\to\infty}\int_{a}^{b}f_{n}$
+\end_inset
+
+.
+ Using the properties of the integral, we assert that for any 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\abs{\int_{a}^{b}f_{n}-\int_{a}^{b}f}=\abs{\int_{a}^{b}\left(f_{n}-f\right)}\leq\int_{a}^{b}\abs{f_{n}-f}.
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, and since 
+\begin_inset Formula $f_{n}\to f$
+\end_inset
+
+ uniformly, there exists an 
+\begin_inset Formula $N\in\R$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n>N$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{f_{n}\left(x\right)-f\left(x\right)}<\frac{\epsilon}{b-a}
+\]
+
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+.
+ Thus, for 
+\begin_inset Formula $n>N$
+\end_inset
+
+ we get that 
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}\abs{f_{n}-f} & \leq\int_{a}^{b}\frac{\epsilon}{b-a}\\
+ & =\epsilon,
+\end{align*}
+
+\end_inset
+
+thus 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=\lim_{n\to\infty}\int_{a}^{b}f_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Prove the Fundamental Theorem of Calculus, Part 1: If f:
+\begin_inset Formula $\left[a,b\right]\to\R$
+\end_inset
+
+ is integrable, and 
+\begin_inset Formula $F:\left[a,b\right]\to\R$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $F'\left(x\right)=f\left(x\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in\left[a,b\right],$
+\end_inset
+
+then 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=F\left(b\right)-F\left(a\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+This proof is in the textbook, so I will utilize it since its allowed.
  
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $P$
+\end_inset
+
+ be a partition of 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ and apply the Mean Value Theorem to 
+\begin_inset Formula $F$
+\end_inset
+
+ on the subinterval 
+\begin_inset Formula $\left[x_{k},x_{k+1}\right]$
+\end_inset
+
+ where 
+\begin_inset Formula $x_{k},x_{k+1}\in P$
+\end_inset
+
+.
+ We get 
+\begin_inset Formula 
+\begin{align*}
+F\left(x_{k+1}\right)-F\left(x_{k}\right) & =F'\left(t_{k+1}\right)\left(x_{k+1}-x_{k}\right)\\
+ & =f\left(t_{k+1}\right)\Delta x_{k+1}
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $t_{k+1}\in\left(x_{k},x_{k+1}\right)$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $M_{k}$
+\end_inset
+
+ be the supremem of 
+\begin_inset Formula $f$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $\Delta x_{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{k}$
+\end_inset
+
+ be the infimum of 
+\begin_inset Formula $f$
+\end_inset
+
+ on the interval 
+\begin_inset Formula $\Delta x_{k}$
+\end_inset
+
+, then 
+\begin_inset Formula $m_{k}<t_{k}<M_{k}$
+\end_inset
+
+ and thus 
+\begin_inset Formula 
+\[
+L\left(f,P\right)\leq\sum_{k=1}^{n}F\left(x_{k}\right)-F\left(x_{k-1}\right)\leq U\left(f,P\right).
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $\sum_{k=1}^{n}F\left(x_{k}\right)-F\left(x_{k-1}\right)$
+\end_inset
+
+ is a telescoping sum, we can simplify the expression to 
+\begin_inset Formula 
+\[
+L\left(f,P\right)\leq F\left(b\right)-F\left(a\right)\leq U\left(f,P\right).
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $F\left(b\right)-F\left(a\right)$
+\end_inset
+
+ is independent of partitions and 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable, we get that 
+\begin_inset Formula 
+\[
+L\left(f\right)\leq F\left(b\right)-F\left(a\right)\leq U\left(f\right).
+\]
+
+\end_inset
+
+Therefore, 
+\begin_inset Formula $\int_{a}^{b}f=L\left(f\right)=U\left(f\right)=F\left(b\right)-F\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Prove the Fundamental Theorem of Calculus, Part 2: Let 
+\begin_inset Formula $g:\left[a,b\right]\to\R$
+\end_inset
+
+ be integrable for 
+\begin_inset Formula $x\in\left[a,b\right],$
+\end_inset
+
+ define 
+\begin_inset Formula 
+\[
+G\left(x\right)=\int_{a}^{x}g.
+\]
+
+\end_inset
+
+Then 
+\begin_inset Formula $G$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous at some point 
+\begin_inset Formula $c\in\left[a,b\right],$
+\end_inset
+
+ then 
+\begin_inset Formula $G$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $G'\left(c\right)=g\left(c\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+This proof is in the textbook, so I will utilize it.
+\end_layout
+
+\begin_layout Proof
+Let 
+\begin_inset Formula $x,y\in\left[a,b\right]$
+\end_inset
+
+ such that 
+\begin_inset Formula $x>y$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{align*}
+\abs{G\left(x\right)-G\left(y\right)} & =\abs{\int_{a}^{x}g-\int_{a}^{y}g}\\
+ & =\abs{\int_{y}^{x}g}.
+\end{align*}
+
+\end_inset
+
+According to the properties of the integral,
+\begin_inset Formula 
+\[
+\abs{\int_{y}^{x}g}\leq\int_{y}^{x}\abs g.
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $g$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, it is also bounded on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $M\in\R$
+\end_inset
+
+ such that 
+\begin_inset Formula $\abs{g\left(k\right)}\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $k\in\left[a,b\right]$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\int_{y}^{x}\abs g\leq M\left(x-y\right),
+\]
+
+\end_inset
+
+which implies that 
+\begin_inset Formula 
+\[
+\abs{G\left(x\right)-G\left(y\right)}\leq M\left(x-y\right).
+\]
+
+\end_inset
+
+Thus 
+\begin_inset Formula $G$
+\end_inset
+
+ is Lipschitz and hence it is uniformly continuous on 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Now we assume that 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+ and we want to show that 
+\begin_inset Formula $G$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+ and that 
+\begin_inset Formula $G'\left(c\right)=g\left(c\right)$
+\end_inset
+
+.
+ Using the definition of the derivative of 
+\begin_inset Formula $G$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+G'\left(c\right) & =\lim_{x\to c}\frac{G\left(x\right)-G\left(c\right)}{x-c}=\lim_{x\to c}\frac{1}{x-c}\left(\int_{a}^{x}g-\int_{a}^{c}g\right)\\
+ & =\lim_{x\to c}\frac{1}{x-c}\int_{c}^{x}g.
+\end{align*}
+
+\end_inset
+
+We would like to show that 
+\begin_inset Formula $\lim_{x\to c}\frac{1}{x-c}\int_{c}^{x}g=g\left(c\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $g$
+\end_inset
+
+ is assumed continuous, we can pick a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, such that when 
+\begin_inset Formula $0<\abs{x-c}<\delta$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\abs{g\left(t\right)-g\left(c\right)}<\epsilon.
+\]
+
+\end_inset
+
+To take advantage of this, we can write the constant 
+\begin_inset Formula $g\left(c\right)$
+\end_inset
+
+ as 
+\begin_inset Formula 
+\[
+g\left(c\right)=\frac{1}{x-c}\int_{c}^{x}g\left(c\right)dt.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Now, using the definition of the limit, given an 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, let 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, then when 
+\begin_inset Formula $0<\abs{x-c}<\delta$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+\abs{\frac{1}{x-c}\left(\int_{c}^{x}g\right)-g\left(c\right)} & =\abs{\frac{1}{x-c}\left(\int_{c}^{x}g\left(x\right)dt-g\left(c\right)dt\right)}.\\
+ & \leq\abs{\frac{1}{x-c}\int_{c}^{x}\epsilon dt}\\
+ & =\epsilon.
+\end{align*}
+
+\end_inset
+
+Therefore, if 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous at some point 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+, then 
+\begin_inset Formula $G$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $G'\left(c\right)=g\left(c\right)$
+\end_inset
+
+.
 \end_layout
 
 \end_body
